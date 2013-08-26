@@ -108,6 +108,7 @@ Reachability *googleReach;
         default:
             break;
     }
+    
     ipAddrLabel.text = [self getIPAddress];
     macAddrLabel.text = [self getMacAddress];
     
