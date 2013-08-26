@@ -5,25 +5,7 @@
 //  Created by Robert Yi Jiang on 26/08/13.
 //  Copyright (c) 2013 Robert Yi Jiang. All rights reserved.
 //
-#import <ifaddrs.h>
-#import <arpa/inet.h>
-#import <sys/sysctl.h>
-#import <sys/utsname.h>
 #import "DDViewController.h"
-#import "Reachability.h"
-#include <sys/types.h>
-#include <stdio.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <net/if_dl.h>
-#include <ifaddrs.h>
-#include <net/if.h> 
-#include <dns.h>
-#include<stdlib.h>
-#include<netinet/in.h>
-#include<unistd.h>
-#include <resolv.h>
-#import <SystemConfiguration/CaptiveNetwork.h>
 
 @interface DDViewController ()
 
@@ -43,6 +25,10 @@
 @synthesize macAddrLabel;
 @synthesize ssidLabel;
 @synthesize ssidTagLabel;
+@synthesize routerIpAddrLabel;
+@synthesize subnetMaskLabel;
+@synthesize routerBoradcastAddrLabel;
+
 
 Reachability *googleReach;
 
@@ -124,6 +110,8 @@ Reachability *googleReach;
     }
     ipAddrLabel.text = [self getIPAddress];
     macAddrLabel.text = [self getMacAddress];
+    
+    [self get_dns_servers];
 }
 
 ///Get IP Address
@@ -272,21 +260,19 @@ Reachability *googleReach;
     return ssid;
 }
 
--(void) get_dns_servers
+-(NSString *) get_dns_servers
 {
-    res_state res = malloc(sizeof(struct __res_state));
-    int result = res_ninit(res);
-    if(result==0)
-    {
-        NSLog(@"No of DNS IP : %d",res->nscount);
-        for ( int i= 0; i < res->nscount; i++)
-        {
-            NSString *s = [NSString stringWithUTF8String :  inet_ntoa(res->nsaddr_list[i].sin_addr)];
-            NSLog(@"DNS ip : %@",s);
-            [server_DNS addObject:s];
-        }
-    }
-    
+  
+//    struct ifaddrs *ifa = NULL, *ifList;
+//    getifaddrs(&ifList); // should check for errors
+//    NSLog(@"ifList %@",ifList);
+//    for (ifa = ifList; ifa != NULL; ifa = ifa->ifa_next) {
+//        NSLog(@"ifa->ifa_addr : %@", ifa->ifa_addr); // interface address
+//        NSLog(@"ifa->ifa_netmask : %@", ifa->ifa_netmask); // subnet mask
+//         NSLog(@"ifa->ifa_dstaddr : %@", ifa->ifa_dstaddr); // broadcast address, NOT router address
+//    }
+//    freeifaddrs(ifList); // clean up after yourself
+    return @"0.0.0.0";
 }
 
 
