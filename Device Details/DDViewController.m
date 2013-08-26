@@ -5,11 +5,25 @@
 //  Created by Robert Yi Jiang on 26/08/13.
 //  Copyright (c) 2013 Robert Yi Jiang. All rights reserved.
 //
-
+#import <ifaddrs.h>
+#import <arpa/inet.h>
 #import <sys/sysctl.h>
 #import <sys/utsname.h>
 #import "DDViewController.h"
 #import "Reachability.h"
+#include <sys/types.h>
+#include <stdio.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <net/if_dl.h>
+#include <ifaddrs.h>
+#include <net/if.h> 
+#include <dns.h>
+#include<stdlib.h>
+#include<netinet/in.h>
+#include<unistd.h>
+#include <resolv.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 @interface DDViewController ()
 
@@ -21,11 +35,15 @@
 @synthesize deviceCodeLabel;
 @synthesize deviceTypeLabel;
 @synthesize deviceNameLabel;
-@synthesize deviceUDIDLabel;
 @synthesize osNameLabel;
 @synthesize osVersionLabel;
 @synthesize deviceUDIDtextField;
 @synthesize networkTypeLabel;
+@synthesize ipAddrLabel;
+@synthesize macAddrLabel;
+@synthesize ssidLabel;
+@synthesize ssidTagLabel;
+
 Reachability *googleReach;
 
 - (void)viewDidLoad
@@ -80,35 +98,208 @@ Reachability *googleReach;
     if ([platform isEqualToString:@"x86_64"])       deviceTypeLabel.text = @"Simulator";
     
     deviceNameLabel.text = [UIDevice currentDevice].name;
-    deviceUDIDLabel.text = [[UIDevice currentDevice] uniqueIdentifier];
     deviceUDIDtextField.text = [[UIDevice currentDevice] uniqueIdentifier];
 
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
     Reachability *reach = [Reachability reachabilityWithHostName:@"www.google.com"];
+    ssidLabel.hidden = YES;
+    ssidTagLabel.hidden = YES;
     switch ([reach currentReachabilityStatus]) {
         case NotReachable:
-            networkTypeLabel.text = @"No Network Connetion";
+            networkTypeLabel.text = @"No Network";
             break;
         case ReachableViaWWAN:
-            networkTypeLabel.text = @"Celular Connection";
+            networkTypeLabel.text = @"3G/GPRS";
             break;
         case ReachableViaWiFi:
-            networkTypeLabel.text = @"WiFi Connection";
+            networkTypeLabel.text = @"WiFi";
+            ssidLabel.text = [self getSSIDInfo];
+            ssidLabel.hidden = NO;
+            ssidTagLabel.hidden = NO;
             break;
             
         default:
             break;
     }
+    ipAddrLabel.text = [self getIPAddress];
+    macAddrLabel.text = [self getMacAddress];
+}
+
+///Get IP Address
+
+//- (NSString *)getIPAddress {
+//    NSString *address = @"error";
+//    struct ifaddrs *interfaces = NULL;
+//    struct ifaddrs *temp_addr = NULL;
+//    int success = 0;
+//    // retrieve the current interfaces - returns 0 on success
+//    success = getifaddrs(&interfaces);
+//    if (success == 0) {
+//        // Loop through linked list of interfaces
+//        temp_addr = interfaces;
+//        while(temp_addr != NULL) {
+//            if(temp_addr->ifa_addr->sa_family == AF_INET) {
+//                // Check if interface is en0 which is the wifi connection on the iPhone
+//                if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
+//                    // Get NSString from C String
+//                    address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+//                }
+//            }
+//            temp_addr = temp_addr->ifa_next;
+//        }
+//    }
+//    // Free memory
+//    freeifaddrs(interfaces);
+//    return address;
+//    
+//}
+- (NSString *)getIPAddress
+{
+    struct ifaddrs *interfaces = NULL;
+    struct ifaddrs *temp_addr = NULL;
+    NSString *wifiAddress = nil;
+    NSString *cellAddress = nil;
+    
+    // retrieve the current interfaces - returns 0 on success
+    if(!getifaddrs(&interfaces)) {
+        // Loop through linked list of interfaces
+        temp_addr = interfaces;
+        while(temp_addr != NULL) {
+            sa_family_t sa_type = temp_addr->ifa_addr->sa_family;
+            if(sa_type == AF_INET || sa_type == AF_INET6) {
+                NSString *name = [NSString stringWithUTF8String:temp_addr->ifa_name];
+                NSString *addr = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)]; // pdp_ip0
+                NSLog(@"NAME: \"%@\" addr: %@", name, addr); // see for yourself
+                
+                if([name isEqualToString:@"en0"]) {
+                    // Interface is the wifi connection on the iPhone
+                    wifiAddress = addr;
+                } else
+                    if([name isEqualToString:@"pdp_ip0"]) {
+                        // Interface is the cell connection on the iPhone
+                        cellAddress = addr;
+                    }
+            }
+            temp_addr = temp_addr->ifa_next;
+        }
+        // Free memory
+        freeifaddrs(interfaces);
+    }
+    NSString *addr = wifiAddress ? wifiAddress : cellAddress;
+    return addr ? addr : @"0.0.0.0";
+}
+
+///Get Mac Address
+- (NSString *)getMacAddress
+{
+    int                 mgmtInfoBase[6];
+    char                *msgBuffer = NULL;
+    size_t              length;
+    unsigned char       macAddress[6];
+    struct if_msghdr    *interfaceMsgStruct;
+    struct sockaddr_dl  *socketStruct;
+    NSString            *errorFlag = NULL;
+    
+    // Setup the management Information Base (mib)
+    mgmtInfoBase[0] = CTL_NET;        // Request network subsystem
+    mgmtInfoBase[1] = AF_ROUTE;       // Routing table info
+    mgmtInfoBase[2] = 0;
+    mgmtInfoBase[3] = AF_LINK;        // Request link layer information
+    mgmtInfoBase[4] = NET_RT_IFLIST;  // Request all configured interfaces
+    
+    // With all configured interfaces requested, get handle index
+    if ((mgmtInfoBase[5] = if_nametoindex("en0")) == 0)
+        errorFlag = @"if_nametoindex failure";
+    else
+    {
+        // Get the size of the data available (store in len)
+        if (sysctl(mgmtInfoBase, 6, NULL, &length, NULL, 0) < 0)
+            errorFlag = @"sysctl mgmtInfoBase failure";
+        else
+        {
+            // Alloc memory based on above call
+            if ((msgBuffer = malloc(length)) == NULL)
+                errorFlag = @"buffer allocation failure";
+            else
+            {
+                // Get system information, store in buffer
+                if (sysctl(mgmtInfoBase, 6, msgBuffer, &length, NULL, 0) < 0)
+                    errorFlag = @"sysctl msgBuffer failure";
+            }
+        }
+    }
+    
+    // Befor going any further...
+    if (errorFlag != NULL)
+    {
+        NSLog(@"Error: %@", errorFlag);
+        return errorFlag;
+    }
+    
+    // Map msgbuffer to interface message structure
+    interfaceMsgStruct = (struct if_msghdr *) msgBuffer;
+    
+    // Map to link-level socket structure
+    socketStruct = (struct sockaddr_dl *) (interfaceMsgStruct + 1);
+    
+    // Copy link layer address data in socket structure to an array
+    memcpy(&macAddress, socketStruct->sdl_data + socketStruct->sdl_nlen, 6);
+    
+    // Read from char array into a string object, into traditional Mac address format
+    NSString *macAddressString = [NSString stringWithFormat:@"%02X:%02X:%02X:%02X:%02X:%02X",
+                                  macAddress[0], macAddress[1], macAddress[2],
+                                  macAddress[3], macAddress[4], macAddress[5]];
+    NSLog(@"Mac Address: %@", macAddressString);
+    
+    // Release the buffer memory
+    free(msgBuffer);
+    
+    return macAddressString;
+}
+
+//Get WiFi SSID
+- (NSString *)getSSIDInfo{
+    // Does not work on the simulator.
+    NSString *ssid = nil;
+    NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
+    for (NSString *ifnam in ifs) {
+        NSDictionary *info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
+        if (info[@"SSID"]) {
+            ssid = info[@"SSID"];
+        }
+    }
+    return ssid;
+}
+
+-(void) get_dns_servers
+{
+    res_state res = malloc(sizeof(struct __res_state));
+    int result = res_ninit(res);
+    if(result==0)
+    {
+        NSLog(@"No of DNS IP : %d",res->nscount);
+        for ( int i= 0; i < res->nscount; i++)
+        {
+            NSString *s = [NSString stringWithUTF8String :  inet_ntoa(res->nsaddr_list[i].sin_addr)];
+            NSLog(@"DNS ip : %@",s);
+            [server_DNS addObject:s];
+        }
+    }
     
 }
 
+
+#pragma mark -
+#pragma mark *** Reachability Delegate ***
 -(void)reachabilityChanged:(NSNotification *)note{
     //When Network Environment is changed
     
     Reachability *curReach = [note object];
     NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
     NetworkStatus status = [curReach currentReachabilityStatus];
+    ssidLabel.hidden = YES;
+    ssidTagLabel.hidden = YES;
     switch (status) {
         case NotReachable:
             networkTypeLabel.text = @"No Network Connetion";
@@ -117,13 +308,15 @@ Reachability *googleReach;
             networkTypeLabel.text = @"Celular Connection";
             break;
         case ReachableViaWiFi:
-            networkTypeLabel.text = @"WiFi Connection";
+            networkTypeLabel.text = @"WiFi";
+            ssidLabel.text = [self getSSIDInfo];
+            ssidLabel.hidden = NO;
+            ssidTagLabel.hidden = NO;
             break;
             
         default:
             break;
     }
-    
+    ipAddrLabel.text = [self getIPAddress];
 }
-
 @end

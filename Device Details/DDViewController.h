@@ -15,9 +15,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *deviceNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *osNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *osVersionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *deviceUDIDLabel;
+
 @property (weak, nonatomic) IBOutlet UITextView *deviceUDIDtextField;
 @property (weak, nonatomic) IBOutlet UILabel *networkTypeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ipAddrLabel;
+@property (weak, nonatomic) IBOutlet UILabel *macAddrLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ssidTagLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ssidLabel;
 
 
 @end
