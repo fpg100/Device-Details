@@ -65,6 +65,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *verticalAccuracyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *courseLabel;
+@property (weak, nonatomic) IBOutlet UILabel *headingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *differWithGeomagneticLabel;
+@property (weak, nonatomic) IBOutlet UILabel *trueHeadingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xGeomagnetismLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yGeomagnetismLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zGeomagnetismLabel;
 
 
 @end

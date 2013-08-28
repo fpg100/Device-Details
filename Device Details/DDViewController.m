@@ -45,6 +45,12 @@
 @synthesize verticalAccuracyLabel;
 @synthesize speedLabel;
 @synthesize courseLabel;
+@synthesize headingLabel;
+@synthesize differWithGeomagneticLabel;
+@synthesize trueHeadingLabel;
+@synthesize xGeomagnetismLabel;
+@synthesize yGeomagnetismLabel;
+@synthesize zGeomagnetismLabel;
 
 Reachability *googleReach;
 
@@ -57,6 +63,8 @@ Reachability *googleReach;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     locationManager.distanceFilter = 2.0f;
     [locationManager startUpdatingLocation];
+    locationManager.headingFilter = kCLHeadingFilterNone;
+    [locationManager startUpdatingHeading];
     
     [self getDeviceDetails];
     [self getLocationDetails];
@@ -361,7 +369,7 @@ didUpdateLocations:(NSArray *)locations{
     horizentalAccuratcyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.horizontalAccuracy];
     altitudeLabel.text = [[NSString alloc] initWithFormat:@"%+.2f m", newLocation.altitude];
     verticalAccuracyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.verticalAccuracy];
-    speedLabel.text =  [[NSString alloc] initWithFormat:@"%.2f mps", newLocation.speed];
+    speedLabel.text =  [[NSString alloc] initWithFormat:@"%.2f km/h", newLocation.speed];
     if (newLocation.course < 0) {
         courseLabel.text = @"Direction is invalid.";
     }else{
@@ -373,7 +381,24 @@ didUpdateLocations:(NSArray *)locations{
 }
 
 
-
+/*
+ *  locationManager:didUpdateHeading:
+ *
+ *  Discussion:
+ *    Invoked when a new heading is available.
+ */
+- (void)locationManager:(CLLocationManager *)manager
+       didUpdateHeading:(CLHeading *)newHeading{
+    
+//    [headingLabel setText:[NSString stringWithFormat:@"%.1fmi",newHeading.magneticHeading]];
+    headingLabel.Text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.magneticHeading];
+    differWithGeomagneticLabel.text =[NSString stringWithFormat:@"%.1fmi",newHeading.headingAccuracy];
+    trueHeadingLabel.text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.trueHeading];
+    xGeomagnetismLabel.text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.x];
+    yGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.y];
+    zGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.z];
+    
+}
 
 
 @end
