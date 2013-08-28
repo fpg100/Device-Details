@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>810A1680-8525-423E-8EEA-570C1F74C42F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Device Details</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B07C577C-9FA7-405D-A518-9B62E8260AF0</key>
+		<string>https://github.com/robert-yi-jones/Device-Details.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Device Details.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B07C577C-9FA7-405D-A518-9B62E8260AF0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/robert-yi-jones/Device-Details.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B07C577C-9FA7-405D-A518-9B62E8260AF0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B07C577C-9FA7-405D-A518-9B62E8260AF0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Device-Details</string>
+		</dict>
+	</array>
+</dict>
+</plist>

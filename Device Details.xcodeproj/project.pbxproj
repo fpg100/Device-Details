@@ -100,7 +100,6 @@
 		E137D17417CAF03D0001A6CF = {
 			isa = PBXGroup;
 			children = (
-				E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */,
 				E137D1FC17CD9E530001A6CF /* Icon@2x.png */,
 				E137D1FA17CD9E4B0001A6CF /* Icon.png */,
 				E137D18617CAF03D0001A6CF /* Device Details */,
@@ -122,6 +121,7 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */,
 				E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */,
 				E137D18017CAF03D0001A6CF /* UIKit.framework */,
 				E137D18217CAF03D0001A6CF /* Foundation.framework */,
