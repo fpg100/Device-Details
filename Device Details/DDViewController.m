@@ -28,7 +28,13 @@
 @synthesize routerIpAddrLabel;
 @synthesize subnetMaskLabel;
 @synthesize routerBoradcastAddrLabel;
-
+@synthesize locationManager;
+@synthesize startPoint;
+@synthesize latitudeLabel;
+@synthesize longitudeLabel;
+@synthesize horizentalAccuratcyLabel;
+@synthesize altitudeLabel;
+@synthesize verticalAccuracyLabel;
 
 Reachability *googleReach;
 
@@ -36,7 +42,14 @@ Reachability *googleReach;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = 2.0f;
+    [locationManager startUpdatingLocation];
+    
     [self getDeviceDetails];
+    [self getLocationDetails];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     googleReach = [Reachability reachabilityWithHostName:@"www.google.com"];
     [googleReach startNotifier];
@@ -46,6 +59,9 @@ Reachability *googleReach;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)getLocationDetails{
+    
 }
 
 - (void) getDeviceDetails{
@@ -306,4 +322,43 @@ Reachability *googleReach;
     }
     ipAddrLabel.text = [self getIPAddress];
 }
+
+
+
+#pragma mark *** CLLocationManager Delegate ***
+/*
+ *  locationManager:didUpdateLocations:
+ *
+ *  Discussion:
+ *    Invoked when new locations are available.  Required for delivery of
+ *    deferred locations.  If implemented, updates will
+ *    not be delivered to locationManager:didUpdateToLocation:fromLocation:
+ *
+ *    locations is an array of CLLocation objects in chronological order.
+ */
+- (void)locationManager:(CLLocationManager *)manager
+didUpdateLocations:(NSArray *)locations{
+    CLLocation *newLocation = [locations lastObject];
+    CLLocation *oldLocation;
+    if (locations.count > 1) {
+        oldLocation = [locations objectAtIndex:locations.count-2];
+    } else {
+        oldLocation = nil;
+    }
+    NSLog(@"didUpdateToLocation %@ from %@", newLocation, oldLocation);
+    
+    
+}
+
+
+
+
+
 @end
+
+
+
+
+
+
+

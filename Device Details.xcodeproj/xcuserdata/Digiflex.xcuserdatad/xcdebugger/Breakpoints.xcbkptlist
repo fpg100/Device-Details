@@ -8,24 +8,24 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Device Details/DDViewController.m"
-         timestampString = "399191740.153527"
+         timestampString = "399357112.399607"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "266"
-         endingLineNumber = "266"
-         landmarkName = "-get_dns_servers"
-         landmarkType = "5">
+         startingLineNumber = "279"
+         endingLineNumber = "279"
+         landmarkName = "@implementation DDViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Device Details/DDViewController.m"
-         timestampString = "399191740.153527"
+         timestampString = "399357112.399607"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "267"
-         endingLineNumber = "267"
+         startingLineNumber = "280"
+         endingLineNumber = "280"
          landmarkName = "-get_dns_servers"
          landmarkType = "5">
       </FileBreakpoint>

@@ -26,8 +26,12 @@
 #import <sys/utsname.h>
 #include <ifaddrs.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface DDViewController : UIViewController {
+
+@interface DDViewController : UIViewController<CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+    CLLocation *startPoint;
    
 }
 @property (weak, nonatomic) IBOutlet UILabel *deviceModeLabel;
@@ -46,6 +50,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *routerIpAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subnetMaskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routerBoradcastAddrLabel;
+
+@property (retain, nonatomic) CLLocationManager *locationManager;
+@property (retain, nonatomic) CLLocation *startPoint;
+@property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *horizentalAccuratcyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *altitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *verticalAccuracyLabel;
 
 
 @end
