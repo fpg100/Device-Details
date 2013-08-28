@@ -34,13 +34,17 @@
     CLLocation *startPoint;
    
 }
+//Hardware Details
 @property (weak, nonatomic) IBOutlet UILabel *deviceModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceCodeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceNameLabel;
+
+//OS Details
 @property (weak, nonatomic) IBOutlet UILabel *osNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *osVersionLabel;
 
+//Network Details
 @property (weak, nonatomic) IBOutlet UITextView *deviceUDIDtextField;
 @property (weak, nonatomic) IBOutlet UILabel *networkTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ipAddrLabel;
@@ -51,6 +55,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *subnetMaskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routerBoradcastAddrLabel;
 
+//Location Details
 @property (retain, nonatomic) CLLocationManager *locationManager;
 @property (retain, nonatomic) CLLocation *startPoint;
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
@@ -58,6 +63,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *horizentalAccuratcyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *altitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *verticalAccuracyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *speedLabel;
+@property (weak, nonatomic) IBOutlet UILabel *courseLabel;
 
 
 @end

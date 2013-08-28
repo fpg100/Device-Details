@@ -13,13 +13,19 @@
 
 
 @implementation DDViewController
+
+//Hardware Details
 @synthesize deviceModeLabel;
 @synthesize deviceCodeLabel;
 @synthesize deviceTypeLabel;
 @synthesize deviceNameLabel;
+
+//OS Details
 @synthesize osNameLabel;
 @synthesize osVersionLabel;
 @synthesize deviceUDIDtextField;
+
+//Network Details
 @synthesize networkTypeLabel;
 @synthesize ipAddrLabel;
 @synthesize macAddrLabel;
@@ -28,6 +34,8 @@
 @synthesize routerIpAddrLabel;
 @synthesize subnetMaskLabel;
 @synthesize routerBoradcastAddrLabel;
+
+//Location Details
 @synthesize locationManager;
 @synthesize startPoint;
 @synthesize latitudeLabel;
@@ -35,6 +43,8 @@
 @synthesize horizentalAccuratcyLabel;
 @synthesize altitudeLabel;
 @synthesize verticalAccuracyLabel;
+@synthesize speedLabel;
+@synthesize courseLabel;
 
 Reachability *googleReach;
 
@@ -100,7 +110,7 @@ Reachability *googleReach;
     if ([platform isEqualToString:@"x86_64"])       deviceTypeLabel.text = @"Simulator";
     
     deviceNameLabel.text = [UIDevice currentDevice].name;
-    deviceUDIDtextField.text = [[UIDevice currentDevice] uniqueIdentifier];
+    //deviceUDIDtextField.text = [[UIDevice currentDevice]  uniqueIdentifier];
 
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
@@ -346,6 +356,18 @@ didUpdateLocations:(NSArray *)locations{
         oldLocation = nil;
     }
     NSLog(@"didUpdateToLocation %@ from %@", newLocation, oldLocation);
+    latitudeLabel.text = [[NSString alloc] initWithFormat:@"%+f\u00B0", newLocation.coordinate.latitude];
+    longitudeLabel.text = [[NSString alloc] initWithFormat:@"%+f\u00B0", newLocation.coordinate.longitude];
+    horizentalAccuratcyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.horizontalAccuracy];
+    altitudeLabel.text = [[NSString alloc] initWithFormat:@"%+.2f m", newLocation.altitude];
+    verticalAccuracyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.verticalAccuracy];
+    speedLabel.text =  [[NSString alloc] initWithFormat:@"%.2f mps", newLocation.speed];
+    if (newLocation.course < 0) {
+        courseLabel.text = @"Direction is invalid.";
+    }else{
+        courseLabel.text = [[NSString alloc] initWithFormat:@"%.2f\u00B0", newLocation.course];
+    }
+    
     
     
 }
