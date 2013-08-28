@@ -27,11 +27,14 @@
 #include <ifaddrs.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <CoreLocation/CoreLocation.h>
+#import <CoreMotion/CoreMotion.h>
 
-
-@interface DDViewController : UIViewController<CLLocationManagerDelegate> {
+#define kAccelerometerFrequency        50.0 //Hz
+@interface DDViewController : UIViewController<CLLocationManagerDelegate, UIAccelerometerDelegate> {
     CLLocationManager *locationManager;
     CLLocation *startPoint;
+    CMMotionManager *motionManager;
+    NSOperationQueue *opQ;
    
 }
 //Hardware Details

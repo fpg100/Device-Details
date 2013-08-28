@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49852AF317CE2A4F0086089A /* CoreMotion.framework */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18317CAF03D0001A6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18217CAF03D0001A6CF /* Foundation.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49852AF317CE2A4F0086089A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		E137D17D17CAF03D0001A6CF /* Device Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Details.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
 				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
 				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
@@ -121,6 +124,7 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49852AF317CE2A4F0086089A /* CoreMotion.framework */,
 				E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */,
 				E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */,
 				E137D18017CAF03D0001A6CF /* UIKit.framework */,
@@ -182,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E137D17C17CAF03D0001A6CF /* Device Details */ = {
+		E137D17C17CAF03D0001A6CF /* Details */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E137D1B517CAF03D0001A6CF /* Build configuration list for PBXNativeTarget "Device Details" */;
+			buildConfigurationList = E137D1B517CAF03D0001A6CF /* Build configuration list for PBXNativeTarget "Details" */;
 			buildPhases = (
 				E137D17917CAF03D0001A6CF /* Sources */,
 				E137D17A17CAF03D0001A6CF /* Frameworks */,
@@ -194,7 +198,7 @@
 			);
 			dependencies = (
 			);
-			name = "Device Details";
+			name = Details;
 			productName = "Device Details";
 			productReference = E137D17D17CAF03D0001A6CF /* Device Details.app */;
 			productType = "com.apple.product-type.application";
@@ -241,7 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E137D17C17CAF03D0001A6CF /* Device Details */,
+				E137D17C17CAF03D0001A6CF /* Details */,
 				E137D1A217CAF03D0001A6CF /* Device DetailsTests */,
 			);
 		};
@@ -313,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		E137D1A917CAF03D0001A6CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E137D17C17CAF03D0001A6CF /* Device Details */;
+			target = E137D17C17CAF03D0001A6CF /* Details */;
 			targetProxy = E137D1A817CAF03D0001A6CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -470,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E137D1B517CAF03D0001A6CF /* Build configuration list for PBXNativeTarget "Device Details" */ = {
+		E137D1B517CAF03D0001A6CF /* Build configuration list for PBXNativeTarget "Details" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E137D1B617CAF03D0001A6CF /* Debug */,

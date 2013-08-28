@@ -66,9 +66,15 @@ Reachability *googleReach;
     locationManager.headingFilter = kCLHeadingFilterNone;
     [locationManager startUpdatingHeading];
     
+    
+    UIAccelerometer*  theAccelerometer = [UIAccelerometer sharedAccelerometer];
+    theAccelerometer.updateInterval = 1 / kAccelerometerFrequency;
+    theAccelerometer.delegate = self;
+    
     [self getDeviceDetails];
     [self getLocationDetails];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    
     googleReach = [Reachability reachabilityWithHostName:@"www.google.com"];
     [googleReach startNotifier];
 }
@@ -88,6 +94,7 @@ Reachability *googleReach;
 
     deviceModeLabel.text = [UIDevice currentDevice].model;
     deviceCodeLabel.text = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    
     
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     if ([platform isEqualToString:@"iPhone1,1"])    deviceTypeLabel.text = @"iPhone 1G";
