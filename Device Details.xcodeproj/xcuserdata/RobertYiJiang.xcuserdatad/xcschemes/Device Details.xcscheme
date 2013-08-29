@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E137D17C17CAF03D0001A6CF"
-               BuildableName = "Device Details.app"
+               BuildableName = "Details.app"
                BlueprintName = "Details"
                ReferencedContainer = "container:Device Details.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E137D17C17CAF03D0001A6CF"
-            BuildableName = "Device Details.app"
+            BuildableName = "Details.app"
             BlueprintName = "Details"
             ReferencedContainer = "container:Device Details.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E137D17C17CAF03D0001A6CF"
-            BuildableName = "Device Details.app"
+            BuildableName = "Details.app"
             BlueprintName = "Details"
             ReferencedContainer = "container:Device Details.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E137D17C17CAF03D0001A6CF"
-            BuildableName = "Device Details.app"
+            BuildableName = "Details.app"
             BlueprintName = "Details"
             ReferencedContainer = "container:Device Details.xcodeproj">
          </BuildableReference>

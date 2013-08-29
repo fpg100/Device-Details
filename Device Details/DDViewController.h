@@ -75,5 +75,27 @@
 @property (weak, nonatomic) IBOutlet UILabel *yGeomagnetismLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zGeomagnetismLabel;
 
+//Motion Details
+//  Gyro
+@property (weak, nonatomic) IBOutlet UILabel *gyroTotalRateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xRotateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yRotateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zRotateLabel;
+//  DeviceMotion
+@property (weak, nonatomic) IBOutlet UILabel *rotateRateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xRotateRateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yRotateRateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zRotateRateLabel;
+//  Accelerometer
+@property (weak, nonatomic) IBOutlet UILabel *gravityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xAccelerationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yAccelerationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zAccelerationLabel;
+//  Magnetic Field
+@property (weak, nonatomic) IBOutlet UILabel *magneticFieldTotileLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xMagneticFieldLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yMagneticFieldLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zMagneticFieldLabel;
+
 
 @end

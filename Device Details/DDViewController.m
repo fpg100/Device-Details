@@ -52,6 +52,27 @@
 @synthesize yGeomagnetismLabel;
 @synthesize zGeomagnetismLabel;
 
+//Motion Details
+@synthesize gyroTotalRateLabel;
+@synthesize xRotateLabel;
+@synthesize yRotateLabel;
+@synthesize zRotateLabel;
+
+@synthesize rotateRateLabel;
+@synthesize xRotateRateLabel;
+@synthesize yRotateRateLabel;
+@synthesize zRotateRateLabel;
+
+@synthesize gravityLabel;
+@synthesize xAccelerationLabel;
+@synthesize yAccelerationLabel;
+@synthesize zAccelerationLabel;
+
+@synthesize magneticFieldTotileLabel;
+@synthesize xMagneticFieldLabel;
+@synthesize yMagneticFieldLabel;
+@synthesize zMagneticFieldLabel;
+
 Reachability *googleReach;
 
 - (void)viewDidLoad
@@ -66,10 +87,16 @@ Reachability *googleReach;
     locationManager.headingFilter = kCLHeadingFilterNone;
     [locationManager startUpdatingHeading];
     
-    
-    UIAccelerometer*  theAccelerometer = [UIAccelerometer sharedAccelerometer];
-    theAccelerometer.updateInterval = 1 / kAccelerometerFrequency;
-    theAccelerometer.delegate = self;
+    motionManager = [[CMMotionManager alloc] init];
+    NSLog(@"motionManager.description:%@", motionManager.description);
+    motionManager.deviceMotionUpdateInterval = 5.0/100.0;
+    motionManager.gyroUpdateInterval = 1.0/60.0;
+    motionManager.accelerometerUpdateInterval = 5.0/100.0;
+    motionManager.magnetometerUpdateInterval  = 1.0/10.0; // Update at 10Hz
+//    [motionManager startAccelerometerUpdates];
+//    [motionManager startDeviceMotionUpdates];
+//    [motionManager startGyroUpdates];
+    [self getMotionDetails];
     
     [self getDeviceDetails];
     [self getLocationDetails];
@@ -153,7 +180,7 @@ Reachability *googleReach;
     ipAddrLabel.text = [self getIPAddress];
     macAddrLabel.text = [self getMacAddress];
     
-    [self get_dns_servers];
+    [self getDnsServers];
 }
 
 ///Get IP Address
@@ -302,8 +329,7 @@ Reachability *googleReach;
     return ssid;
 }
 
--(NSString *) get_dns_servers
-{
+-(NSString *) getDnsServers{
   
 //    struct ifaddrs *ifa = NULL, *ifList;
 //    getifaddrs(&ifList); // should check for errors
@@ -317,6 +343,121 @@ Reachability *googleReach;
     return @"0.0.0.0";
 }
 
+/**
+ *                      At 100Hz                At 20Hz
+ *                  Total   Application     Total	Application
+ *DeviceMotion      65%         20%         65%         10%
+ *Accelerometer     50%         15%         46%         5%
+ *Accel + Gyro      51%         10%         50%         5%
+ */
+-(void) getMotionDetails{
+    opQ = [NSOperationQueue currentQueue];
+    [motionManager startGyroUpdatesToQueue: opQ
+                               withHandler: ^(CMGyroData *gyroData,
+                                              NSError *error)
+     {
+         dispatch_async(dispatch_get_main_queue(), ^{
+             CMRotationRate rotate = gyroData.rotationRate;
+             NSLog(@"rotation rate = [%f, %f, %f]", rotate.x, rotate.y, rotate.z);
+             xRotateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", rotate.x];
+             yRotateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", rotate.y];
+             zRotateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", rotate.z];
+             gyroTotalRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", sqrtf(powf(rotate.x, 2.0) + powf(rotate.y, 2.0) + powf(rotate.z, 2.0))];
+         });
+     }];
+    [motionManager startDeviceMotionUpdatesToQueue:opQ
+                                       withHandler:^(CMDeviceMotion *motion, NSError *error)
+    {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            rotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", sqrtf(powf(motion.gravity.x, 2.0) + powf(motion.gravity.y, 2.0) + powf(motion.gravity.z, 2.0))];
+            xRotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", motion.rotationRate.x];
+            yRotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", motion.rotationRate.y];
+            zRotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", motion.rotationRate.z];
+        });
+    }];
+    [motionManager startAccelerometerUpdatesToQueue:opQ
+                                        withHandler:^(CMAccelerometerData *accelerometerData,
+                                                      NSError *error)
+     {
+         dispatch_async(dispatch_get_main_queue(), ^{
+             CMAcceleration acceler = accelerometerData.acceleration;
+             gravityLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", sqrtf(powf(acceler.x, 2.0) + powf(acceler.y, 2.0) + powf(acceler.z, 2.0))];
+             xAccelerationLabel.text = [NSString stringWithFormat:@"%+.1f",accelerometerData.acceleration.x];
+             yAccelerationLabel.text = [NSString stringWithFormat:@"%+.1f",accelerometerData.acceleration.y];
+             zAccelerationLabel.text = [NSString stringWithFormat:@"%+.1f",accelerometerData.acceleration.z];
+         });
+     }];
+
+    [motionManager startMagnetometerUpdatesToQueue:opQ
+                                       withHandler:^(CMMagnetometerData *magnetometerData, NSError *error) {
+                                           dispatch_async(dispatch_get_main_queue(), ^{
+                                               CMMagneticField magneticField = magnetometerData.magneticField;
+                                               xMagneticFieldLabel.text = [NSString stringWithFormat:@"%+.1f", magneticField.x];
+                                               yMagneticFieldLabel.text = [NSString stringWithFormat:@"%+.1f", magneticField.y];
+                                               zMagneticFieldLabel.text = [NSString stringWithFormat:@"%+.1f", magneticField.z];
+                                               magneticFieldTotileLabel.text = [NSString stringWithFormat:@"%+.4f",
+                                                                  sqrtf(powf(magneticField.x, 2.0) +
+                                                                        powf(magneticField.y, 2.0) +
+                                                                        powf(magneticField.z, 2.0))];
+                                           });
+                                       }];
+//    I need know how does this works.
+//    - (void)startMotionManager{
+//        if (motionManager == nil) {
+//            motionManager = [[CMMotionManager alloc] init];
+//        }
+//        
+//        motionManager.deviceMotionUpdateInterval = 1/15.0;
+//        if (motionManager.deviceMotionAvailable) {
+//            
+//            NSLog(@"Device Motion Available");
+//            [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue]
+//                                               withHandler: ^(CMDeviceMotion *motion, NSError *error){
+//                                                   //CMAttitude *attitude = motion.attitude;
+//                                                   //NSLog(@"rotation rate = [%f, %f, %f]", attitude.pitch, attitude.roll, attitude.yaw);
+//                                                   [self performSelectorOnMainThread:@selector(handleDeviceMotion:) withObject:motion waitUntilDone:YES];
+//                                                   
+//                                               }];
+//            //[motionManager startDeviceMotionUpdates];
+//            
+//            
+//        } else {
+//            NSLog(@"No device motion on device.");
+//            [self setMotionManager:nil];
+//        }
+//    }
+//    
+//    - (void)handleDeviceMotion:(CMDeviceMotion*)motion{
+//        CMAttitude *attitude = motion.attitude;
+//        
+//        float accelerationThreshold = 0.2; // or whatever is appropriate - play around with different values
+//        CMAcceleration userAcceleration = motion.userAcceleration;
+//        
+//        float rotationRateThreshold = 7.0;
+//        CMRotationRate rotationRate = motion.rotationRate;
+//        
+//        if ((rotationRate.x) > rotationRateThreshold) {
+//            if (fabs(userAcceleration.x) > accelerationThreshold || fabs(userAcceleration.y) > accelerationThreshold || fabs(userAcceleration.z) > accelerationThreshold) {
+//                
+//                NSLog(@"rotation rate = [Pitch: %f, Roll: %f, Yaw: %f]", attitude.pitch, attitude.roll, attitude.yaw);
+//                NSLog(@"motion.rotationRate = %f", rotationRate.x);
+//                
+//                [self showMenuAnimated:YES];
+//            }
+//        }
+//        
+//        else if ((-rotationRate.x) > rotationRateThreshold) {
+//            if (fabs(userAcceleration.x) > accelerationThreshold || fabs(userAcceleration.y) > accelerationThreshold || fabs(userAcceleration.z) > accelerationThreshold) {
+//                
+//                NSLog(@"rotation rate = [Pitch: %f, Roll: %f, Yaw: %f]", attitude.pitch, attitude.roll, attitude.yaw);
+//                NSLog(@"motion.rotationRate = %f", rotationRate.x);
+//                
+//                [self dismissMenuAnimated:YES];
+//            }
+//        }
+//    }
+    
+}
 
 #pragma mark -
 #pragma mark *** Reachability Delegate ***
@@ -401,7 +542,7 @@ didUpdateLocations:(NSArray *)locations{
     headingLabel.Text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.magneticHeading];
     differWithGeomagneticLabel.text =[NSString stringWithFormat:@"%.1fmi",newHeading.headingAccuracy];
     trueHeadingLabel.text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.trueHeading];
-    xGeomagnetismLabel.text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.x];
+    xGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.x];
     yGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.y];
     zGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.z];
     
