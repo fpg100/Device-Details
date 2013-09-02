@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		49852AF317CE2A4F0086089A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		E137D17D17CAF03D0001A6CF /* Device Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Details.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E137D18417CAF03D0001A6CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,7 +115,7 @@
 		E137D17E17CAF03D0001A6CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E137D17D17CAF03D0001A6CF /* Device Details.app */,
+				E137D17D17CAF03D0001A6CF /* Details.app */,
 				E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */,
 			);
 			name = Products;
@@ -200,7 +200,7 @@
 			);
 			name = Details;
 			productName = "Device Details";
-			productReference = E137D17D17CAF03D0001A6CF /* Device Details.app */;
+			productReference = E137D17D17CAF03D0001A6CF /* Details.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E137D1A217CAF03D0001A6CF /* Device DetailsTests */ = {
