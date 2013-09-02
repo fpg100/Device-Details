@@ -28,9 +28,10 @@
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
+#import <MapKit/MapKit.h>
 
 #define kAccelerometerFrequency        50.0 //Hz
-@interface DDViewController : UIViewController<CLLocationManagerDelegate, UIAccelerometerDelegate> {
+@interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate> {
     CLLocationManager *locationManager;
     CLLocation *startPoint;
     CMMotionManager *motionManager;
@@ -74,6 +75,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *xGeomagnetismLabel;
 @property (weak, nonatomic) IBOutlet UILabel *yGeomagnetismLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zGeomagnetismLabel;
+@property (strong, nonatomic) NSMutableDictionary *placeDictionary;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countryLabel;
+@property (weak, nonatomic) IBOutlet MKMapView *currentLocationMapView;
 
 //Motion Details
 //  Gyro

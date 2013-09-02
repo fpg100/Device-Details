@@ -51,6 +51,12 @@
 @synthesize xGeomagnetismLabel;
 @synthesize yGeomagnetismLabel;
 @synthesize zGeomagnetismLabel;
+@synthesize placeDictionary;
+@synthesize addressLabel;
+@synthesize cityLabel;
+@synthesize stateLabel;
+@synthesize countryLabel;
+@synthesize currentLocationMapView;
 
 //Motion Details
 @synthesize gyroTotalRateLabel;
@@ -80,6 +86,8 @@ Reachability *googleReach;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.locationManager = [[CLLocationManager alloc] init];
+    
+    //Location
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     locationManager.distanceFilter = 2.0f;
@@ -87,6 +95,7 @@ Reachability *googleReach;
     locationManager.headingFilter = kCLHeadingFilterNone;
     [locationManager startUpdatingHeading];
     
+    //Motion
     motionManager = [[CMMotionManager alloc] init];
     NSLog(@"motionManager.description:%@", motionManager.description);
     motionManager.deviceMotionUpdateInterval = 5.0/100.0;
@@ -112,6 +121,12 @@ Reachability *googleReach;
     // Dispose of any resources that can be recreated.
 }
 - (void)getLocationDetails{
+    placeDictionary = [[NSMutableDictionary alloc] init];
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = 40.740848;
+    zoomLocation.longitude= -73.991134;
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 1609.344,1609.344);
+    [currentLocationMapView setRegion:viewRegion animated:YES];
     
 }
 
