@@ -52,10 +52,21 @@
 @synthesize yGeomagnetismLabel;
 @synthesize zGeomagnetismLabel;
 @synthesize placeDictionary;
+
+@synthesize placeNameLabel;
+@synthesize addressNumberLabel;
 @synthesize addressLabel;
 @synthesize cityLabel;
+@synthesize neighborhoodLabel;
 @synthesize stateLabel;
+@synthesize countyLabel;
+@synthesize zipCodeLabel;
 @synthesize countryLabel;
+@synthesize countryCodeLabel;
+@synthesize inlandWaterLabel;
+@synthesize oceanLabel;
+@synthesize areasOfInterestLabel;
+
 @synthesize currentLocationMapView;
 
 //Motion Details
@@ -80,20 +91,18 @@
 @synthesize zMagneticFieldLabel;
 
 Reachability *googleReach;
+MKCoordinateRegion viewRegion;
+CLLocationCoordinate2D zoomLocation;
+CLGeocoder *geocoder;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.locationManager = [[CLLocationManager alloc] init];
+    
     
     //Location
-    locationManager.delegate = self;
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    locationManager.distanceFilter = 2.0f;
-    [locationManager startUpdatingLocation];
-    locationManager.headingFilter = kCLHeadingFilterNone;
-    [locationManager startUpdatingHeading];
+    [self initLocationDetails];
     
     //Motion
     motionManager = [[CMMotionManager alloc] init];
@@ -108,7 +117,9 @@ Reachability *googleReach;
     [self getMotionDetails];
     
     [self getDeviceDetails];
-    [self getLocationDetails];
+    
+    
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     
     googleReach = [Reachability reachabilityWithHostName:@"www.google.com"];
@@ -120,14 +131,17 @@ Reachability *googleReach;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)getLocationDetails{
+
+- (void)initLocationDetails{
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = 5.0f;
+    [locationManager startUpdatingLocation];
+    locationManager.headingFilter = kCLHeadingFilterNone;
+    [locationManager startUpdatingHeading];
     placeDictionary = [[NSMutableDictionary alloc] init];
-    CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 40.740848;
-    zoomLocation.longitude= -73.991134;
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 1609.344,1609.344);
-    [currentLocationMapView setRegion:viewRegion animated:YES];
-    
+    geocoder = [[CLGeocoder alloc] init];
 }
 
 - (void) getDeviceDetails{
@@ -226,6 +240,10 @@ Reachability *googleReach;
 //    return address;
 //    
 //}
+
+
+#pragma mark -
+#pragma mark   Network Details Functions  
 - (NSString *)getIPAddress
 {
     struct ifaddrs *interfaces = NULL;
@@ -358,6 +376,11 @@ Reachability *googleReach;
     return @"0.0.0.0";
 }
 
+
+
+#pragma mark -
+#pragma mark   Motion Details Functions  
+
 /**
  *                      At 100Hz                At 20Hz
  *                  Total   Application     Total	Application
@@ -475,7 +498,37 @@ Reachability *googleReach;
 }
 
 #pragma mark -
-#pragma mark *** Reachability Delegate ***
+#pragma mark   Location Region Functions  
+
+
+- (void)updatePlaceDictionary {
+    //5
+    [placeDictionary setValue:addressLabel.text forKey:@"Street"];
+    [placeDictionary setValue:cityLabel.text forKey:@"City"];
+    [placeDictionary setValue:stateLabel.text forKey:@"State"];
+    [placeDictionary setValue:zipCodeLabel.text forKey:@"ZIP"];
+    [placeDictionary setValue:countryLabel.text forKey:@"ZIP"];
+    
+}
+
+- (void)updateMaps {
+    //6
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder geocodeAddressDictionary:self.placeDictionary completionHandler:^(NSArray *placemarks, NSError *error) {
+        if([placemarks count]) {
+            CLPlacemark *placemark = [placemarks objectAtIndex:0];
+            CLLocation *location = placemark.location;
+            CLLocationCoordinate2D coordinate = location.coordinate;
+            [currentLocationMapView setCenterCoordinate:coordinate animated:YES];
+        } else {
+            NSLog(@"error");
+        }
+    }];
+    
+}
+
+#pragma mark -
+#pragma mark   Reachability Delegate  
 -(void)reachabilityChanged:(NSNotification *)note{
     //When Network Environment is changed
     
@@ -506,7 +559,7 @@ Reachability *googleReach;
 
 
 
-#pragma mark *** CLLocationManager Delegate ***
+#pragma mark   CLLocationManager Delegate
 /*
  *  locationManager:didUpdateLocations:
  *
@@ -518,7 +571,7 @@ Reachability *googleReach;
  *    locations is an array of CLLocation objects in chronological order.
  */
 - (void)locationManager:(CLLocationManager *)manager
-didUpdateLocations:(NSArray *)locations{
+     didUpdateLocations:(NSArray *)locations{
     CLLocation *newLocation = [locations lastObject];
     CLLocation *oldLocation;
     if (locations.count > 1) {
@@ -539,8 +592,36 @@ didUpdateLocations:(NSArray *)locations{
         courseLabel.text = [[NSString alloc] initWithFormat:@"%.2f\u00B0", newLocation.course];
     }
     
+    viewRegion = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 320.00,80.00);
+    [currentLocationMapView setRegion:viewRegion animated:YES];
     
-    
+    [geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+        if(placemarks.count){
+            
+//            NSDictionary *dictionary = [[placemarks objectAtIndex:0] addressDictionary];
+//            addressLabel.Text = [dictionary valueForKey:@"Street"];
+//            cityLabel.Text = [dictionary valueForKey:@"City"];
+//            stateLabel.Text = [dictionary valueForKey:@"State"];
+//            zipCodeLabel.Text = [dictionary valueForKey:@"ZIP"];
+//            countryLabel.text = [dictionary valueForKey:@"Country"];
+//            countryCodeLabel.text = [dictionary valueForKey:@"CountryCode"];
+            
+            
+            placeNameLabel.text = [placemarks[0] name];
+            addressNumberLabel.text = [placemarks[0] subThoroughfare];
+            addressLabel.text = [placemarks[0] thoroughfare];
+            neighborhoodLabel.text = [placemarks[0] subLocality];
+            cityLabel.text = [placemarks[0] locality];
+            countyLabel.text = [placemarks[0] subAdministrativeArea];
+            stateLabel.text = [placemarks[0] administrativeArea];
+            zipCodeLabel.text = [placemarks[0] postalCode];
+            countryLabel.text = [placemarks[0] country];
+            countryCodeLabel.text = [placemarks[0] ISOcountryCode];
+            inlandWaterLabel.text = [placemarks[0] inlandWater];
+            oceanLabel.text = [placemarks[0] ocean];
+//            areasOfInterestLabel.text = [placemarks[0] areasOfInterest[0]];
+        }
+    }];
 }
 
 
@@ -562,6 +643,8 @@ didUpdateLocations:(NSArray *)locations{
     zGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.z];
     
 }
+
+
 
 
 @end

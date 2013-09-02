@@ -76,10 +76,23 @@
 @property (weak, nonatomic) IBOutlet UILabel *yGeomagnetismLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zGeomagnetismLabel;
 @property (strong, nonatomic) NSMutableDictionary *placeDictionary;
+@property (weak, nonatomic) IBOutlet UILabel *placeNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *neighborhoodLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zipCodeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *countryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countryCodeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *inlandWaterLabel;
+@property (weak, nonatomic) IBOutlet UILabel *oceanLabel;
+@property (weak, nonatomic) IBOutlet UILabel *areasOfInterestLabel;
+
+
+
+
 @property (weak, nonatomic) IBOutlet MKMapView *currentLocationMapView;
 
 //Motion Details
