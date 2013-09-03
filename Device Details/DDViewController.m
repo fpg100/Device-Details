@@ -95,35 +95,29 @@ MKCoordinateRegion viewRegion;
 CLLocationCoordinate2D zoomLocation;
 CLGeocoder *geocoder;
 
+#pragma mark -
+#pragma mark   View Controller
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
     
-    //Location
-    [self initLocationDetails];
-    
-    //Motion
-    motionManager = [[CMMotionManager alloc] init];
-    NSLog(@"motionManager.description:%@", motionManager.description);
-    motionManager.deviceMotionUpdateInterval = 5.0/100.0;
-    motionManager.gyroUpdateInterval = 1.0/60.0;
-    motionManager.accelerometerUpdateInterval = 5.0/100.0;
-    motionManager.magnetometerUpdateInterval  = 1.0/10.0; // Update at 10Hz
-//    [motionManager startAccelerometerUpdates];
-//    [motionManager startDeviceMotionUpdates];
-//    [motionManager startGyroUpdates];
-    [self getMotionDetails];
-    
     [self getDeviceDetails];
     
+    [self getNetworkDetails];
+    
+    [self initLocationDetails];
+    
+    [self initMotionDetails];
+    
+    [self getMotionDetails];
     
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     
-    googleReach = [Reachability reachabilityWithHostName:@"www.google.com"];
-    [googleReach startNotifier];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -132,6 +126,19 @@ CLGeocoder *geocoder;
     // Dispose of any resources that can be recreated.
 }
 
+- (void)initMotionDetails{
+    //Motion
+    motionManager = [[CMMotionManager alloc] init];
+    NSLog(@"motionManager.description:%@", motionManager.description);
+    motionManager.deviceMotionUpdateInterval = 5.0/100.0;
+    motionManager.gyroUpdateInterval = 1.0/60.0;
+    motionManager.accelerometerUpdateInterval = 5.0/100.0;
+    motionManager.magnetometerUpdateInterval  = 1.0/10.0; // Update at 10Hz
+    //    [motionManager startAccelerometerUpdates];
+    //    [motionManager startDeviceMotionUpdates];
+    //    [motionManager startGyroUpdates];
+}
+     
 - (void)initLocationDetails{
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
@@ -144,6 +151,8 @@ CLGeocoder *geocoder;
     geocoder = [[CLGeocoder alloc] init];
 }
 
+#pragma mark -
+#pragma mark   Hardware Details Functions
 - (void) getDeviceDetails{
     struct utsname systemInfo;
     uname(&systemInfo);
@@ -185,31 +194,7 @@ CLGeocoder *geocoder;
 
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
-    Reachability *reach = [Reachability reachabilityWithHostName:@"www.google.com"];
-    ssidLabel.hidden = YES;
-    ssidTagLabel.hidden = YES;
-    switch ([reach currentReachabilityStatus]) {
-        case NotReachable:
-            networkTypeLabel.text = @"No Network";
-            break;
-        case ReachableViaWWAN:
-            networkTypeLabel.text = @"3G/GPRS";
-            break;
-        case ReachableViaWiFi:
-            networkTypeLabel.text = @"WiFi";
-            ssidLabel.text = [self getSSIDInfo];
-            ssidLabel.hidden = NO;
-            ssidTagLabel.hidden = NO;
-            break;
-            
-        default:
-            break;
-    }
-    
-    ipAddrLabel.text = [self getIPAddress];
-    macAddrLabel.text = [self getMacAddress];
-    
-    [self getDnsServers];
+
 }
 
 ///Get IP Address
@@ -244,6 +229,39 @@ CLGeocoder *geocoder;
 
 #pragma mark -
 #pragma mark   Network Details Functions  
+
+- (void)getNetworkDetails{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    
+    googleReach = [Reachability reachabilityWithHostName:@"www.google.com"];
+    [googleReach startNotifier];
+    
+    ssidLabel.hidden = YES;
+    ssidTagLabel.hidden = YES;
+    switch ([googleReach currentReachabilityStatus]) {
+        case NotReachable:
+            networkTypeLabel.text = @"No Network";
+            break;
+        case ReachableViaWWAN:
+            networkTypeLabel.text = @"3G/GPRS";
+            break;
+        case ReachableViaWiFi:
+            networkTypeLabel.text = @"WiFi";
+            ssidLabel.text = [self getSSIDInfo];
+            ssidLabel.hidden = NO;
+            ssidTagLabel.hidden = NO;
+            break;
+            
+        default:
+            break;
+    }
+    
+    ipAddrLabel.text = [self getIPAddress];
+    macAddrLabel.text = [self getMacAddress];
+    
+    [self getDnsServers];
+}
+
 - (NSString *)getIPAddress
 {
     struct ifaddrs *interfaces = NULL;
@@ -280,7 +298,11 @@ CLGeocoder *geocoder;
     return addr ? addr : @"0.0.0.0";
 }
 
-///Get Mac Address
+/**
+ *	getMacAddress doesn't work under iOS 7
+ *
+ *	@return	MAC Address
+ */
 - (NSString *)getMacAddress
 {
     int                 mgmtInfoBase[6];
@@ -376,6 +398,35 @@ CLGeocoder *geocoder;
     return @"0.0.0.0";
 }
 
+#pragma mark   Reachability Delegate
+-(void)reachabilityChanged:(NSNotification *)note{
+    //When Network Environment is changed
+    
+    Reachability *curReach = [note object];
+    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+    NetworkStatus status = [curReach currentReachabilityStatus];
+    ssidLabel.hidden = YES;
+    ssidTagLabel.hidden = YES;
+    switch (status) {
+        case NotReachable:
+            networkTypeLabel.text = @"No Network Connetion";
+            break;
+        case ReachableViaWWAN:
+            networkTypeLabel.text = @"Celular Connection";
+            break;
+        case ReachableViaWiFi:
+            networkTypeLabel.text = @"WiFi";
+            ssidLabel.text = [self getSSIDInfo];
+            ssidLabel.hidden = NO;
+            ssidTagLabel.hidden = NO;
+            break;
+            
+        default:
+            break;
+    }
+    ipAddrLabel.text = [self getIPAddress];
+}
+
 
 
 #pragma mark -
@@ -439,6 +490,7 @@ CLGeocoder *geocoder;
                                                                         powf(magneticField.z, 2.0))];
                                            });
                                        }];
+}
 //    I need know how does this works.
 //    - (void)startMotionManager{
 //        if (motionManager == nil) {
@@ -494,71 +546,10 @@ CLGeocoder *geocoder;
 //            }
 //        }
 //    }
-    
-}
+
+
 
 #pragma mark -
-#pragma mark   Location Region Functions  
-
-
-- (void)updatePlaceDictionary {
-    //5
-    [placeDictionary setValue:addressLabel.text forKey:@"Street"];
-    [placeDictionary setValue:cityLabel.text forKey:@"City"];
-    [placeDictionary setValue:stateLabel.text forKey:@"State"];
-    [placeDictionary setValue:zipCodeLabel.text forKey:@"ZIP"];
-    [placeDictionary setValue:countryLabel.text forKey:@"ZIP"];
-    
-}
-
-- (void)updateMaps {
-    //6
-    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    [geocoder geocodeAddressDictionary:self.placeDictionary completionHandler:^(NSArray *placemarks, NSError *error) {
-        if([placemarks count]) {
-            CLPlacemark *placemark = [placemarks objectAtIndex:0];
-            CLLocation *location = placemark.location;
-            CLLocationCoordinate2D coordinate = location.coordinate;
-            [currentLocationMapView setCenterCoordinate:coordinate animated:YES];
-        } else {
-            NSLog(@"error");
-        }
-    }];
-    
-}
-
-#pragma mark -
-#pragma mark   Reachability Delegate  
--(void)reachabilityChanged:(NSNotification *)note{
-    //When Network Environment is changed
-    
-    Reachability *curReach = [note object];
-    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
-    NetworkStatus status = [curReach currentReachabilityStatus];
-    ssidLabel.hidden = YES;
-    ssidTagLabel.hidden = YES;
-    switch (status) {
-        case NotReachable:
-            networkTypeLabel.text = @"No Network Connetion";
-            break;
-        case ReachableViaWWAN:
-            networkTypeLabel.text = @"Celular Connection";
-            break;
-        case ReachableViaWiFi:
-            networkTypeLabel.text = @"WiFi";
-            ssidLabel.text = [self getSSIDInfo];
-            ssidLabel.hidden = NO;
-            ssidTagLabel.hidden = NO;
-            break;
-            
-        default:
-            break;
-    }
-    ipAddrLabel.text = [self getIPAddress];
-}
-
-
-
 #pragma mark   CLLocationManager Delegate
 /*
  *  locationManager:didUpdateLocations:
