@@ -7,28 +7,32 @@
 //
 
 #import <UIKit/UIKit.h>
+//Network Details
 #import "Reachability.h"
-#include <sys/types.h>
-#include <stdio.h>
-#include <string.h>
 #include <sys/socket.h>
 #include <net/if_dl.h>
 #include <ifaddrs.h>
 #include <net/if.h>
 #include <dns.h>
-#include<stdlib.h>
-#include<netinet/in.h>
-#include<unistd.h>
-#include <resolv.h>
-#import <ifaddrs.h>
+#include <netinet/in.h>
 #import <arpa/inet.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
+
+//Hardware and OS Details
+#include <sys/types.h>
 #import <sys/sysctl.h>
 #import <sys/utsname.h>
-#include <ifaddrs.h>
-#import <SystemConfiguration/CaptiveNetwork.h>
+
+//Location Details
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
 #import <MapKit/MapKit.h>
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <resolv.h>
 
 #define kAccelerometerFrequency        50.0 //Hz
 @interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate> {
