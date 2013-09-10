@@ -194,6 +194,7 @@ CLGeocoder *geocoder;
 
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
+    macAddrLabel.text = [UIDevice currentDevice].identifierForVendor.UUIDString;
 
 }
 
@@ -257,8 +258,7 @@ CLGeocoder *geocoder;
     }
     
     ipAddrLabel.text = [self getIPAddress];
-    macAddrLabel.text = [self getMacAddress];
-    
+//    macAddrLabel.text = [self getMacAddress];
     [self getDnsServers];
 }
 
