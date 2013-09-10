@@ -19,6 +19,7 @@
 @synthesize deviceCodeLabel;
 @synthesize deviceTypeLabel;
 @synthesize deviceNameLabel;
+@synthesize uuidLabel;
 
 //OS Details
 @synthesize osNameLabel;
@@ -194,7 +195,7 @@ CLGeocoder *geocoder;
 
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
-    macAddrLabel.text = [UIDevice currentDevice].identifierForVendor.UUIDString;
+    uuidLabel.text = [UIDevice currentDevice].identifierForVendor.UUIDString;
 
 }
 
@@ -299,7 +300,7 @@ CLGeocoder *geocoder;
 }
 
 /**
- *	getMacAddress doesn't work under iOS 7
+ *	getMacAddress is depreciated since iOS 7
  *
  *	@return	MAC Address
  */

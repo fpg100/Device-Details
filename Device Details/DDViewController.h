@@ -47,6 +47,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *deviceCodeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *uuidLabel;
 
 //OS Details
 @property (weak, nonatomic) IBOutlet UILabel *osNameLabel;

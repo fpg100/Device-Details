@@ -831,7 +831,6 @@
                         <outlet property="ipAddrLabel" destination="r2U-Uw-4xv" id="968-Mm-UIx"/>
                         <outlet property="latitudeLabel" destination="SUO-St-NtL" id="Zof-lI-VDa"/>
                         <outlet property="longitudeLabel" destination="83q-DV-MEc" id="Wk7-Hc-eC6"/>
-                        <outlet property="macAddrLabel" destination="1Mz-5T-13h" id="cdu-0c-o2g"/>
                         <outlet property="magneticFieldTotileLabel" destination="nzS-Ej-mc9" id="epy-zg-THt"/>
                         <outlet property="neighborhoodLabel" destination="Unl-yU-TNq" id="oBC-zY-TIJ"/>
                         <outlet property="networkTypeLabel" destination="YVt-JA-Dxn" id="7r1-F6-NmW"/>
@@ -845,6 +844,7 @@
                         <outlet property="ssidTagLabel" destination="4ht-SY-Va4" id="LXh-9C-Tgj"/>
                         <outlet property="stateLabel" destination="Y7m-8f-MHZ" id="elt-fO-ZSh"/>
                         <outlet property="trueHeadingLabel" destination="4Ns-r4-8nN" id="hZi-Tz-bYq"/>
+                        <outlet property="uuidLabel" destination="1Mz-5T-13h" id="xaW-Cr-CtU"/>
                         <outlet property="verticalAccuracyLabel" destination="yEz-EI-d4w" id="3R4-MY-MTf"/>
                         <outlet property="xAccelerationLabel" destination="3vh-OV-aQI" id="3UG-63-J1K"/>
                         <outlet property="xGeomagnetismLabel" destination="XsQ-aw-Qo5" id="2D1-yf-feW"/>
