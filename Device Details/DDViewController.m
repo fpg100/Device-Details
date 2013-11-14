@@ -172,6 +172,7 @@ CLGeocoder *geocoder;
     if ([platform isEqualToString:@"iPhone1,2"])    deviceTypeLabel.text = @"iPhone 3G";
     if ([platform isEqualToString:@"iPhone2,1"])    deviceTypeLabel.text = @"iPhone 3GS";
     if ([platform isEqualToString:@"iPhone3,1"])    deviceTypeLabel.text = @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone3,2"])    deviceTypeLabel.text = @"iPhone 4 CDMA";
     if ([platform isEqualToString:@"iPhone3,3"])    deviceTypeLabel.text = @"Verizon iPhone 4";
     if ([platform isEqualToString:@"iPhone4,1"])    deviceTypeLabel.text = @"iPhone 4S";
     if ([platform isEqualToString:@"iPhone5,1"])    deviceTypeLabel.text = @"iPhone 5 (GSM)";
