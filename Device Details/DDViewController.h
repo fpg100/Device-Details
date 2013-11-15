@@ -28,6 +28,10 @@
 #import <CoreMotion/CoreMotion.h>
 #import <MapKit/MapKit.h>
 
+
+//Decibel Meter
+#import "F3BarGauge.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -35,6 +39,8 @@
 #include <resolv.h>
 
 #define kAccelerometerFrequency        50.0 //Hz
+
+
 @interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate> {
     CLLocationManager *locationManager;
     CLLocation *startPoint;
@@ -121,6 +127,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *xMagneticFieldLabel;
 @property (weak, nonatomic) IBOutlet UILabel *yMagneticFieldLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zMagneticFieldLabel;
-
+//  Decibel Meter
+@property (weak, nonatomic) IBOutlet UILabel *dbPeakPowerValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dbAveragePowerValueLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *dbPeakPowerProgressView;
+@property (weak, nonatomic) IBOutlet UIProgressView *dbAveragePowerProgressView;
+@property (weak, nonatomic) IBOutlet F3BarGauge *dbBarGauge;
 
 @end

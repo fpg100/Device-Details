@@ -6,9 +6,12 @@
 //  Copyright (c) 2013 Robert Yi Jiang. All rights reserved.
 //
 #import "DDViewController.h"
+#import "BBDecibelMeter.h"
 
 @interface DDViewController ()
 
+//@property (nonatomic, strong) BBDecibelMeter *dbDecibelMeter;
+@property (nonatomic, strong) BBDecibelMeter *meter;
 @end
 
 
@@ -91,6 +94,13 @@
 @synthesize yMagneticFieldLabel;
 @synthesize zMagneticFieldLabel;
 
+//Decibel Meter
+@synthesize dbAveragePowerProgressView;
+@synthesize dbAveragePowerValueLabel;
+@synthesize dbBarGauge;
+@synthesize dbPeakPowerProgressView;
+@synthesize dbPeakPowerValueLabel;
+
 Reachability *googleReach;
 MKCoordinateRegion viewRegion;
 CLLocationCoordinate2D zoomLocation;
@@ -115,7 +125,7 @@ CLGeocoder *geocoder;
     
     [self getMotionDetails];
     
-    
+    [self initDecibelMeter];
     
     
     
@@ -505,62 +515,6 @@ CLGeocoder *geocoder;
                                            });
                                        }];
 }
-//    I need know how does this works.
-//    - (void)startMotionManager{
-//        if (motionManager == nil) {
-//            motionManager = [[CMMotionManager alloc] init];
-//        }
-//        
-//        motionManager.deviceMotionUpdateInterval = 1/15.0;
-//        if (motionManager.deviceMotionAvailable) {
-//            
-//            NSLog(@"Device Motion Available");
-//            [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue]
-//                                               withHandler: ^(CMDeviceMotion *motion, NSError *error){
-//                                                   //CMAttitude *attitude = motion.attitude;
-//                                                   //NSLog(@"rotation rate = [%f, %f, %f]", attitude.pitch, attitude.roll, attitude.yaw);
-//                                                   [self performSelectorOnMainThread:@selector(handleDeviceMotion:) withObject:motion waitUntilDone:YES];
-//                                                   
-//                                               }];
-//            //[motionManager startDeviceMotionUpdates];
-//            
-//            
-//        } else {
-//            NSLog(@"No device motion on device.");
-//            [self setMotionManager:nil];
-//        }
-//    }
-//    
-//    - (void)handleDeviceMotion:(CMDeviceMotion*)motion{
-//        CMAttitude *attitude = motion.attitude;
-//        
-//        float accelerationThreshold = 0.2; // or whatever is appropriate - play around with different values
-//        CMAcceleration userAcceleration = motion.userAcceleration;
-//        
-//        float rotationRateThreshold = 7.0;
-//        CMRotationRate rotationRate = motion.rotationRate;
-//        
-//        if ((rotationRate.x) > rotationRateThreshold) {
-//            if (fabs(userAcceleration.x) > accelerationThreshold || fabs(userAcceleration.y) > accelerationThreshold || fabs(userAcceleration.z) > accelerationThreshold) {
-//                
-//                NSLog(@"rotation rate = [Pitch: %f, Roll: %f, Yaw: %f]", attitude.pitch, attitude.roll, attitude.yaw);
-//                NSLog(@"motion.rotationRate = %f", rotationRate.x);
-//                
-//                [self showMenuAnimated:YES];
-//            }
-//        }
-//        
-//        else if ((-rotationRate.x) > rotationRateThreshold) {
-//            if (fabs(userAcceleration.x) > accelerationThreshold || fabs(userAcceleration.y) > accelerationThreshold || fabs(userAcceleration.z) > accelerationThreshold) {
-//                
-//                NSLog(@"rotation rate = [Pitch: %f, Roll: %f, Yaw: %f]", attitude.pitch, attitude.roll, attitude.yaw);
-//                NSLog(@"motion.rotationRate = %f", rotationRate.x);
-//                
-//                [self dismissMenuAnimated:YES];
-//            }
-//        }
-//    }
-
 
 
 #pragma mark -
@@ -624,7 +578,9 @@ CLGeocoder *geocoder;
             countryCodeLabel.text = [placemarks[0] ISOcountryCode];
             inlandWaterLabel.text = [placemarks[0] inlandWater];
             oceanLabel.text = [placemarks[0] ocean];
-//            areasOfInterestLabel.text = [placemarks[0] areasOfInterest[0]];
+            if ([[placemarks[0] areasOfInterest] count] >=1) {
+                areasOfInterestLabel.text = [[placemarks[0] areasOfInterest] objectAtIndex:0];
+            }
         }
     }];
 }
@@ -651,6 +607,51 @@ CLGeocoder *geocoder;
 
 
 
+#pragma mark - Decibel Meter Intialise & Observe
+
+- (void) initDecibelMeter{
+    dbPeakPowerProgressView.trackImage = nil;
+//    dbPeakPowerProgressView.trackTintColor = [UIColor clearColor];
+    dbAveragePowerProgressView.trackImage = nil;
+//    dbAveragePowerProgressView.trackTintColor = [UIColor clearColor];
+    
+    self.meter = [BBDecibelMeter meter];
+    self.meter.interval = 1/30;
+    [self.meter startMeasuring];
+    
+    [self.meter addObserver:self
+                          forKeyPath:kBBDecibelMeterAvgPowerKey
+                             options:0
+                             context:nil];
+    
+    [self.meter addObserver:self
+                          forKeyPath:kBBDecibelMeterPeakPowerKey
+                             options:0
+                             context:nil];
+    
+    dbBarGauge.numBars = 20;
+    dbBarGauge.holdPeak = YES;
+}
+
+- (void) observeValueForKeyPath:(NSString *)keyPath
+                       ofObject:(id)object
+                         change:(NSDictionary *)change
+                        context:(void *)context
+{
+    if([keyPath isEqualToString:kBBDecibelMeterAvgPowerKey]) {
+        
+        //NSLog(@"Power: %f, Peak: %f", self.meter.averagePower, self.meter.peakPower);
+        dbPeakPowerValueLabel.text = [NSString stringWithFormat:@"%f",self.meter.peakPower];
+        dbAveragePowerValueLabel.text = [NSString stringWithFormat:@"%f",self.meter.averagePower];
+        
+        [dbPeakPowerProgressView setProgress:self.meter.peakPower];
+        [dbAveragePowerProgressView setProgress:self.meter.averagePower];
+        
+        [dbBarGauge resetPeak];
+        dbBarGauge.value = self.meter.peakPower;
+        dbBarGauge.value = self.meter.averagePower;
+    }
+}
 
 @end
 
