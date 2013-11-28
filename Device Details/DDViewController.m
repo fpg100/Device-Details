@@ -39,6 +39,10 @@
 @synthesize subnetMaskLabel;
 @synthesize routerBoradcastAddrLabel;
 
+//Date Time
+@synthesize localDateTimeLabel;
+@synthesize utcDateTimeLabel;
+
 //Location Details
 @synthesize locationManager;
 @synthesize startPoint;
@@ -118,6 +122,8 @@ CLGeocoder *geocoder;
     [self getDeviceDetails];
     
     [self getNetworkDetails];
+    
+    [self initDateTimeDetails];
     
     [self initLocationDetails];
     
@@ -252,8 +258,6 @@ CLGeocoder *geocoder;
 //}
 
 
-#pragma mark -
-#pragma mark   Network Details Functions  
 
 - (void)getNetworkDetails{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
@@ -282,7 +286,11 @@ CLGeocoder *geocoder;
     }
     
     ipAddrLabel.text = [self getIPAddress];
-//    macAddrLabel.text = [self getMacAddress];
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
+        macAddrLabel.text = [self getMacAddress];
+    }else {
+        macAddrLabel.text = @"Only for iOS 6.1 and lower";
+    }
     [self getDnsServers];
 }
 
@@ -452,9 +460,37 @@ CLGeocoder *geocoder;
 }
 
 
+#pragma mark - Date Time Details Functions
+-(void) initDateTimeDetails{
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                      target:self
+                                                    selector:@selector(timerTick:)
+                                                    userInfo:nil
+                                                     repeats:YES];
+}
 
-#pragma mark -
-#pragma mark   Motion Details Functions  
+- (void)timerTick:(NSTimer *)timer {
+    NSDate *now = [NSDate date];
+    
+    static NSDateFormatter *dateFormatter;
+    if (!dateFormatter) {
+        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"HH:mm:ss  dd-MMM-yyyy";  // very simple format  "18:47:22 28-Nov-2013"
+    }
+    localDateTimeLabel.text = [dateFormatter stringFromDate:now];
+    
+    
+    static NSDateFormatter *utcDateFormatter;
+    if (!utcDateFormatter) {
+        utcDateFormatter = [[NSDateFormatter alloc] init];
+        NSTimeZone *utcTimeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+        [utcDateFormatter setTimeZone:utcTimeZone];
+        [utcDateFormatter setDateFormat:@"HH:mm:ss  dd-MMM-yyyy"];
+    }
+    utcDateTimeLabel.text = [utcDateFormatter stringFromDate:now];
+}
+
+#pragma mark - Motion Details Functions
 
 /**
  *                      At 100Hz                At 20Hz

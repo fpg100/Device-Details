@@ -70,6 +70,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *subnetMaskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routerBoradcastAddrLabel;
 
+//Date Time
+@property (strong, nonatomic) IBOutlet UILabel *localDateTimeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *utcDateTimeLabel;
+
+
 //Location Details
 @property (retain, nonatomic) CLLocationManager *locationManager;
 @property (retain, nonatomic) CLLocation *startPoint;
