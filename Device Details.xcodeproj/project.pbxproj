@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49852AF317CE2A4F0086089A /* CoreMotion.framework */; };
+		499997621874F38E00D3A605 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499997611874F38D00D3A605 /* iAd.framework */; };
+		499997651874F92900D3A605 /* DDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499997641874F92900D3A605 /* DDMainViewController.m */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18317CAF03D0001A6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18217CAF03D0001A6CF /* Foundation.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		49852AF317CE2A4F0086089A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		499997611874F38D00D3A605 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		499997631874F92900D3A605 /* DDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMainViewController.h; sourceTree = "<group>"; };
+		499997641874F92900D3A605 /* DDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMainViewController.m; sourceTree = "<group>"; };
 		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
@@ -136,6 +142,7 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				499997611874F38D00D3A605 /* iAd.framework */,
 				E1D1D2711835AA650007E301 /* AVFoundation.framework */,
 				E1B9F8F117D470EC0089CE9D /* MapKit.framework */,
 				49852AF317CE2A4F0086089A /* CoreMotion.framework */,
@@ -154,6 +161,8 @@
 			children = (
 				E1D1D2691835A9B50007E301 /* Third Party Tools */,
 				E137D19817CAF03D0001A6CF /* MainStoryboard.storyboard */,
+				499997631874F92900D3A605 /* DDMainViewController.h */,
+				499997641874F92900D3A605 /* DDMainViewController.m */,
 				E137D1F717CB00D10001A6CF /* Reachability.h */,
 				E137D1F817CB00D10001A6CF /* Reachability.m */,
 				E137D18F17CAF03D0001A6CF /* DDAppDelegate.h */,
@@ -331,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499997651874F92900D3A605 /* DDMainViewController.m in Sources */,
 				E1D1D2701835AA130007E301 /* F3BarGauge.m in Sources */,
 				E137D18D17CAF03D0001A6CF /* main.m in Sources */,
 				E137D19117CAF03D0001A6CF /* DDAppDelegate.m in Sources */,
@@ -448,6 +458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -459,6 +470,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
