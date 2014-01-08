@@ -7,6 +7,7 @@
 //
 
 #import "Device_DetailsTests.h"
+#import <XCTest/XCTest.h>
 
 @implementation Device_DetailsTests
 
@@ -27,6 +28,8 @@
 - (void)testExample
 {
     STFail(@"Unit tests are not implemented yet in Device DetailsTests");
+    
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end

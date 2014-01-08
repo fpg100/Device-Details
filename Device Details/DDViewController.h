@@ -39,15 +39,10 @@
 #include <resolv.h>
 
 
-//EZAudio
-#import "EZAudio.h"
-//Accelerate
-#import <Accelerate/Accelerate.h>
-
 #define kAccelerometerFrequency        50.0 //Hz
 
 
-@interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate,EZMicrophoneDelegate> {
+@interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate> {
     CLLocationManager *locationManager;
     CLLocation *startPoint;
     CMMotionManager *motionManager;
@@ -145,11 +140,5 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *dbAveragePowerProgressView;
 @property (weak, nonatomic) IBOutlet F3BarGauge *dbBarGauge;
 
-//  EZAudioPlot for frequency plot
-@property (nonatomic,weak) IBOutlet EZAudioPlot *audioPlotFreq;
-//  EZAudioPlot for time plot
-@property (nonatomic,weak) IBOutlet EZAudioPlotGL *audioPlotTime;
-//  Microphone
-@property (nonatomic,strong) EZMicrophone *microphone;
 
 @end
