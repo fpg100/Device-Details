@@ -74,7 +74,7 @@
 		499997611874F38D00D3A605 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		499997631874F92900D3A605 /* DDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMainViewController.h; sourceTree = "<group>"; };
 		499997641874F92900D3A605 /* DDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMainViewController.m; sourceTree = "<group>"; };
-		E137D17D17CAF03D0001A6CF /* details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = details.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E137D18417CAF03D0001A6CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,17 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4912672C187CF215001F66A5 /* Images.xcassets */,
-				E137D1FC17CD9E530001A6CF /* Icon@2x.png */,
-				4912672E187CF4F4001F66A5 /* iPad 29.png */,
-				4912672F187CF4F4001F66A5 /* iPad 29@2x.png */,
-				49126730187CF4F4001F66A5 /* iPad 40.png */,
-				49126731187CF4F4001F66A5 /* iPad 40@2x.png */,
-				49126732187CF4F4001F66A5 /* iPad 76.png */,
-				49126733187CF4F4001F66A5 /* iPad 76@2x.png */,
-				49126734187CF4F4001F66A5 /* iPhone 29@2x.png */,
-				49126735187CF4F4001F66A5 /* iPhone 40@2x.png */,
-				49126736187CF4F4001F66A5 /* iPhone 60@2x.png */,
-				E137D1FA17CD9E4B0001A6CF /* Icon.png */,
+				E1E2748D1886468B00B25D84 /* Sources */,
 				E137D18617CAF03D0001A6CF /* Device Details */,
 				E137D1AA17CAF03D0001A6CF /* Device DetailsTests */,
 				E137D17F17CAF03D0001A6CF /* Frameworks */,
@@ -165,7 +155,7 @@
 		E137D17E17CAF03D0001A6CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E137D17D17CAF03D0001A6CF /* details.app */,
+				E137D17D17CAF03D0001A6CF /* Details.app */,
 				E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */,
 			);
 			name = Products;
@@ -259,6 +249,24 @@
 			name = "Decibel Meter";
 			sourceTree = "<group>";
 		};
+		E1E2748D1886468B00B25D84 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E137D1FC17CD9E530001A6CF /* Icon@2x.png */,
+				4912672E187CF4F4001F66A5 /* iPad 29.png */,
+				4912672F187CF4F4001F66A5 /* iPad 29@2x.png */,
+				49126730187CF4F4001F66A5 /* iPad 40.png */,
+				49126731187CF4F4001F66A5 /* iPad 40@2x.png */,
+				49126732187CF4F4001F66A5 /* iPad 76.png */,
+				49126733187CF4F4001F66A5 /* iPad 76@2x.png */,
+				49126734187CF4F4001F66A5 /* iPhone 29@2x.png */,
+				49126735187CF4F4001F66A5 /* iPhone 40@2x.png */,
+				49126736187CF4F4001F66A5 /* iPhone 60@2x.png */,
+				E137D1FA17CD9E4B0001A6CF /* Icon.png */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,7 +284,7 @@
 			);
 			name = Details;
 			productName = "Device Details";
-			productReference = E137D17D17CAF03D0001A6CF /* details.app */;
+			productReference = E137D17D17CAF03D0001A6CF /* Details.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E137D1A217CAF03D0001A6CF /* Device DetailsTests */ = {

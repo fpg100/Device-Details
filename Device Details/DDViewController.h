@@ -62,6 +62,7 @@
 //Network Details
 @property (weak, nonatomic) IBOutlet UITextView *deviceUDIDtextField;
 @property (weak, nonatomic) IBOutlet UILabel *networkTypeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *externalIpAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ipAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *macAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ssidTagLabel;
@@ -69,7 +70,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *routerIpAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subnetMaskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routerBoradcastAddrLabel;
-
 //Date Time
 @property (strong, nonatomic) IBOutlet UILabel *localDateTimeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *utcDateTimeLabel;

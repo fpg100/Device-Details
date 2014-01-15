@@ -31,6 +31,7 @@
 
 //Network Details
 @synthesize networkTypeLabel;
+@synthesize externalIpAddrLabel;
 @synthesize ipAddrLabel;
 @synthesize macAddrLabel;
 @synthesize ssidLabel;
@@ -284,7 +285,7 @@ CLGeocoder *geocoder;
         default:
             break;
     }
-    
+    externalIpAddrLabel.text = [self getExternalIPAddress];
     ipAddrLabel.text = [self getIPAddress];
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
         macAddrLabel.text = [self getMacAddress];
@@ -293,6 +294,22 @@ CLGeocoder *geocoder;
     }
     [self getDnsServers];
 }
+
+- (NSString *)getExternalIPAddress{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://ipecho.net/plain"]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:10];
+    
+    [request setHTTPMethod: @"GET"];
+    
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    
+    
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    return [[NSString alloc] initWithData:response1 encoding:NSUTF8StringEncoding] ;
+}
+
 
 - (NSString *)getIPAddress
 {
