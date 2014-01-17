@@ -151,7 +151,7 @@ CLGeocoder *geocoder;
 - (void)initMotionDetails{
     //Motion
     motionManager = [[CMMotionManager alloc] init];
-    NSLog(@"motionManager.description:%@", motionManager.description);
+//    NSLog(@"motionManager.description:%@", motionManager.description);
     motionManager.deviceMotionUpdateInterval = 5.0/100.0;
     motionManager.gyroUpdateInterval = 1.0/60.0;
     motionManager.accelerometerUpdateInterval = 5.0/100.0;
@@ -331,7 +331,7 @@ CLGeocoder *geocoder;
             if(sa_type == AF_INET || sa_type == AF_INET6) {
                 NSString *name = [NSString stringWithUTF8String:temp_addr->ifa_name];
                 NSString *addr = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)]; // pdp_ip0
-                NSLog(@"NAME: \"%@\" addr: %@", name, addr); // see for yourself
+//                NSLog(@"NAME: \"%@\" addr: %@", name, addr); // see for yourself
                 
                 if([name isEqualToString:@"en0"]) {
                     // Interface is the wifi connection on the iPhone
@@ -398,7 +398,7 @@ CLGeocoder *geocoder;
     // Befor going any further...
     if (errorFlag != NULL)
     {
-        NSLog(@"Error: %@", errorFlag);
+//        NSLog(@"Error: %@", errorFlag);
         return errorFlag;
     }
     
@@ -415,7 +415,7 @@ CLGeocoder *geocoder;
     NSString *macAddressString = [NSString stringWithFormat:@"%02X:%02X:%02X:%02X:%02X:%02X",
                                   macAddress[0], macAddress[1], macAddress[2],
                                   macAddress[3], macAddress[4], macAddress[5]];
-    NSLog(@"Mac Address: %@", macAddressString);
+//    NSLog(@"Mac Address: %@", macAddressString);
     
     // Release the buffer memory
     free(msgBuffer);
@@ -528,7 +528,7 @@ CLGeocoder *geocoder;
      {
          dispatch_async(dispatch_get_main_queue(), ^{
              CMRotationRate rotate = gyroData.rotationRate;
-             NSLog(@"rotation rate = [%f, %f, %f]", rotate.x, rotate.y, rotate.z);
+//             NSLog(@"rotation rate = [%f, %f, %f]", rotate.x, rotate.y, rotate.z);
              xRotateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", rotate.x];
              yRotateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", rotate.y];
              zRotateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", rotate.z];
@@ -539,7 +539,7 @@ CLGeocoder *geocoder;
                                        withHandler:^(CMDeviceMotion *motion, NSError *error)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            rotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", sqrtf(powf(motion.gravity.x, 2.0) + powf(motion.gravity.y, 2.0) + powf(motion.gravity.z, 2.0))];
+            rotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", sqrtf(powf(motion.rotationRate.x, 2.0) + powf(motion.rotationRate.y, 2.0) + powf(motion.rotationRate.z, 2.0))];
             xRotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", motion.rotationRate.x];
             yRotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", motion.rotationRate.y];
             zRotateRateLabel.text = [[NSString alloc] initWithFormat:@"%+.1f", motion.rotationRate.z];
@@ -595,7 +595,7 @@ CLGeocoder *geocoder;
     } else {
         oldLocation = nil;
     }
-    NSLog(@"didUpdateToLocation %@ from %@", newLocation, oldLocation);
+//    NSLog(@"didUpdateToLocation %@ from %@", newLocation, oldLocation);
     latitudeLabel.text = [[NSString alloc] initWithFormat:@"%+f\u00B0", newLocation.coordinate.latitude];
     longitudeLabel.text = [[NSString alloc] initWithFormat:@"%+f\u00B0", newLocation.coordinate.longitude];
     horizentalAccuratcyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.horizontalAccuracy];
