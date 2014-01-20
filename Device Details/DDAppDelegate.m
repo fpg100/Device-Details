@@ -8,11 +8,42 @@
 
 #import "DDAppDelegate.h"
 
-@implementation DDAppDelegate
+@implementation DDAppDelegate{
+    CLLocationManager *_locationManager;
+}
 
+- (void)locationManager:(CLLocationManager *)manager
+didDetermineState:(CLRegionState)state
+forRegion:(CLRegion *)region
+{
+    // A user can transition in or out of a region while the application is not running.
+    // When this happens CoreLocation will launch the application momentarily, call this delegate method
+    // and we will let the user know via a local notification.
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    
+    if(state == CLRegionStateInside)
+    {
+        notification.alertBody = @"You're inside the region";
+    }
+    else if(state == CLRegionStateOutside)
+    {
+        notification.alertBody = @"You're outside the region";
+    }
+    else
+    {
+        return;
+    }
+    
+    // If the application is in the foreground, it will get a callback to application:didReceiveLocalNotification:.
+    // If its not, iOS will display the notification to the user.
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // This location manager will be used to notify the user of region state transitions.
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    
     return YES;
 }
 							
@@ -41,6 +72,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    // If the application is in the foreground, we will notify the user of the region's state via an alert.
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:notification.alertBody message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
