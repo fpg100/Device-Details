@@ -21,6 +21,33 @@
 		49E7D88918895EEE0096C450 /* iPhone 57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E7D88718895EEE0096C450 /* iPhone 57@2x.png */; };
 		49E7D88C188960B50096C450 /* iPhone 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E7D88A188960B50096C450 /* iPhone 120.png */; };
 		49E7D88D188960B50096C450 /* iPhone 120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E7D88B188960B50096C450 /* iPhone 120@2x.png */; };
+		E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042969189206FC0096B2AD /* ALAccessory.m */; };
+		E10429AA189206FC0096B2AD /* ALBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296C189206FC0096B2AD /* ALBattery.m */; };
+		E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296F189206FC0096B2AD /* ALCarrier.m */; };
+		E10429AC189206FC0096B2AD /* ALDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042972189206FC0096B2AD /* ALDisk.m */; };
+		E10429AD189206FC0096B2AD /* ALHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042975189206FC0096B2AD /* ALHardware.m */; };
+		E10429AE189206FC0096B2AD /* ALJailbreak.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042978189206FC0096B2AD /* ALJailbreak.m */; };
+		E10429AF189206FC0096B2AD /* ALLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = E104297B189206FC0096B2AD /* ALLocalization.m */; };
+		E10429B0189206FC0096B2AD /* ALMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = E104297E189206FC0096B2AD /* ALMemory.m */; };
+		E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042981189206FC0096B2AD /* ALNetwork.m */; };
+		E10429B2189206FC0096B2AD /* ALProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042984189206FC0096B2AD /* ALProcessor.m */; };
+		E10429B3189206FC0096B2AD /* ALSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042986189206FC0096B2AD /* ALSystem.m */; };
+		E10429B5189206FC0096B2AD /* iPad2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1042998189206FC0096B2AD /* iPad2.plist */; };
+		E10429B6189206FC0096B2AD /* iPad3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1042999189206FC0096B2AD /* iPad3.plist */; };
+		E10429B7189206FC0096B2AD /* iPad4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299A189206FC0096B2AD /* iPad4.plist */; };
+		E10429B8189206FC0096B2AD /* iPadAir.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299B189206FC0096B2AD /* iPadAir.plist */; };
+		E10429B9189206FC0096B2AD /* iPadMini.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299C189206FC0096B2AD /* iPadMini.plist */; };
+		E10429BA189206FC0096B2AD /* iPadMiniRetina.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299D189206FC0096B2AD /* iPadMiniRetina.plist */; };
+		E10429BB189206FC0096B2AD /* iPhone3Gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299F189206FC0096B2AD /* iPhone3Gs.plist */; };
+		E10429BC189206FC0096B2AD /* iPhone4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A0189206FC0096B2AD /* iPhone4.plist */; };
+		E10429BD189206FC0096B2AD /* iPhone4s.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A1189206FC0096B2AD /* iPhone4s.plist */; };
+		E10429BE189206FC0096B2AD /* iPhone5.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A2189206FC0096B2AD /* iPhone5.plist */; };
+		E10429BF189206FC0096B2AD /* iPhone5c.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A3189206FC0096B2AD /* iPhone5c.plist */; };
+		E10429C0189206FC0096B2AD /* iPhone5s.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A4189206FC0096B2AD /* iPhone5s.plist */; };
+		E10429C1189206FC0096B2AD /* iPodTouch3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A6189206FC0096B2AD /* iPodTouch3.plist */; };
+		E10429C2189206FC0096B2AD /* iPodTouch4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A7189206FC0096B2AD /* iPodTouch4.plist */; };
+		E10429C3189206FC0096B2AD /* iPodTouch5.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A8189206FC0096B2AD /* iPodTouch5.plist */; };
+		E10429C5189220FA0096B2AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E10429C4189220FA0096B2AD /* README.md */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
 		E137D18B17CAF03D0001A6CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E137D18917CAF03D0001A6CF /* InfoPlist.strings */; };
@@ -90,6 +117,55 @@
 		49E7D88718895EEE0096C450 /* iPhone 57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone 57@2x.png"; path = "Artworks/iPhone 57@2x.png"; sourceTree = "<group>"; };
 		49E7D88A188960B50096C450 /* iPhone 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone 120.png"; path = "Artworks/iPhone 120.png"; sourceTree = "<group>"; };
 		49E7D88B188960B50096C450 /* iPhone 120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone 120@2x.png"; path = "Artworks/iPhone 120@2x.png"; sourceTree = "<group>"; };
+		E1042968189206FC0096B2AD /* ALAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAccessory.h; sourceTree = "<group>"; };
+		E1042969189206FC0096B2AD /* ALAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAccessory.m; sourceTree = "<group>"; };
+		E104296B189206FC0096B2AD /* ALBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBattery.h; sourceTree = "<group>"; };
+		E104296C189206FC0096B2AD /* ALBattery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBattery.m; sourceTree = "<group>"; };
+		E104296E189206FC0096B2AD /* ALCarrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCarrier.h; sourceTree = "<group>"; };
+		E104296F189206FC0096B2AD /* ALCarrier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCarrier.m; sourceTree = "<group>"; };
+		E1042971189206FC0096B2AD /* ALDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDisk.h; sourceTree = "<group>"; };
+		E1042972189206FC0096B2AD /* ALDisk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDisk.m; sourceTree = "<group>"; };
+		E1042974189206FC0096B2AD /* ALHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALHardware.h; sourceTree = "<group>"; };
+		E1042975189206FC0096B2AD /* ALHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALHardware.m; sourceTree = "<group>"; };
+		E1042977189206FC0096B2AD /* ALJailbreak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALJailbreak.h; sourceTree = "<group>"; };
+		E1042978189206FC0096B2AD /* ALJailbreak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALJailbreak.m; sourceTree = "<group>"; };
+		E104297A189206FC0096B2AD /* ALLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALLocalization.h; sourceTree = "<group>"; };
+		E104297B189206FC0096B2AD /* ALLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALLocalization.m; sourceTree = "<group>"; };
+		E104297D189206FC0096B2AD /* ALMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMemory.h; sourceTree = "<group>"; };
+		E104297E189206FC0096B2AD /* ALMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMemory.m; sourceTree = "<group>"; };
+		E1042980189206FC0096B2AD /* ALNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNetwork.h; sourceTree = "<group>"; };
+		E1042981189206FC0096B2AD /* ALNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNetwork.m; sourceTree = "<group>"; };
+		E1042983189206FC0096B2AD /* ALProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALProcessor.h; sourceTree = "<group>"; };
+		E1042984189206FC0096B2AD /* ALProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALProcessor.m; sourceTree = "<group>"; };
+		E1042985189206FC0096B2AD /* ALSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem.h; sourceTree = "<group>"; };
+		E1042986189206FC0096B2AD /* ALSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSystem.m; sourceTree = "<group>"; };
+		E1042988189206FC0096B2AD /* ALSystem_AccessoryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_AccessoryConstants.h; sourceTree = "<group>"; };
+		E1042989189206FC0096B2AD /* ALSystem_ALBatteryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_ALBatteryConstants.h; sourceTree = "<group>"; };
+		E104298A189206FC0096B2AD /* ALSystem_CarrierConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_CarrierConstants.h; sourceTree = "<group>"; };
+		E104298B189206FC0096B2AD /* ALSystem_DiskConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_DiskConstants.h; sourceTree = "<group>"; };
+		E104298C189206FC0096B2AD /* ALSystem_HardwareConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_HardwareConstants.h; sourceTree = "<group>"; };
+		E104298D189206FC0096B2AD /* ALSystem_JailbreakConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_JailbreakConstants.h; sourceTree = "<group>"; };
+		E104298E189206FC0096B2AD /* ALSystem_LocalizationConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_LocalizationConstants.h; sourceTree = "<group>"; };
+		E104298F189206FC0096B2AD /* ALSystem_MemoryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_MemoryConstants.h; sourceTree = "<group>"; };
+		E1042990189206FC0096B2AD /* ALSystem_NetworkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_NetworkConstants.h; sourceTree = "<group>"; };
+		E1042991189206FC0096B2AD /* ALSystem_ProcessorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_ProcessorConstants.h; sourceTree = "<group>"; };
+		E1042992189206FC0096B2AD /* ALSystemConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystemConstants.h; sourceTree = "<group>"; };
+		E1042998189206FC0096B2AD /* iPad2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad2.plist; sourceTree = "<group>"; };
+		E1042999189206FC0096B2AD /* iPad3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad3.plist; sourceTree = "<group>"; };
+		E104299A189206FC0096B2AD /* iPad4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad4.plist; sourceTree = "<group>"; };
+		E104299B189206FC0096B2AD /* iPadAir.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir.plist; sourceTree = "<group>"; };
+		E104299C189206FC0096B2AD /* iPadMini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini.plist; sourceTree = "<group>"; };
+		E104299D189206FC0096B2AD /* iPadMiniRetina.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMiniRetina.plist; sourceTree = "<group>"; };
+		E104299F189206FC0096B2AD /* iPhone3Gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone3Gs.plist; sourceTree = "<group>"; };
+		E10429A0189206FC0096B2AD /* iPhone4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone4.plist; sourceTree = "<group>"; };
+		E10429A1189206FC0096B2AD /* iPhone4s.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone4s.plist; sourceTree = "<group>"; };
+		E10429A2189206FC0096B2AD /* iPhone5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5.plist; sourceTree = "<group>"; };
+		E10429A3189206FC0096B2AD /* iPhone5c.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5c.plist; sourceTree = "<group>"; };
+		E10429A4189206FC0096B2AD /* iPhone5s.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5s.plist; sourceTree = "<group>"; };
+		E10429A6189206FC0096B2AD /* iPodTouch3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch3.plist; sourceTree = "<group>"; };
+		E10429A7189206FC0096B2AD /* iPodTouch4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch4.plist; sourceTree = "<group>"; };
+		E10429A8189206FC0096B2AD /* iPodTouch5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch5.plist; sourceTree = "<group>"; };
+		E10429C4189220FA0096B2AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,8 +189,8 @@
 		E137D1B017CAF03D0001A6CF /* Device_DetailsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device_DetailsTests.h; sourceTree = "<group>"; };
 		E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device_DetailsTests.m; sourceTree = "<group>"; };
 		E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		E137D1F717CB00D10001A6CF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		E137D1F817CB00D10001A6CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E137D1F717CB00D10001A6CF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.h"; sourceTree = "<group>"; };
+		E137D1F817CB00D10001A6CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.m"; sourceTree = "<group>"; };
 		E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E1B8B0731888B20900A20509 /* iPad 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29.png"; path = "Artworks/iPad 29.png"; sourceTree = "<group>"; };
 		E1B8B0741888B20900A20509 /* iPad 29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29@2x.png"; path = "Artworks/iPad 29@2x.png"; sourceTree = "<group>"; };
@@ -180,6 +256,192 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1042966189206FC0096B2AD /* ALSystemUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E10429C4189220FA0096B2AD /* README.md */,
+				E1042985189206FC0096B2AD /* ALSystem.h */,
+				E1042986189206FC0096B2AD /* ALSystem.m */,
+				E1042967189206FC0096B2AD /* ALAccessory */,
+				E104296A189206FC0096B2AD /* ALBattery */,
+				E104296D189206FC0096B2AD /* ALCarrier */,
+				E1042970189206FC0096B2AD /* ALDisk */,
+				E1042973189206FC0096B2AD /* ALHardware */,
+				E1042976189206FC0096B2AD /* ALJailbreak */,
+				E1042979189206FC0096B2AD /* ALLocalization */,
+				E104297C189206FC0096B2AD /* ALMemory */,
+				E104297F189206FC0096B2AD /* ALNetwork */,
+				E1042982189206FC0096B2AD /* ALProcessor */,
+				E1042987189206FC0096B2AD /* ALSystemConstants */,
+				E1042993189206FC0096B2AD /* Reachability */,
+				E1042996189206FC0096B2AD /* Resources */,
+			);
+			path = ALSystemUtilities;
+			sourceTree = "<group>";
+		};
+		E1042967189206FC0096B2AD /* ALAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				E1042968189206FC0096B2AD /* ALAccessory.h */,
+				E1042969189206FC0096B2AD /* ALAccessory.m */,
+			);
+			path = ALAccessory;
+			sourceTree = "<group>";
+		};
+		E104296A189206FC0096B2AD /* ALBattery */ = {
+			isa = PBXGroup;
+			children = (
+				E104296B189206FC0096B2AD /* ALBattery.h */,
+				E104296C189206FC0096B2AD /* ALBattery.m */,
+			);
+			path = ALBattery;
+			sourceTree = "<group>";
+		};
+		E104296D189206FC0096B2AD /* ALCarrier */ = {
+			isa = PBXGroup;
+			children = (
+				E104296E189206FC0096B2AD /* ALCarrier.h */,
+				E104296F189206FC0096B2AD /* ALCarrier.m */,
+			);
+			path = ALCarrier;
+			sourceTree = "<group>";
+		};
+		E1042970189206FC0096B2AD /* ALDisk */ = {
+			isa = PBXGroup;
+			children = (
+				E1042971189206FC0096B2AD /* ALDisk.h */,
+				E1042972189206FC0096B2AD /* ALDisk.m */,
+			);
+			path = ALDisk;
+			sourceTree = "<group>";
+		};
+		E1042973189206FC0096B2AD /* ALHardware */ = {
+			isa = PBXGroup;
+			children = (
+				E1042974189206FC0096B2AD /* ALHardware.h */,
+				E1042975189206FC0096B2AD /* ALHardware.m */,
+			);
+			path = ALHardware;
+			sourceTree = "<group>";
+		};
+		E1042976189206FC0096B2AD /* ALJailbreak */ = {
+			isa = PBXGroup;
+			children = (
+				E1042977189206FC0096B2AD /* ALJailbreak.h */,
+				E1042978189206FC0096B2AD /* ALJailbreak.m */,
+			);
+			path = ALJailbreak;
+			sourceTree = "<group>";
+		};
+		E1042979189206FC0096B2AD /* ALLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				E104297A189206FC0096B2AD /* ALLocalization.h */,
+				E104297B189206FC0096B2AD /* ALLocalization.m */,
+			);
+			path = ALLocalization;
+			sourceTree = "<group>";
+		};
+		E104297C189206FC0096B2AD /* ALMemory */ = {
+			isa = PBXGroup;
+			children = (
+				E104297D189206FC0096B2AD /* ALMemory.h */,
+				E104297E189206FC0096B2AD /* ALMemory.m */,
+			);
+			path = ALMemory;
+			sourceTree = "<group>";
+		};
+		E104297F189206FC0096B2AD /* ALNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				E1042980189206FC0096B2AD /* ALNetwork.h */,
+				E1042981189206FC0096B2AD /* ALNetwork.m */,
+			);
+			path = ALNetwork;
+			sourceTree = "<group>";
+		};
+		E1042982189206FC0096B2AD /* ALProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				E1042983189206FC0096B2AD /* ALProcessor.h */,
+				E1042984189206FC0096B2AD /* ALProcessor.m */,
+			);
+			path = ALProcessor;
+			sourceTree = "<group>";
+		};
+		E1042987189206FC0096B2AD /* ALSystemConstants */ = {
+			isa = PBXGroup;
+			children = (
+				E1042988189206FC0096B2AD /* ALSystem_AccessoryConstants.h */,
+				E1042989189206FC0096B2AD /* ALSystem_ALBatteryConstants.h */,
+				E104298A189206FC0096B2AD /* ALSystem_CarrierConstants.h */,
+				E104298B189206FC0096B2AD /* ALSystem_DiskConstants.h */,
+				E104298C189206FC0096B2AD /* ALSystem_HardwareConstants.h */,
+				E104298D189206FC0096B2AD /* ALSystem_JailbreakConstants.h */,
+				E104298E189206FC0096B2AD /* ALSystem_LocalizationConstants.h */,
+				E104298F189206FC0096B2AD /* ALSystem_MemoryConstants.h */,
+				E1042990189206FC0096B2AD /* ALSystem_NetworkConstants.h */,
+				E1042991189206FC0096B2AD /* ALSystem_ProcessorConstants.h */,
+				E1042992189206FC0096B2AD /* ALSystemConstants.h */,
+			);
+			path = ALSystemConstants;
+			sourceTree = "<group>";
+		};
+		E1042993189206FC0096B2AD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E137D1F717CB00D10001A6CF /* Reachability.h */,
+				E137D1F817CB00D10001A6CF /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		E1042996189206FC0096B2AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1042997189206FC0096B2AD /* iPad */,
+				E104299E189206FC0096B2AD /* iPhone */,
+				E10429A5189206FC0096B2AD /* iPodTouch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1042997189206FC0096B2AD /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				E1042998189206FC0096B2AD /* iPad2.plist */,
+				E1042999189206FC0096B2AD /* iPad3.plist */,
+				E104299A189206FC0096B2AD /* iPad4.plist */,
+				E104299B189206FC0096B2AD /* iPadAir.plist */,
+				E104299C189206FC0096B2AD /* iPadMini.plist */,
+				E104299D189206FC0096B2AD /* iPadMiniRetina.plist */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		E104299E189206FC0096B2AD /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				E104299F189206FC0096B2AD /* iPhone3Gs.plist */,
+				E10429A0189206FC0096B2AD /* iPhone4.plist */,
+				E10429A1189206FC0096B2AD /* iPhone4s.plist */,
+				E10429A2189206FC0096B2AD /* iPhone5.plist */,
+				E10429A3189206FC0096B2AD /* iPhone5c.plist */,
+				E10429A4189206FC0096B2AD /* iPhone5s.plist */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		E10429A5189206FC0096B2AD /* iPodTouch */ = {
+			isa = PBXGroup;
+			children = (
+				E10429A6189206FC0096B2AD /* iPodTouch3.plist */,
+				E10429A7189206FC0096B2AD /* iPodTouch4.plist */,
+				E10429A8189206FC0096B2AD /* iPodTouch5.plist */,
+			);
+			path = iPodTouch;
+			sourceTree = "<group>";
+		};
 		E137D17417CAF03D0001A6CF = {
 			isa = PBXGroup;
 			children = (
@@ -226,8 +488,6 @@
 				E137D19817CAF03D0001A6CF /* MainStoryboard.storyboard */,
 				499997631874F92900D3A605 /* DDMainViewController.h */,
 				499997641874F92900D3A605 /* DDMainViewController.m */,
-				E137D1F717CB00D10001A6CF /* Reachability.h */,
-				E137D1F817CB00D10001A6CF /* Reachability.m */,
 				499122BB188D51D100643FFE /* ALRangingViewController.h */,
 				499122BC188D51D100643FFE /* ALRangingViewController.m */,
 				499122BE188D5FD600643FFE /* ALDefaults.h */,
@@ -277,6 +537,7 @@
 		E1D1D2691835A9B50007E301 /* Third Party Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E1042966189206FC0096B2AD /* ALSystemUtilities */,
 				E1D1D26A1835A9DA0007E301 /* Decibel Meter */,
 			);
 			name = "Third Party Tools";
@@ -374,7 +635,7 @@
 				ORGANIZATIONNAME = "Robert Yi Jiang";
 				TargetAttributes = {
 					E137D17C17CAF03D0001A6CF = {
-						DevelopmentTeam = DQK83PW4RV;
+						DevelopmentTeam = GR44ZFBFYS;
 					};
 				};
 			};
@@ -405,15 +666,23 @@
 			files = (
 				E1B8B0891888B20900A20509 /* iPad 40.png in Resources */,
 				E1B8B08E1888B20900A20509 /* iPhone 40@2x.png in Resources */,
+				E10429BD189206FC0096B2AD /* iPhone4s.plist in Resources */,
 				E1B8B0911888B20900A20509 /* Icon-72@2x.png in Resources */,
 				E1B8B09A1888B20900A20509 /* Sign Info.png in Resources */,
+				E10429BF189206FC0096B2AD /* iPhone5c.plist in Resources */,
 				49E7D88D188960B50096C450 /* iPhone 120@2x.png in Resources */,
 				E137D18B17CAF03D0001A6CF /* InfoPlist.strings in Resources */,
+				E10429C5189220FA0096B2AD /* README.md in Resources */,
 				E1B8B08B1888B20900A20509 /* iPad 76.png in Resources */,
 				E1B8B0991888B20900A20509 /* iTunesArtwork@2x in Resources */,
 				E1B8B0931888B20900A20509 /* Icon-Small-50@2x.png in Resources */,
 				E137D19317CAF03D0001A6CF /* Default.png in Resources */,
 				E1B8B08A1888B20900A20509 /* iPad 40@2x.png in Resources */,
+				E10429C2189206FC0096B2AD /* iPodTouch4.plist in Resources */,
+				E10429BB189206FC0096B2AD /* iPhone3Gs.plist in Resources */,
+				E10429B8189206FC0096B2AD /* iPadAir.plist in Resources */,
+				E10429C3189206FC0096B2AD /* iPodTouch5.plist in Resources */,
+				E10429B5189206FC0096B2AD /* iPad2.plist in Resources */,
 				E1B8B0951888B20900A20509 /* Icon-Small@2x.png in Resources */,
 				E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */,
 				49E7D88C188960B50096C450 /* iPhone 120.png in Resources */,
@@ -421,18 +690,26 @@
 				E137D19717CAF03D0001A6CF /* Default-568h@2x.png in Resources */,
 				E1B8B0981888B20900A20509 /* iTunesArtwork in Resources */,
 				E1B8B0961888B20900A20509 /* Icon.png in Resources */,
+				E10429C1189206FC0096B2AD /* iPodTouch3.plist in Resources */,
 				E137D19A17CAF03D0001A6CF /* MainStoryboard.storyboard in Resources */,
+				E10429BC189206FC0096B2AD /* iPhone4.plist in Resources */,
+				E10429C0189206FC0096B2AD /* iPhone5s.plist in Resources */,
 				49E7D88818895EEE0096C450 /* iPhone 57.png in Resources */,
 				E1B8B0871888B20900A20509 /* iPad 29.png in Resources */,
+				E10429B6189206FC0096B2AD /* iPad3.plist in Resources */,
+				E10429BA189206FC0096B2AD /* iPadMiniRetina.plist in Resources */,
 				E1B8B0921888B20900A20509 /* Icon-Small-50.png in Resources */,
 				E1B8B08C1888B20900A20509 /* iPad 76@2x.png in Resources */,
 				E1B8B08F1888B20900A20509 /* iPhone 60@2x.png in Resources */,
 				E1B8B0941888B20900A20509 /* Icon-Small.png in Resources */,
 				E1B8B0901888B20900A20509 /* Icon-72.png in Resources */,
+				E10429B9189206FC0096B2AD /* iPadMini.plist in Resources */,
+				E10429B7189206FC0096B2AD /* iPad4.plist in Resources */,
 				49E7D88918895EEE0096C450 /* iPhone 57@2x.png in Resources */,
 				E1B8B08D1888B20900A20509 /* iPhone 29@2x.png in Resources */,
 				E1B8B0971888B20900A20509 /* Icon@2x.png in Resources */,
 				49126742187D7CC4001F66A5 /* Settings.bundle in Resources */,
+				E10429BE189206FC0096B2AD /* iPhone5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,15 +744,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10429AD189206FC0096B2AD /* ALHardware.m in Sources */,
+				E10429AF189206FC0096B2AD /* ALLocalization.m in Sources */,
 				499997651874F92900D3A605 /* DDMainViewController.m in Sources */,
+				E10429B3189206FC0096B2AD /* ALSystem.m in Sources */,
+				E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */,
+				E10429AE189206FC0096B2AD /* ALJailbreak.m in Sources */,
 				E1D1D2701835AA130007E301 /* F3BarGauge.m in Sources */,
 				E137D18D17CAF03D0001A6CF /* main.m in Sources */,
+				E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */,
+				E10429AC189206FC0096B2AD /* ALDisk.m in Sources */,
+				E10429B2189206FC0096B2AD /* ALProcessor.m in Sources */,
 				E137D19117CAF03D0001A6CF /* DDAppDelegate.m in Sources */,
 				E137D19D17CAF03D0001A6CF /* DDViewController.m in Sources */,
 				E1D1D26F1835AA130007E301 /* BBDecibelMeter.m in Sources */,
+				E10429B0189206FC0096B2AD /* ALMemory.m in Sources */,
 				499122C0188D5FD600643FFE /* ALDefaults.m in Sources */,
 				499122BD188D51D100643FFE /* ALRangingViewController.m in Sources */,
 				E137D1F917CB00D10001A6CF /* Reachability.m in Sources */,
+				E10429AA189206FC0096B2AD /* ALBattery.m in Sources */,
+				E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,14 +884,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4FCB58ED-EC97-492D-8C77-AEC9E317C6A8";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -614,14 +902,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4FCB58ED-EC97-492D-8C77-AEC9E317C6A8";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

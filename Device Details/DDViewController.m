@@ -7,6 +7,7 @@
 //
 #import "DDViewController.h"
 #import "BBDecibelMeter.h"
+#import "ALSystem.h"
 
 @interface DDViewController (){
  
@@ -26,6 +27,9 @@
 @synthesize deviceTypeLabel;
 @synthesize deviceNameLabel;
 @synthesize uuidLabel;
+@synthesize osStorageTotalSizeLabel;
+@synthesize osStorageUsedSizeLabel;
+@synthesize osStorageRemainningSizeLabel;
 
 //OS Details
 @synthesize osNameLabel;
@@ -184,11 +188,7 @@ CLGeocoder *geocoder;
     
     
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    
-    
-    
-    
-    
+ 
     if ([platform isEqualToString:@"iPhone1,1"])    deviceTypeLabel.text = @"iPhone 1G";
     if ([platform isEqualToString:@"iPhone1,2"])    deviceTypeLabel.text = @"iPhone 3G";
     if ([platform isEqualToString:@"iPhone2,1"])    deviceTypeLabel.text = @"iPhone 3GS";
@@ -230,7 +230,58 @@ CLGeocoder *geocoder;
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
     uuidLabel.text = [UIDevice currentDevice].identifierForVendor.UUIDString;
+    osStorageTotalSizeLabel.text = [self totalDiskSpace];
+    osStorageUsedSizeLabel.text  = [self usedDiskSpace];
+    osStorageRemainningSizeLabel.text = [self freeDiskSpace];
+    
+    NSLog(@"\n%@\n",[ALCarrier carrierName]);
+    
 
+}
+
+- (NSString *)memoryFormatter:(long long)diskSpace {
+    NSString *formatted;
+    double bytes = 1.0 * diskSpace;
+    double megabytes = bytes / MB;
+    double gigabytes = bytes / GB;
+    if (gigabytes >= 1.0)
+        formatted = [NSString stringWithFormat:@"%.2f GB", gigabytes];
+    else if (megabytes >= 1.0)
+        formatted = [NSString stringWithFormat:@"%.2f MB", megabytes];
+    else
+        formatted = [NSString stringWithFormat:@"%.2f bytes", bytes];
+    
+    return formatted;
+}
+
+
+- (NSString *)totalDiskSpace {
+    long long space = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemSize] longLongValue];
+    return [self memoryFormatter:space];
+}
+
+- (NSString *)freeDiskSpace {
+    long long freeSpace = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemFreeSize] longLongValue];
+    return [self memoryFormatter:freeSpace];
+}
+
+- (NSString *)usedDiskSpace {
+    return [self memoryFormatter:[self usedDiskSpaceInBytes]];
+}
+
+- (CGFloat)totalDiskSpaceInBytes {
+    long long space = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemSize] longLongValue];
+    return space;
+}
+
+- (CGFloat)freeDiskSpaceInBytes {
+    long long freeSpace = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemFreeSize] longLongValue];
+    return freeSpace;
+}
+
+- (CGFloat)usedDiskSpaceInBytes {
+    long long usedSpace = [self totalDiskSpaceInBytes] - [self freeDiskSpaceInBytes];
+    return usedSpace;
 }
 
 ///Get IP Address
@@ -263,6 +314,8 @@ CLGeocoder *geocoder;
 //}
 
 
+#pragma mark -
+#pragma mark   Network Details Functions
 
 - (void)getNetworkDetails{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+//
+
 //Network Details
 #import "Reachability.h"
 #include <sys/socket.h>
@@ -22,6 +24,9 @@
 #include <sys/types.h>
 #import <sys/sysctl.h>
 #import <sys/utsname.h>
+#import <mach/mach.h>
+#define MB (1024*1024)
+#define GB (MB*1024)
 
 //Location Details
 #import <CoreLocation/CoreLocation.h>
@@ -59,6 +64,9 @@
 //OS Details
 @property (weak, nonatomic) IBOutlet UILabel *osNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *osVersionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *osStorageTotalSizeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *osStorageUsedSizeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *osStorageRemainningSizeLabel;
 
 //Network Details
 @property (weak, nonatomic) IBOutlet UITextView *deviceUDIDtextField;
