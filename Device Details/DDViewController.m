@@ -536,11 +536,11 @@ CLGeocoder *geocoder;
 
 #pragma mark - Date Time Details Functions
 -(void) initDateTimeDetails{
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                                      target:self
-                                                    selector:@selector(timerTick:)
-                                                    userInfo:nil
-                                                     repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(timerTick:)
+                                   userInfo:nil
+                                    repeats:YES];
 }
 
 - (void)timerTick:(NSTimer *)timer {

@@ -30,7 +30,6 @@
 		E10429AF189206FC0096B2AD /* ALLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = E104297B189206FC0096B2AD /* ALLocalization.m */; };
 		E10429B0189206FC0096B2AD /* ALMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = E104297E189206FC0096B2AD /* ALMemory.m */; };
 		E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042981189206FC0096B2AD /* ALNetwork.m */; };
-		E10429B2189206FC0096B2AD /* ALProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042984189206FC0096B2AD /* ALProcessor.m */; };
 		E10429B3189206FC0096B2AD /* ALSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042986189206FC0096B2AD /* ALSystem.m */; };
 		E10429B5189206FC0096B2AD /* iPad2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1042998189206FC0096B2AD /* iPad2.plist */; };
 		E10429B6189206FC0096B2AD /* iPad3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1042999189206FC0096B2AD /* iPad3.plist */; };
@@ -65,7 +64,14 @@
 		E137D1B217CAF03D0001A6CF /* Device_DetailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */; };
 		E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */; };
 		E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */; };
-		E176DB0218922CC9000224F8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB0118922CC9000224F8 /* Reachability.m */; };
+		E176DB0518923034000224F8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB0418923034000224F8 /* Reachability.m */; };
+		E176DB08189231EF000224F8 /* ALProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB07189231EF000224F8 /* ALProcessor.m */; };
+		E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB09189232FB000224F8 /* CFNetwork.framework */; };
+		E176DB0C1892331A000224F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0B1892331A000224F8 /* AudioToolbox.framework */; };
+		E176DB0E18923326000224F8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0D18923326000224F8 /* CoreTelephony.framework */; };
+		E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0F1892332F000224F8 /* ExternalAccessory.framework */; };
+		E176DB1218923338000224F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1118923338000224F8 /* Security.framework */; };
+		E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1318923367000224F8 /* CoreFoundation.framework */; };
 		E1B8B0871888B20900A20509 /* iPad 29.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0731888B20900A20509 /* iPad 29.png */; };
 		E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0741888B20900A20509 /* iPad 29@2x.png */; };
 		E1B8B0891888B20900A20509 /* iPad 40.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0751888B20900A20509 /* iPad 40.png */; };
@@ -135,8 +141,6 @@
 		E104297E189206FC0096B2AD /* ALMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMemory.m; sourceTree = "<group>"; };
 		E1042980189206FC0096B2AD /* ALNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNetwork.h; sourceTree = "<group>"; };
 		E1042981189206FC0096B2AD /* ALNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNetwork.m; sourceTree = "<group>"; };
-		E1042983189206FC0096B2AD /* ALProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALProcessor.h; sourceTree = "<group>"; };
-		E1042984189206FC0096B2AD /* ALProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALProcessor.m; sourceTree = "<group>"; };
 		E1042985189206FC0096B2AD /* ALSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem.h; sourceTree = "<group>"; };
 		E1042986189206FC0096B2AD /* ALSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSystem.m; sourceTree = "<group>"; };
 		E1042988189206FC0096B2AD /* ALSystem_AccessoryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_AccessoryConstants.h; sourceTree = "<group>"; };
@@ -190,8 +194,16 @@
 		E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device_DetailsTests.m; sourceTree = "<group>"; };
 		E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		E176DB0018922CC9000224F8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		E176DB0118922CC9000224F8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E176DB0318923034000224F8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.h"; sourceTree = SOURCE_ROOT; };
+		E176DB0418923034000224F8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.m"; sourceTree = SOURCE_ROOT; };
+		E176DB06189231EF000224F8 /* ALProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALProcessor.h; sourceTree = "<group>"; };
+		E176DB07189231EF000224F8 /* ALProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALProcessor.m; sourceTree = "<group>"; };
+		E176DB09189232FB000224F8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E176DB0B1892331A000224F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E176DB0D18923326000224F8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E176DB0F1892332F000224F8 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		E176DB1118923338000224F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E176DB1318923367000224F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E1B8B0731888B20900A20509 /* iPad 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29.png"; path = "Artworks/iPad 29.png"; sourceTree = "<group>"; };
 		E1B8B0741888B20900A20509 /* iPad 29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29@2x.png"; path = "Artworks/iPad 29@2x.png"; sourceTree = "<group>"; };
 		E1B8B0751888B20900A20509 /* iPad 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 40.png"; path = "Artworks/iPad 40.png"; sourceTree = "<group>"; };
@@ -229,13 +241,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CE10E718766DE20020031C /* Foundation.framework in Frameworks */,
+				E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */,
+				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
+				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
+				E176DB1218923338000224F8 /* Security.framework in Frameworks */,
+				E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */,
+				E176DB0E18923326000224F8 /* CoreTelephony.framework in Frameworks */,
+				E176DB0C1892331A000224F8 /* AudioToolbox.framework in Frameworks */,
+				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
-				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
-				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
 				E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,10 +381,8 @@
 		E1042982189206FC0096B2AD /* ALProcessor */ = {
 			isa = PBXGroup;
 			children = (
-				E176DB0018922CC9000224F8 /* Reachability.h */,
-				E176DB0118922CC9000224F8 /* Reachability.m */,
-				E1042983189206FC0096B2AD /* ALProcessor.h */,
-				E1042984189206FC0096B2AD /* ALProcessor.m */,
+				E176DB06189231EF000224F8 /* ALProcessor.h */,
+				E176DB07189231EF000224F8 /* ALProcessor.m */,
 			);
 			path = ALProcessor;
 			sourceTree = "<group>";
@@ -392,6 +408,8 @@
 		E1042993189206FC0096B2AD /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
+				E176DB0318923034000224F8 /* Reachability.h */,
+				E176DB0418923034000224F8 /* Reachability.m */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -466,6 +484,12 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E176DB1318923367000224F8 /* CoreFoundation.framework */,
+				E176DB1118923338000224F8 /* Security.framework */,
+				E176DB0F1892332F000224F8 /* ExternalAccessory.framework */,
+				E176DB0D18923326000224F8 /* CoreTelephony.framework */,
+				E176DB0B1892331A000224F8 /* AudioToolbox.framework */,
+				E176DB09189232FB000224F8 /* CFNetwork.framework */,
 				499997611874F38D00D3A605 /* iAd.framework */,
 				E1D1D2711835AA650007E301 /* AVFoundation.framework */,
 				E1B9F8F117D470EC0089CE9D /* MapKit.framework */,
@@ -745,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10429AD189206FC0096B2AD /* ALHardware.m in Sources */,
+				E176DB08189231EF000224F8 /* ALProcessor.m in Sources */,
 				E10429AF189206FC0096B2AD /* ALLocalization.m in Sources */,
 				499997651874F92900D3A605 /* DDMainViewController.m in Sources */,
 				E10429B3189206FC0096B2AD /* ALSystem.m in Sources */,
@@ -754,11 +779,10 @@
 				E137D18D17CAF03D0001A6CF /* main.m in Sources */,
 				E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */,
 				E10429AC189206FC0096B2AD /* ALDisk.m in Sources */,
-				E10429B2189206FC0096B2AD /* ALProcessor.m in Sources */,
+				E176DB0518923034000224F8 /* Reachability.m in Sources */,
 				E137D19117CAF03D0001A6CF /* DDAppDelegate.m in Sources */,
 				E137D19D17CAF03D0001A6CF /* DDViewController.m in Sources */,
 				E1D1D26F1835AA130007E301 /* BBDecibelMeter.m in Sources */,
-				E176DB0218922CC9000224F8 /* Reachability.m in Sources */,
 				E10429B0189206FC0096B2AD /* ALMemory.m in Sources */,
 				499122C0188D5FD600643FFE /* ALDefaults.m in Sources */,
 				499122BD188D51D100643FFE /* ALRangingViewController.m in Sources */,
