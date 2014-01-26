@@ -13,6 +13,7 @@
 @end
 
 @implementation DDMainViewController
+@synthesize adView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    adView.delegate =self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +35,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void) bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    NSLog(@"iAdBanner failed\n");
+    NSLog(@"%@",[error localizedDescription]);
+    
+    
+}
+-(void) bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    
+    NSLog(@"iAdBanner loaded");
+    
+}
+
 
 @end

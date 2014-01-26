@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 
-@interface DDMainViewController : UIViewController <ADBannerViewDelegate>
+@interface DDMainViewController : UIViewController <ADBannerViewDelegate> {
+    
+    //iAD
+    ADBannerView *adView;
+}
+
+//iAD
+@property(nonatomic,retain)IBOutlet ADBannerView *adView;
 
 @end

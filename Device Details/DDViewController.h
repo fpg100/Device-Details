@@ -60,29 +60,50 @@
 @property (weak, nonatomic) IBOutlet UILabel *deviceTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *uuidLabel;
+@property (strong, nonatomic) IBOutlet UILabel *deviceStorageTotalSizeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *deviceStorageUsedSizeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *deviceStorageRemainningSizeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceCpuLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceCpuNumberLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *deviceActiveProcessorsNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceCpuUsageForAppLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *deviceActiveCpuArrayLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *deviceNumberOfActiveCpuLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceRAMTotalSizeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceRAMFreeSizeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceGpuLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceScreenSizeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceScreenTypeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceScreenDensityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceScreenBrightness;
+@property (weak, nonatomic) IBOutlet UILabel *deviceWLANLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceBluetoothLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceCameraFrontLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceCameraBackLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceDimentionsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceWeightLabel;
 
 //OS Details
 @property (weak, nonatomic) IBOutlet UILabel *osNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *osVersionLabel;
-@property (strong, nonatomic) IBOutlet UILabel *osStorageTotalSizeLabel;
-@property (strong, nonatomic) IBOutlet UILabel *osStorageUsedSizeLabel;
-@property (strong, nonatomic) IBOutlet UILabel *osStorageRemainningSizeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *osJailbrokenLabel;
 
 //Network Details
 @property (weak, nonatomic) IBOutlet UITextView *deviceUDIDtextField;
 @property (weak, nonatomic) IBOutlet UILabel *networkTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *externalIpAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ipAddrLabel;
+@property (weak, nonatomic) IBOutlet UILabel *networkIpMaskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *macAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ssidTagLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ssidLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routerIpAddrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subnetMaskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routerBoradcastAddrLabel;
+
 //Date Time
 @property (strong, nonatomic) IBOutlet UILabel *localDateTimeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *utcDateTimeLabel;
-
 
 //Location Details
 @property (retain, nonatomic) CLLocationManager *locationManager;

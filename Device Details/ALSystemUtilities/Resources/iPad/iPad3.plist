@@ -13,7 +13,7 @@
 	<key>weight</key>
 	<string>652 g.</string>
 	<key>display-type</key>
-	<string>LED-backlit IPS LCD, capacitive touchscreen</string>
+	<string>LED-backlit IPS LCD</string>
 	<key>display-density</key>
 	<string>264 ppi</string>
 	<key>WLAN</key>
@@ -27,7 +27,7 @@
 	<key>cpu</key>
 	<string>Apple A5X</string>
 	<key>gpu</key>
-	<string>PowerVR SGX543MP4 (quad-core graphics)</string>
+	<string>PowerVR SGX543MP4 (quad-core)</string>
 	<key>siri</key>
 	<string>Yes</string>
 	<key>touch-id</key>

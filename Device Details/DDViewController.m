@@ -27,19 +27,37 @@
 @synthesize deviceTypeLabel;
 @synthesize deviceNameLabel;
 @synthesize uuidLabel;
-@synthesize osStorageTotalSizeLabel;
-@synthesize osStorageUsedSizeLabel;
-@synthesize osStorageRemainningSizeLabel;
+@synthesize deviceStorageTotalSizeLabel;
+@synthesize deviceStorageUsedSizeLabel;
+@synthesize deviceStorageRemainningSizeLabel;
+@synthesize deviceCpuLabel;
+@synthesize deviceCpuNumberLabel;
+@synthesize deviceCpuUsageForAppLabel;
+@synthesize deviceGpuLabel;
+@synthesize deviceRAMTotalSizeLabel;
+@synthesize deviceRAMFreeSizeLabel;
+@synthesize deviceScreenSizeLabel;
+@synthesize deviceScreenTypeLabel;
+@synthesize deviceScreenDensityLabel;
+@synthesize deviceScreenBrightness;
+@synthesize deviceWLANLabel;
+@synthesize deviceBluetoothLabel;
+@synthesize deviceCameraFrontLabel;
+@synthesize deviceCameraBackLabel;
+@synthesize deviceDimentionsLabel;
+@synthesize deviceWeightLabel;
+
 
 //OS Details
 @synthesize osNameLabel;
 @synthesize osVersionLabel;
-@synthesize deviceUDIDtextField;
+@synthesize osJailbrokenLabel;
 
 //Network Details
 @synthesize networkTypeLabel;
 @synthesize externalIpAddrLabel;
 @synthesize ipAddrLabel;
+@synthesize networkIpMaskLabel;
 @synthesize macAddrLabel;
 @synthesize ssidLabel;
 @synthesize ssidTagLabel;
@@ -227,13 +245,30 @@ CLGeocoder *geocoder;
     deviceNameLabel.text = [UIDevice currentDevice].name;
     //deviceUDIDtextField.text = [[UIDevice currentDevice]  uniqueIdentifier];
 
+    uuidLabel.text = [UIDevice currentDevice].identifierForVendor.UUIDString;
+    deviceStorageTotalSizeLabel.text = [self totalDiskSpace];
+    deviceStorageUsedSizeLabel.text  = [self usedDiskSpace];
+    deviceStorageRemainningSizeLabel.text = [self freeDiskSpace];
+    deviceCpuLabel.text = [ALHardware cpu];
+    deviceCpuNumberLabel.text = [NSString stringWithFormat:@"%d", [ALProcessor processorsNumber]];
+    deviceCpuUsageForAppLabel.text =  [NSString stringWithFormat:@"%.3f%%", [ALProcessor cpuUsageForApp]];
+    deviceGpuLabel.text = [ALHardware gpu];
+    deviceRAMTotalSizeLabel.text = [NSString stringWithFormat:@"%dMB",[ALMemory totalMemory]];
+    deviceRAMFreeSizeLabel.text = [NSString stringWithFormat:@"%.1fMB",[ALMemory freeMemory]];
+    deviceScreenSizeLabel.text = [NSString stringWithFormat:@"%d * %d",[ALHardware screenHeight],[ALHardware screenWidth]];
+    deviceScreenTypeLabel.text = [ALHardware displayType];
+    deviceScreenDensityLabel.text = [ALHardware displayDensity];
+    deviceScreenBrightness.text = [NSString stringWithFormat:@"%.2f",[ALHardware brightness]];
+    deviceWLANLabel.text = [ALHardware WLAN];
+    deviceBluetoothLabel.text = [ALHardware bluetooth];
+    deviceCameraFrontLabel.text = [ALHardware cameraSecondary];
+    deviceCameraBackLabel.text = [ALHardware cameraPrimary];
+    deviceDimentionsLabel.text = [ALHardware dimensions];
+    deviceWeightLabel.text = [ALHardware weight];
+    
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
-    uuidLabel.text = [UIDevice currentDevice].identifierForVendor.UUIDString;
-    osStorageTotalSizeLabel.text = [self totalDiskSpace];
-    osStorageUsedSizeLabel.text  = [self usedDiskSpace];
-    osStorageRemainningSizeLabel.text = [self freeDiskSpace];
-    
+    osJailbrokenLabel.text = [NSString stringWithFormat:@"%@",([ALJailbreak isJailbroken]?@"YES":@"NO")];
     NSLog(@"\n%@\n",[ALCarrier carrierName]);
     
 
@@ -344,6 +379,7 @@ CLGeocoder *geocoder;
     }
     externalIpAddrLabel.text = [self getExternalIPAddress];
     ipAddrLabel.text = [self getIPAddress];
+    networkIpMaskLabel.text = [ALNetwork WiFiNetmaskAddress];
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
         macAddrLabel.text = [self getMacAddress];
     }else {

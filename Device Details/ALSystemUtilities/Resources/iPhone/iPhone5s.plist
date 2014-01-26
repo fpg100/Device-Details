@@ -37,7 +37,7 @@
 	<key>cpu</key>
 	<string>Apple A7 64 bit / M7</string>
 	<key>gpu</key>
-	<string>PowerVR SGX 543MP3 (triple-core graphics)</string>
+	<string>PowerVR SGX 543MP3 (triple-core)</string>
 	<key>siri</key>
 	<string>Yes</string>
 	<key>touch-id</key>

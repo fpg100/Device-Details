@@ -13,7 +13,7 @@
 	<key>weight</key>
 	<string>331 g.</string>
 	<key>display-type</key>
-	<string>LED-backlit IPS LCD, capacitive touchscreen</string>
+	<string>LED-backlit IPS LCD</string>
 	<key>display-density</key>
 	<string>324 ppi</string>
 	<key>WLAN</key>
@@ -27,7 +27,7 @@
 	<key>cpu</key>
 	<string>Apple A7 64 bit / M7</string>
 	<key>gpu</key>
-	<string>PowerVR G6430 (quad-core graphics)</string>
+	<string>PowerVR G6430 (quad-core)</string>
 	<key>siri</key>
 	<string>Yes</string>
 	<key>touch-id</key>
