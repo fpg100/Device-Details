@@ -65,13 +65,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *deviceStorageRemainningSizeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceCpuLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceCpuNumberLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *deviceActiveProcessorsNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceCpuUsageForAppLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *deviceActiveCpuArrayLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *deviceNumberOfActiveCpuLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceGpuLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceRAMTotalSizeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceRAMFreeSizeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *deviceGpuLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceScreenSizeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceScreenTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceScreenDensityLabel;
