@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
     adView.delegate =self;
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,14 +41,20 @@
 {
     NSLog(@"iAdBanner failed\n");
     NSLog(@"%@",[error localizedDescription]);
-    
+//    [adView setHidden:YES];
     
 }
 -(void) bannerViewDidLoadAd:(ADBannerView *)banner
 {
-    
     NSLog(@"iAdBanner loaded");
+//    [adView setHidden:NO];
     
+}
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 
