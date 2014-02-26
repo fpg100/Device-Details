@@ -251,7 +251,7 @@ CLGeocoder *geocoder;
     deviceStorageRemainningSizeLabel.text = [self freeDiskSpace];
     deviceCpuLabel.text = [ALHardware cpu];
     deviceCpuNumberLabel.text = [NSString stringWithFormat:@"%d", [ALProcessor processorsNumber]];
-    deviceCpuUsageForAppLabel.text =  [NSString stringWithFormat:@"%.3f%%", [ALProcessor cpuUsageForApp]];
+    deviceCpuUsageForAppLabel.text =  [NSString stringWithFormat:@"%.1f%%", [ALProcessor cpuUsageForApp]*100];
     deviceGpuLabel.text = [ALHardware gpu];
     deviceRAMTotalSizeLabel.text = [NSString stringWithFormat:@"%dMB",[ALMemory totalMemory]];
     deviceRAMFreeSizeLabel.text = [NSString stringWithFormat:@"%.1fMB",[ALMemory freeMemory]];
@@ -801,6 +801,9 @@ CLGeocoder *geocoder;
 
 
 
+- (IBAction)turnOnUrlButtonTouchUpInside:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"https://itunes.apple.com/app/fing-network-scanner/id430921107?mt=8"]];
+}
 @end
 
 
