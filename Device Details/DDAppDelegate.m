@@ -44,6 +44,15 @@ forRegion:(CLRegion *)region
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     
+    /***********************
+     *     Flurry
+     ***********************/
+    //note: iOS only allows one crash reporting tool per app; if using another, set to: NO
+    [Flurry setCrashReportingEnabled:YES];
+    
+    // Replace YOUR_API_KEY with the api key in the downloaded package
+    [Flurry startSession:@"CW54JDS6PS7JVZPSMR22"];
+    
     return YES;
 }
 							
