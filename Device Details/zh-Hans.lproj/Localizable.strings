@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Device Details
+
+  Created by Jingxi & Yi on 19/03/2014.
+  Copyright (c) 2014 Robert Yi Jiang. All rights reserved.
+*/
+
+"DDFingAppDiscription" = "可以在几秒钟内查找所有连接在你的Wi-Fi网络上的设备。这是一个专业的网络分析工具。 它可以显示设备的生产商和MAC地址";
+"DDSpectrumViewAppDiscription" = "动态可视化你可以听到，甚至不能听到，的声音之频谱。SpectrumView分析工具提供高品质的实时频谱图。它还可以设置采样率与频率分辨率。支持iPhone与iPad。";
+"DDLightBlueAppDiscription" = "它可以测试你所有的低功率蓝牙4.0设备。 它可以扫描并连接周边设备。在外设模式下你可以模拟其它外设。你可以添加或重命名Services和characteristics。";
+"DDBigStopWatchAppDiscription" = "这是一个日本开发者开发的简约且精美的大秒表。アナログ表示とデジタル表示を兼ね備えたストップウォッチです。緑の針が秒、赤の針が分を指し示します。";

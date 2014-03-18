@@ -37,6 +37,9 @@
 //Decibel Meter
 #import "F3BarGauge.h"
 
+//CM Pop Tip View
+#import "CMPopTipView.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -47,12 +50,11 @@
 #define kAccelerometerFrequency        50.0 //Hz
 
 
-@interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate> {
+@interface DDViewController : UIViewController<CLLocationManagerDelegate,UIAccelerometerDelegate,MKMapViewDelegate,CMPopTipViewDelegate> {
     CLLocationManager *locationManager;
     CLLocation *startPoint;
     CMMotionManager *motionManager;
     NSOperationQueue *opQ;
-   
 }
 //Hardware Details
 @property (weak, nonatomic) IBOutlet UILabel *deviceModeLabel;
@@ -167,8 +169,15 @@
 @property (weak, nonatomic) IBOutlet F3BarGauge *dbBarGauge;
 
 
-- (IBAction)turnOnUrlButtonTouchUpInside:(id)sender;
+- (IBAction)turnOnFingScanUrlButtonTouchUpInside:(id)sender;
+- (IBAction)turnOnSpectViewUrlButtonTouchUpInside:(id)sender;
+- (IBAction)turnOnLightBlueUrlButtonTouchUpInside:(id)sender;
+- (IBAction)turnOnStopWatchUrlButtonTouchUpInside:(id)sender;
 
+- (IBAction)fingTitleButtonTouchUpInside:(id)sender;
+- (IBAction)spectViewTitleButtonTouchUpInside:(id)sender;
+- (IBAction)lightBlueTitleButtonTouchUpInside:(id)sender;
+- (IBAction)stopWatchTitleButtonTouchUpInside:(id)sender;
 
 
 

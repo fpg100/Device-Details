@@ -8,6 +8,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "DDMainViewController.h"
+#import "CMPopTipView.h"
 
 @interface DDMainViewController ()
 
@@ -32,10 +33,9 @@
     adView.delegate =self;
     [self setNeedsStatusBarAppearanceUpdate];
     
-    
-    
-    RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
-    [self.view addGestureRecognizer:longPress];
+//    
+//    RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+//    [self.view addGestureRecognizer:longPress];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +67,7 @@
 #pragma mark - Target/Action
 
 - (IBAction)onShowButton:(id)sender {
-    [self showGrid];
+//    [self showGrid];
 }
 
 - (void)handleLongPress:(UILongPressGestureRecognizer *)longPress {
@@ -196,6 +196,8 @@
     //    av.bounces = NO;
     [av showInViewController:self center:CGPointMake(self.view.bounds.size.width/2.f, self.view.bounds.size.height/2.f)];
 }
+
+
 
 
 @end

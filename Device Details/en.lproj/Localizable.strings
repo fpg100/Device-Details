@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Device Details
+
+  Created by Jingxi & Yi on 19/03/2014.
+  Copyright (c) 2014 Robert Yi Jiang. All rights reserved.
+*/
+"DDFingAppDiscription" = "Find out which devices are connected to your Wi-Fi network, in just a few seconds. It is a professional App for network analysis.  It can display MAC Address and device manufacturer.";
+"DDSpectrumViewAppDiscription" = "Visualize in real-time the frequencies that you can hear around you and even those you cannot. The SpectrumView analyser provides a high quality real-time spectrogram and spectrum analyser display with configurable sample rate and frequency resolution for the iPhone and iPad.";
+"DDLightBlueAppDiscription" = "It can test all of your devices that use Bluetooth 4.0 Low Energy. It can scan and connect to all devices around you. In peripheral mode, your iOS devices simulates your peripheral hardware. You can add and rename services and characteristics.";
+"DDBigStopWatchAppDiscription" = "An elegance and simplicity big stopwatch created by a Japanese developer. アナログ表示とデジタル表示を兼ね備えたストップウォッチです。緑の針が秒、赤の針が分を指し示します。";
