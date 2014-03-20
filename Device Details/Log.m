@@ -107,7 +107,7 @@ NSString *formatJsonData(NSString *rawMessageString){
         }else if ([oneCharString isEqualToString: @","]){
             [cookedMessageMutableString appendString:oneCharString];
             NSString *previousCharacterString = [rawMessageString substringWithRange:NSMakeRange(i-1, 1)];
-            if ((i>0) && ![previousCharacterString isEqualToString:@"\""] && [previousCharacterString isEqualToString:@"{"] ) {
+            if (![previousCharacterString isEqualToString:@"\""] || [previousCharacterString isEqualToString:@"}"] || [previousCharacterString intValue] != nil) {
                 doubleQuotePairs = 0;
             }
         }else {
