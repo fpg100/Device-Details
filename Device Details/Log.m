@@ -1,25 +1,44 @@
 //
 //  Log.m
-//  Device Details
+//  I-Hate_NSLog
 //
-//  Created by Jingxi & Yi on 19/03/2014.
-//  Copyright (c) 2014 Robert Yi Jiang. All rights reserved.
+//  Created by Robert Yi Jiang on 19/03/2014.
+//  Copyright (c) 2014 Robert Yi Jiang All rights reserved.
 //
 
 #import "Log.h"
+#import <objc/runtime.h>
 #define PADDING_TABS 10
 
 @implementation Log
 void _Log(NSString *prefix, const char *file, int lineNumber, const char *funcName, NSString *format,...) {
+    
     va_list ap;
     va_start (ap, format);
     format = [format stringByAppendingString:@"\n"];
-    NSString *msg = [[NSString alloc] initWithFormat:[NSString stringWithFormat:@"%@",format] arguments:ap];
+    NSString *msg = [[NSString alloc] initWithFormat:[NSString stringWithFormat:@"%@",format]
+                                           arguments:ap];
+    
     msg = formatJsonData(msg);
     
     va_end (ap);
-    fprintf(stderr,"\n%s[%30s:%4d] -\t%s",[prefix UTF8String], [[[NSString stringWithUTF8String:file] lastPathComponent]UTF8String] , lineNumber, [msg UTF8String]);
+    fprintf(stderr,"\n%s - [%30s:%4d] -  %s",[prefix UTF8String], [[[NSString stringWithUTF8String:file] lastPathComponent]UTF8String] , lineNumber, [msg UTF8String]);
     append(msg);
+    
+    // TestFlight TFLog
+    //    TFLog((@"%s [Line %4d] %s"),funcName,lineNumber,[msg UTF8String]);
+}
+
+void LogObj(NSString *prefix, const char *file, int lineNumber, const char *funcName, NSObject *obj,...){
+    const char* className = class_getName([obj class]);
+    if ([obj isKindOfClass:[obj class]]){
+        NSString *objString = [obj description];
+        fprintf(stderr,"\n%s - [%30s:%4d] -  This Object is Kind of Class: %s\n%s",[prefix UTF8String], [[[NSString stringWithUTF8String:file] lastPathComponent]UTF8String] , lineNumber,className , [objString UTF8String]);
+        append(objString);
+    } else {
+        fprintf(stderr,"\n%s - [%30s:%4d] -  This Object can't be display.\n", [prefix UTF8String], [[[NSString stringWithUTF8String:file] lastPathComponent]UTF8String] , lineNumber);
+    }
+    
 }
 
 void append(NSString *msg){
@@ -41,13 +60,13 @@ void append(NSString *msg){
 
 
 NSString *formatJsonData(NSString *rawMessageString){
-
+    
     int jsonCounterInt      = 0;
     int doubleQuotePairs    = 0;
     NSMutableString *cookedMessageMutableString =  [NSMutableString stringWithString:@""];
     NSString *suspectedJsonString = [NSString new];
-//    BOOL hasJsonDataBool = NO;   //useless variable
-  
+    //    BOOL hasJsonDataBool = NO;   //useless variable
+    
     
     NSRange jsonStartRange = [rawMessageString rangeOfString:@"{"];
     NSRange jsonEndRange   = [rawMessageString rangeOfString:@"}" options:NSBackwardsSearch];

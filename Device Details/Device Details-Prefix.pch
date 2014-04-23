@@ -11,6 +11,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "Log.h"
 #endif
 
 //#ifdef DEBUG_MODE
@@ -20,9 +21,14 @@
 //#define NSLog( s, ... )
 //#endif
 
-#import "Log.h"
 #ifdef DEBUG_MODE
-#define NSLog( args, ... ) _Log(@"Prefix",__FILE__,__LINE__,__PRETTY_FUNCTION__,args);
+#define NSLog( args ... )      _Log(@"", __FILE__, __LINE__, __PRETTY_FUNCTION__, args);
+#define NSLogObj( args ... )   LogObj(@"", __FILE__, __LINE__, __PRETTY_FUNCTION__, args);
 #else
-#define NSLog( args, ... )
+#define NSLog( args ... )
+#define NSLogObj( args ... )
 #endif
+
+#define NSLogRect(rect) NSLog(@"%s x:%.4f, y:%.4f, w:%.4f, h:%.4f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
+#define NSLogSize(size) NSLog(@"%s w:%.4f, h:%.4f", #size, size.width, size.height)
+#define NSLogPoint(point) NSLog(@"%s x:%.4f, y:%.4f", #point, point.x, point.y)

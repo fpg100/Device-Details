@@ -276,7 +276,7 @@ CLGeocoder *geocoder;
     osNameLabel.text = [UIDevice currentDevice].systemName;
     osVersionLabel.text = [UIDevice currentDevice].systemVersion;
     osJailbrokenLabel.text = [NSString stringWithFormat:@"%@",([ALJailbreak isJailbroken]?@"YES":@"NO")];
-    NSLog(@"\n%@\n",[ALCarrier carrierName]);
+//    NSLog(@"Carrier Name: %@",[ALCarrier carrierName]);
     
 
 }

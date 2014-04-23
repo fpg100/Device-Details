@@ -33,9 +33,9 @@
     adView.delegate =self;
     [self setNeedsStatusBarAppearanceUpdate];
     
-//    
-//    RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
-//    [self.view addGestureRecognizer:longPress];
+    
+    RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+    [self.view addGestureRecognizer:longPress];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +67,7 @@
 #pragma mark - Target/Action
 
 - (IBAction)onShowButton:(id)sender {
-//    [self showGrid];
+    [self showGrid];
 }
 
 - (void)handleLongPress:(UILongPressGestureRecognizer *)longPress {
@@ -80,6 +80,7 @@
 #pragma mark - RNGridMenuDelegate
 
 - (void)gridMenu:(RNGridMenu *)gridMenu willDismissWithSelectedItem:(RNGridMenuItem *)item atIndex:(NSInteger)itemIndex {
+    NSLog(@"before problem");
     NSLog(@"Dismissed with item %ld: %@", (long)itemIndex, item.title);
 }
 
@@ -128,12 +129,12 @@
 - (void)showGrid {
     NSInteger numberOfOptions = 9;
     NSArray *items = @[
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698288_menu-24"] title:@"Hardware"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698673_camera"] title:@"OS Details"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"Chip"] title:@"Hardware"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"AppleLogo"] title:@"OS Details"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698864_cloud"] title:@"Network"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698898_clock"] title:@"Date Time"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"Calendar"] title:@"Date Time"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698936_news"] title:@"Show All"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"download"] title:@"Compass"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"compass-512"] title:@"Compass"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698827_vynil"] title:@"Motion"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698839_location"] title:@"Location"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698752_sound"] title:@"Decibel Meter"]
