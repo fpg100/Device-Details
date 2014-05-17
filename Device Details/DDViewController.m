@@ -556,6 +556,7 @@ CLGeocoder *geocoder;
     NetworkStatus status = [curReach currentReachabilityStatus];
     ssidLabel.hidden = YES;
     ssidTagLabel.hidden = YES;
+    externalIpAddrLabel.hidden = YES;
     switch (status) {
         case NotReachable:
             networkTypeLabel.text = @"No Network Connetion";
@@ -566,8 +567,11 @@ CLGeocoder *geocoder;
         case ReachableViaWiFi:
             networkTypeLabel.text = @"WiFi";
             ssidLabel.text = [self getSSIDInfo];
+            externalIpAddrLabel.text = [self getExternalIPAddress];
             ssidLabel.hidden = NO;
             ssidTagLabel.hidden = NO;
+            externalIpAddrLabel.hidden = NO;
+            networkIpMaskLabel.text = [ALNetwork WiFiNetmaskAddress];
             break;
             
         default:
