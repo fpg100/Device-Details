@@ -25,8 +25,8 @@
 		49CE10E718766DE20020031C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18217CAF03D0001A6CF /* Foundation.framework */; };
 		49CE10EA1876734B0020031C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		49CE10EB187673530020031C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		49D5C6401926443800F9542A /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D5C63F1926443800F9542A /* libFlurry_4.3.2.a */; };
 		49D75E6318D88E4000E7A48A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49D75E6518D88E4000E7A48A /* Localizable.strings */; };
-		49E0D5291907FE5D002F8679 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0D5281907FE5D002F8679 /* libFlurry_4.3.2.a */; };
 		49E0D52B19080BD1002F8679 /* AppleLogoFlat.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E0D52A19080BD1002F8679 /* AppleLogoFlat.png */; };
 		49E0D535190810B1002F8679 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E0D532190810B1002F8679 /* Calendar.png */; };
 		49E0D536190810B1002F8679 /* Chip.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E0D533190810B1002F8679 /* Chip.png */; };
@@ -104,6 +104,8 @@
 		49E8F39A18CF34C400E98861 /* 1393698960_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F35E18CF34C400E98861 /* 1393698960_lock.png */; };
 		49E8F39B18CF34C400E98861 /* 1393698982_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F35F18CF34C400E98861 /* 1393698982_photo.png */; };
 		49E8F39F18CF34C400E98861 /* compass-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F36318CF34C400E98861 /* compass-512.png */; };
+		49EAECF119263C22008A8D58 /* iPhone4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */; };
+		49EAECF219263C22008A8D58 /* iPhone5@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */; };
 		49F7267718FC1E8300B0ED15 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */; };
 		E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042969189206FC0096B2AD /* ALAccessory.m */; };
 		E10429AA189206FC0096B2AD /* ALBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296C189206FC0096B2AD /* ALBattery.m */; };
@@ -213,10 +215,10 @@
 		499997641874F92900D3A605 /* DDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMainViewController.m; sourceTree = "<group>"; };
 		49C63AE018D9C8E500BA5877 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		49C63AE118D9C93D00BA5877 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		49D5C63E1926443800F9542A /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		49D5C63F1926443800F9542A /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		49D75E6418D88E4000E7A48A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		49D75E6618D88E4A00E7A48A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		49E0D5271907FE5D002F8679 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		49E0D5281907FE5D002F8679 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		49E0D52A19080BD1002F8679 /* AppleLogoFlat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogoFlat.png; sourceTree = "<group>"; };
 		49E0D532190810B1002F8679 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		49E0D533190810B1002F8679 /* Chip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chip.png; sourceTree = "<group>"; };
@@ -295,6 +297,8 @@
 		49E8F35E18CF34C400E98861 /* 1393698960_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698960_lock.png; path = Artworks/1393698960_lock.png; sourceTree = SOURCE_ROOT; };
 		49E8F35F18CF34C400E98861 /* 1393698982_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698982_photo.png; path = Artworks/1393698982_photo.png; sourceTree = SOURCE_ROOT; };
 		49E8F36318CF34C400E98861 /* compass-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "compass-512.png"; path = "Artworks/compass-512.png"; sourceTree = SOURCE_ROOT; };
+		49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhone4@2x.jpg"; sourceTree = "<group>"; };
+		49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhone5@2x.jpg"; sourceTree = "<group>"; };
 		49F7267518FC1E8300B0ED15 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
 		49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
 		E1042968189206FC0096B2AD /* ALAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAccessory.h; sourceTree = "<group>"; };
@@ -419,7 +423,7 @@
 				49CE10E718766DE20020031C /* Foundation.framework in Frameworks */,
 				E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */,
 				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
-				49E0D5291907FE5D002F8679 /* libFlurry_4.3.2.a in Frameworks */,
+				49D5C6401926443800F9542A /* libFlurry_4.3.2.a in Frameworks */,
 				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
 				E176DB1218923338000224F8 /* Security.framework in Frameworks */,
 				E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */,
@@ -485,8 +489,8 @@
 		49E8F29F18CDCF8400E98861 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				49E0D5271907FE5D002F8679 /* Flurry.h */,
-				49E0D5281907FE5D002F8679 /* libFlurry_4.3.2.a */,
+				49D5C63E1926443800F9542A /* Flurry.h */,
+				49D5C63F1926443800F9542A /* libFlurry_4.3.2.a */,
 			);
 			name = Flurry;
 			sourceTree = "<group>";
@@ -893,6 +897,8 @@
 		E1E2748D1886468B00B25D84 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */,
+				49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */,
 				4974349418D5C09400D3AC62 /* Third Party App ICONs */,
 				E1B8B0731888B20900A20509 /* iPad 29.png */,
 				E1B8B0741888B20900A20509 /* iPad 29@2x.png */,
@@ -1030,6 +1036,7 @@
 				49E8F39618CF34C400E98861 /* 1393698936_news.png in Resources */,
 				49E8F37E18CF34C400E98861 /* 1393698778_pen.png in Resources */,
 				E10429C5189220FA0096B2AD /* README.md in Resources */,
+				49EAECF219263C22008A8D58 /* iPhone5@2x.jpg in Resources */,
 				49E8F36718CF34C400E98861 /* 1393698384_more.png in Resources */,
 				E1B8B08B1888B20900A20509 /* iPad 76.png in Resources */,
 				49E8F37618CF34C400E98861 /* 1393698730_truck.png in Resources */,
@@ -1112,6 +1119,7 @@
 				49E8F37718CF34C400E98861 /* 1393698733_world.png in Resources */,
 				49E0D537190810B1002F8679 /* CommandKey.png in Resources */,
 				E1B8B08D1888B20900A20509 /* iPhone 29@2x.png in Resources */,
+				49EAECF119263C22008A8D58 /* iPhone4@2x.jpg in Resources */,
 				49E8F37818CF34C400E98861 /* 1393698752_sound.png in Resources */,
 				49E8F36618CF34C400E98861 /* 1393698334_photo-24.png in Resources */,
 				E1B8B0971888B20900A20509 /* Icon@2x.png in Resources */,
@@ -1329,6 +1337,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4FCB58ED-EC97-492D-8C77-AEC9E317C6A8";
@@ -1349,6 +1359,8 @@
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Device",
+					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
 					"$(PROJECT_DIR)/Device",
