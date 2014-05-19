@@ -361,13 +361,12 @@ CLGeocoder *geocoder;
 
 - (void)getNetworkDetails{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
-    
     googleReach = [Reachability reachabilityWithHostName:@"www.google.com"];
     [googleReach startNotifier];
-    
     ssidLabel.hidden = YES;
     ssidTagLabel.hidden = YES;
-    switch ([googleReach currentReachabilityStatus]) {
+    int reachabilityStatusIndexInt = [googleReach currentReachabilityStatus];
+    switch (reachabilityStatusIndexInt) {
         case NotReachable:
             networkTypeLabel.text = @"No Network";
             break;
@@ -382,34 +381,112 @@ CLGeocoder *geocoder;
             break;
             
         default:
-            break;
+        break;
     }
-    externalIpAddrLabel.text = [self getExternalIPAddress];
-    ipAddrLabel.text = [self getIPAddress];
-    networkIpMaskLabel.text = [ALNetwork WiFiNetmaskAddress];
+    
+    [self updatePublicIP];
+    NSString *ipAddressString = [self getIPAddress];
+    NSString *networkIpMaskString = [ALNetwork WiFiNetmaskAddress];
+    NSString *macAddressString = [self getMacAddress];
+//        [self getDnsServers];
+    ipAddrLabel.text = ipAddressString;
+    networkIpMaskLabel.text = networkIpMaskString;
+    
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
         macAddrLabel.text = [self getMacAddress];
     }else {
         macAddrLabel.text = @"Only for iOS 6.1 and lower";
     }
-    [self getDnsServers];
+
 }
 
-- (NSString *)getExternalIPAddress{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://ipecho.net/plain"]
+- (void)updatePublicIP{
+    dispatch_queue_t ipAddress1stQueue = dispatch_queue_create("com.robert.yi.jones.details.network1", NULL);
+    dispatch_queue_t ipAddress2ndQueue = dispatch_queue_create("com.robert.yi.jones.details.network2", NULL);
+    dispatch_queue_t ipAddress3rdQueue = dispatch_queue_create("com.robert.yi.jones.details.network3", NULL);
+    __block BOOL publicIpDidUpdate = NO;
+    dispatch_async(ipAddress1stQueue, ^{
+        NSString *externalIpAddressString;
+        externalIpAddressString = [self getPublicIPAddressFromWtfIsMyIpCom];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!publicIpDidUpdate) {
+                externalIpAddrLabel.text = externalIpAddressString;
+                publicIpDidUpdate = YES;
+            }
+        });
+        
+    });
+    dispatch_async(ipAddress2ndQueue, ^{
+        NSString *externalIpAddressString;
+        externalIpAddressString = [self getPublicIPAddressFromIpEchoNet];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!publicIpDidUpdate) {
+                externalIpAddrLabel.text = externalIpAddressString;
+                publicIpDidUpdate = YES;
+            }
+        });
+        
+    });
+    
+    dispatch_async(ipAddress3rdQueue, ^{
+        NSString *externalIpAddressString;
+        externalIpAddressString = [self getPublicIPAddressFromMyIpAddressCom];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!publicIpDidUpdate) {
+                externalIpAddrLabel.text  = externalIpAddressString;
+                publicIpDidUpdate = YES;
+            }
+        });
+        
+    });
+}
+    
+
+
+- (NSString *)getPublicIPAddressFromWtfIsMyIpCom{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://wtfismyip.com/text"]
                                                            cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
-                                                       timeoutInterval:10];
-    
+                                                       timeoutInterval:3];
     [request setHTTPMethod: @"GET"];
-    
     NSError *requestError;
     NSURLResponse *urlResponse = nil;
-    
-    
-    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-    return [[NSString alloc] initWithData:response1 encoding:NSUTF8StringEncoding] ;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    NSLog(@"wtfismyip.com : %@",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+    return [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] ;
+    }
+
+- (NSString *)getPublicIPAddressFromIpEchoNet{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://ipecho.net/plain"]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:3];
+    [request setHTTPMethod: @"GET"];
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    NSLog(@"ipecho.net : %@",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+    return [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] ;
 }
 
+- (NSString *)getPublicIPAddressFromMyIpAddressCom{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.myipaddress.com/"]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:3];
+    [request setHTTPMethod: @"GET"];
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+//    NSLog(@"responseString: %@",responseString);
+    NSString *regExpString = @"\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01‌​]?[0-9][0-9]?)\\b";
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regExpString
+                                                                           options:0
+                                                                             error:NULL];
+    NSTextCheckingResult *match = [regex firstMatchInString:responseString
+                                                    options:0
+                                                      range:NSMakeRange(0, [responseString length])];
+    NSLog(@"www.myipaddress.com : %@",[responseString substringWithRange:[match rangeAtIndex:0]]);
+    return [responseString substringWithRange:[match rangeAtIndex:0]] ;
+}
 
 - (NSString *)getIPAddress
 {
@@ -567,7 +644,7 @@ CLGeocoder *geocoder;
         case ReachableViaWiFi:
             networkTypeLabel.text = @"WiFi";
             ssidLabel.text = [self getSSIDInfo];
-            externalIpAddrLabel.text = [self getExternalIPAddress];
+            [self updatePublicIP];
             ssidLabel.hidden = NO;
             ssidTagLabel.hidden = NO;
             externalIpAddrLabel.hidden = NO;
