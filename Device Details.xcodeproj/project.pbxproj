@@ -157,7 +157,7 @@
 		E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0F1892332F000224F8 /* ExternalAccessory.framework */; };
 		E176DB1218923338000224F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1118923338000224F8 /* Security.framework */; };
 		E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1318923367000224F8 /* CoreFoundation.framework */; };
-		E18F6E061935730400FA2106 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F6E051935730400FA2106 /* libFlurry_4.3.2.a */; };
+		E18F6E091935B43D00FA2106 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F6E081935B43D00FA2106 /* libFlurry_4.3.2.a */; };
 		E1B8B0871888B20900A20509 /* iPad 29.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0731888B20900A20509 /* iPad 29.png */; };
 		E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0741888B20900A20509 /* iPad 29@2x.png */; };
 		E1B8B0891888B20900A20509 /* iPad 40.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0751888B20900A20509 /* iPad 40.png */; };
@@ -356,9 +356,9 @@
 		E137D18E17CAF03D0001A6CF /* Device Details-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Device Details-Prefix.pch"; sourceTree = "<group>"; };
 		E137D18F17CAF03D0001A6CF /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		E137D19017CAF03D0001A6CF /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
-		E137D19217CAF03D0001A6CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		E137D19417CAF03D0001A6CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		E137D19617CAF03D0001A6CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E137D19217CAF03D0001A6CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Device Details/Default.png"; sourceTree = "<group>"; };
+		E137D19417CAF03D0001A6CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Device Details/Default@2x.png"; sourceTree = "<group>"; };
+		E137D19617CAF03D0001A6CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Device Details/Default-568h@2x.png"; sourceTree = "<group>"; };
 		E137D19917CAF03D0001A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E137D19B17CAF03D0001A6CF /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
 		E137D19C17CAF03D0001A6CF /* DDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
@@ -380,8 +380,8 @@
 		E176DB0F1892332F000224F8 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		E176DB1118923338000224F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E176DB1318923367000224F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		E18F6E041935730400FA2106 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		E18F6E051935730400FA2106 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
+		E18F6E071935B43D00FA2106 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		E18F6E081935B43D00FA2106 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		E1B8B0731888B20900A20509 /* iPad 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29.png"; path = "Artworks/iPad 29.png"; sourceTree = "<group>"; };
 		E1B8B0741888B20900A20509 /* iPad 29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29@2x.png"; path = "Artworks/iPad 29@2x.png"; sourceTree = "<group>"; };
 		E1B8B0751888B20900A20509 /* iPad 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 40.png"; path = "Artworks/iPad 40.png"; sourceTree = "<group>"; };
@@ -423,7 +423,7 @@
 				49CE10E718766DE20020031C /* Foundation.framework in Frameworks */,
 				E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */,
 				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
-				E18F6E061935730400FA2106 /* libFlurry_4.3.2.a in Frameworks */,
+				E18F6E091935B43D00FA2106 /* libFlurry_4.3.2.a in Frameworks */,
 				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
 				E176DB1218923338000224F8 /* Security.framework in Frameworks */,
 				E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */,
@@ -489,8 +489,8 @@
 		49E8F29F18CDCF8400E98861 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				E18F6E041935730400FA2106 /* Flurry.h */,
-				E18F6E051935730400FA2106 /* libFlurry_4.3.2.a */,
+				E18F6E071935B43D00FA2106 /* Flurry.h */,
+				E18F6E081935B43D00FA2106 /* libFlurry_4.3.2.a */,
 			);
 			name = Flurry;
 			sourceTree = "<group>";
@@ -841,9 +841,6 @@
 				E137D18917CAF03D0001A6CF /* InfoPlist.strings */,
 				E137D18C17CAF03D0001A6CF /* main.m */,
 				E137D18E17CAF03D0001A6CF /* Device Details-Prefix.pch */,
-				E137D19217CAF03D0001A6CF /* Default.png */,
-				E137D19417CAF03D0001A6CF /* Default@2x.png */,
-				E137D19617CAF03D0001A6CF /* Default-568h@2x.png */,
 				49D75E6518D88E4000E7A48A /* Localizable.strings */,
 				49C63AE018D9C8E500BA5877 /* Log.h */,
 				49C63AE118D9C93D00BA5877 /* Log.m */,
@@ -922,6 +919,9 @@
 				E1B8B0821888B20900A20509 /* Icon.png */,
 				E1B8B0831888B20900A20509 /* Icon@2x.png */,
 				490CFF2818D71C2100E2A878 /* SpectrumView.png */,
+				E137D19217CAF03D0001A6CF /* Default.png */,
+				E137D19417CAF03D0001A6CF /* Default@2x.png */,
+				E137D19617CAF03D0001A6CF /* Default-568h@2x.png */,
 				E1B8B0841888B20900A20509 /* iTunesArtwork */,
 				E1B8B0851888B20900A20509 /* iTunesArtwork@2x */,
 				E1B8B0861888B20900A20509 /* Sign Info.png */,
@@ -1343,6 +1343,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
@@ -1363,6 +1365,8 @@
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Device",
+					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
 					"$(PROJECT_DIR)/Device",

@@ -158,11 +158,11 @@
     NSInteger numberOfOptions = 9;
     NSArray *items = @[
                        [RNGridMenuItem emptyItem],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"attachment"] title:@"Attach"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"attachment"] title:@"More"],
                        [RNGridMenuItem emptyItem],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"bluetooth"] title:@"Bluetooth"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"bluetooth"] title:@"Back"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"cube"] title:@"Deliver"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"download"] title:@"Download"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"download"] title:@"Forward"],
                        [RNGridMenuItem emptyItem],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"file"] title:@"Source Code"],
                        [RNGridMenuItem emptyItem]
