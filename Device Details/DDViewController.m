@@ -636,10 +636,16 @@ CLGeocoder *geocoder;
     externalIpAddrLabel.hidden = YES;
     switch (status) {
         case NotReachable:
-            networkTypeLabel.text = @"No Network Connetion";
+            networkTypeLabel.text = @"No Network";
+            ssidLabel.hidden = YES;
+            ssidTagLabel.hidden = YES;
+            externalIpAddrLabel.hidden = YES;
             break;
         case ReachableViaWWAN:
-            networkTypeLabel.text = @"Celular Connection";
+            networkTypeLabel.text = @"Celullar";
+            ssidLabel.hidden = YES;
+            ssidTagLabel.hidden = YES;
+            externalIpAddrLabel.hidden = YES;
             break;
         case ReachableViaWiFi:
             networkTypeLabel.text = @"WiFi";

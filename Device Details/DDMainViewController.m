@@ -31,7 +31,15 @@
 {
     [super viewDidLoad];
     adView.delegate =self;
-    [self setNeedsStatusBarAppearanceUpdate];
+    
+    NSLog(@"getSystemVersionAsAnInteger %d",[self getSystemVersionAsAnInteger]);
+    if([self getSystemVersionAsAnInteger] < __IPHONE_7_0)
+    {
+        NSLog(@"getSystemVersionAsAnInteger < __IPHONE_7_0");
+    } else {
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+   
     
     
     RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
@@ -198,7 +206,23 @@
     [av showInViewController:self center:CGPointMake(self.view.bounds.size.width/2.f, self.view.bounds.size.height/2.f)];
 }
 
-
+- (NSInteger) getSystemVersionAsAnInteger{
+    int index = 0;
+    NSInteger version = 0;
+    
+    NSArray* digits = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
+    NSEnumerator* enumer = [digits objectEnumerator];
+    NSString* number;
+    while (number = [enumer nextObject]) {
+        if (index>2) {
+            break;
+        }
+        NSInteger multipler = powf(100, 2-index);
+        version += [number intValue]*multipler;
+        index++;
+    }
+    return version;
+}
 
 
 @end
