@@ -192,10 +192,10 @@
     NSInteger numberOfOptions = 9;
     NSArray *items = @[
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"Chip"] title:@"Hardware"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"AppleLogo"] title:@"OS Details"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"AppleLogo"] title:@"OS"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698864_cloud"] title:@"Network"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"Calendar"] title:@"Date Time"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698936_news"] title:@"Show All"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"note"] title:@"Brief Info."],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"compass-512"] title:@"Compass"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698827_vynil"] title:@"Motion"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"1393698839_location"] title:@"Location"],
@@ -212,7 +212,7 @@
     NSInteger numberOfOptions = 9;
     NSArray *items = @[
                        [RNGridMenuItem emptyItem],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"broadcast"] title:@"Broadcast"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"radio"] title:@"Broadcast"],
                        [RNGridMenuItem emptyItem],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"back-alt"] title:@"Back"],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"camera"] title:@"Camera"],
@@ -221,14 +221,12 @@
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"file"] title:@"Source Code"],
                        [RNGridMenuItem emptyItem]
                        ];
-    
     RNGridMenu *av = [[RNGridMenu alloc] initWithItems:[items subarrayWithRange:NSMakeRange(0, numberOfOptions)]];
     av.delegate = self;
     av.bounces = NO;
     av.animationDuration = 0.3;
     av.blurExclusionPath = [UIBezierPath bezierPathWithOvalInRect:self.imageView.frame];
     av.backgroundPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0.f, 0.f, av.itemSize.width*3, av.itemSize.height*3)];
-    
     UILabel *header = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
     header.text = @"Example Header";
     header.font = [UIFont boldSystemFontOfSize:18];

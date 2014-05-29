@@ -18,6 +18,7 @@
 		49588AA5193777DD009F694B /* back-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AA4193777DD009F694B /* back-alt.png */; };
 		49588AA7193778E8009F694B /* 1401391022_envelope_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AA6193778E8009F694B /* 1401391022_envelope_outline.png */; };
 		49588AA919377BFE009F694B /* broadcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AA819377BFE009F694B /* broadcast.png */; };
+		49588AAB19377FFF009F694B /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AAA19377FFF009F694B /* radio.png */; };
 		497434A618D5C44100D3AC62 /* BigStopWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4974349C18D5C44100D3AC62 /* BigStopWatch.png */; };
 		49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49852AF317CE2A4F0086089A /* CoreMotion.framework */; };
 		499122BD188D51D100643FFE /* ALRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499122BC188D51D100643FFE /* ALRangingViewController.m */; };
@@ -68,7 +69,7 @@
 		49E8F37218CF34C400E98861 /* 1393698701_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33618CF34C400E98861 /* 1393698701_calendar.png */; };
 		49E8F37318CF34C400E98861 /* 1393698705_display.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33718CF34C400E98861 /* 1393698705_display.png */; };
 		49E8F37418CF34C400E98861 /* 1393698709_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33818CF34C400E98861 /* 1393698709_settings.png */; };
-		49E8F37518CF34C400E98861 /* 1393698718_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33918CF34C400E98861 /* 1393698718_note.png */; };
+		49E8F37518CF34C400E98861 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33918CF34C400E98861 /* note.png */; };
 		49E8F37618CF34C400E98861 /* 1393698730_truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33A18CF34C400E98861 /* 1393698730_truck.png */; };
 		49E8F37718CF34C400E98861 /* 1393698733_world.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33B18CF34C400E98861 /* 1393698733_world.png */; };
 		49E8F37818CF34C400E98861 /* 1393698752_sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E8F33C18CF34C400E98861 /* 1393698752_sound.png */; };
@@ -213,6 +214,7 @@
 		49588AA4193777DD009F694B /* back-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-alt.png"; sourceTree = "<group>"; };
 		49588AA6193778E8009F694B /* 1401391022_envelope_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1401391022_envelope_outline.png; sourceTree = "<group>"; };
 		49588AA819377BFE009F694B /* broadcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broadcast.png; sourceTree = "<group>"; };
+		49588AAA19377FFF009F694B /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
 		4974349C18D5C44100D3AC62 /* BigStopWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigStopWatch.png; path = Artworks/BigStopWatch/BigStopWatch.png; sourceTree = "<group>"; };
 		49852AF317CE2A4F0086089A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		499122BB188D51D100643FFE /* ALRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRangingViewController.h; sourceTree = "<group>"; };
@@ -265,7 +267,7 @@
 		49E8F33618CF34C400E98861 /* 1393698701_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698701_calendar.png; path = Artworks/1393698701_calendar.png; sourceTree = SOURCE_ROOT; };
 		49E8F33718CF34C400E98861 /* 1393698705_display.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698705_display.png; path = Artworks/1393698705_display.png; sourceTree = SOURCE_ROOT; };
 		49E8F33818CF34C400E98861 /* 1393698709_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698709_settings.png; path = Artworks/1393698709_settings.png; sourceTree = SOURCE_ROOT; };
-		49E8F33918CF34C400E98861 /* 1393698718_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698718_note.png; path = Artworks/1393698718_note.png; sourceTree = SOURCE_ROOT; };
+		49E8F33918CF34C400E98861 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = note.png; path = Artworks/note.png; sourceTree = SOURCE_ROOT; };
 		49E8F33A18CF34C400E98861 /* 1393698730_truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698730_truck.png; path = Artworks/1393698730_truck.png; sourceTree = SOURCE_ROOT; };
 		49E8F33B18CF34C400E98861 /* 1393698733_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698733_world.png; path = Artworks/1393698733_world.png; sourceTree = SOURCE_ROOT; };
 		49E8F33C18CF34C400E98861 /* 1393698752_sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1393698752_sound.png; path = Artworks/1393698752_sound.png; sourceTree = SOURCE_ROOT; };
@@ -523,6 +525,7 @@
 				49E8F33018CF34C400E98861 /* 1393698659_mail.png */,
 				49E8F33118CF34C400E98861 /* 1393698671_megaphone.png */,
 				49588AA819377BFE009F694B /* broadcast.png */,
+				49588AAA19377FFF009F694B /* radio.png */,
 				49E8F33218CF34C400E98861 /* camera.png */,
 				49588AA4193777DD009F694B /* back-alt.png */,
 				49E8F33318CF34C400E98861 /* 1393698675_key.png */,
@@ -532,7 +535,7 @@
 				49E8F33618CF34C400E98861 /* 1393698701_calendar.png */,
 				49E8F33718CF34C400E98861 /* 1393698705_display.png */,
 				49E8F33818CF34C400E98861 /* 1393698709_settings.png */,
-				49E8F33918CF34C400E98861 /* 1393698718_note.png */,
+				49E8F33918CF34C400E98861 /* note.png */,
 				49E8F33A18CF34C400E98861 /* 1393698730_truck.png */,
 				49E8F33B18CF34C400E98861 /* 1393698733_world.png */,
 				49E8F33C18CF34C400E98861 /* 1393698752_sound.png */,
@@ -1087,6 +1090,7 @@
 				49E8F39318CF34C400E98861 /* 1393698898_clock.png in Resources */,
 				E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */,
 				49E0D536190810B1002F8679 /* Chip.png in Resources */,
+				49588AAB19377FFF009F694B /* radio.png in Resources */,
 				49E7D88C188960B50096C450 /* iPhone 120.png in Resources */,
 				49E8F37118CF34C400E98861 /* 1393698697_vallet.png in Resources */,
 				49588AA919377BFE009F694B /* broadcast.png in Resources */,
@@ -1117,7 +1121,7 @@
 				E10429C0189206FC0096B2AD /* iPhone5s.plist in Resources */,
 				49E7D88818895EEE0096C450 /* iPhone 57.png in Resources */,
 				E1B8B0871888B20900A20509 /* iPad 29.png in Resources */,
-				49E8F37518CF34C400E98861 /* 1393698718_note.png in Resources */,
+				49E8F37518CF34C400E98861 /* note.png in Resources */,
 				E10429B6189206FC0096B2AD /* iPad3.plist in Resources */,
 				49E8F39018CF34C400E98861 /* 1393698872_stack.png in Resources */,
 				49E8F37418CF34C400E98861 /* 1393698709_settings.png in Resources */,
