@@ -371,7 +371,7 @@ CLGeocoder *geocoder;
             networkTypeLabel.text = @"No Network";
             break;
         case ReachableViaWWAN:
-            networkTypeLabel.text = @"3G/GPRS";
+            networkTypeLabel.text = @"Cellular";
             break;
         case ReachableViaWiFi:
             networkTypeLabel.text = @"WiFi";
@@ -642,7 +642,7 @@ CLGeocoder *geocoder;
             externalIpAddrLabel.hidden = YES;
             break;
         case ReachableViaWWAN:
-            networkTypeLabel.text = @"Celullar";
+            networkTypeLabel.text = @"Cellular";
             ssidLabel.hidden = YES;
             ssidTagLabel.hidden = YES;
             externalIpAddrLabel.hidden = YES;

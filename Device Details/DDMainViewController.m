@@ -212,11 +212,11 @@
     NSInteger numberOfOptions = 9;
     NSArray *items = @[
                        [RNGridMenuItem emptyItem],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"attachment"] title:@"More"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"broadcast"] title:@"Broadcast"],
                        [RNGridMenuItem emptyItem],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"bluetooth"] title:@"Back"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"cube"] title:@"Deliver"],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"download"] title:@"Forward"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"back-alt"] title:@"Back"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"camera"] title:@"Camera"],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"paperplane"] title:@"Forward"],
                        [RNGridMenuItem emptyItem],
                        [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"file"] title:@"Source Code"],
                        [RNGridMenuItem emptyItem]
