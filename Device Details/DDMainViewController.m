@@ -10,7 +10,9 @@
 #import "DDMainViewController.h"
 #import "CMPopTipView.h"
 
-@interface DDMainViewController ()
+@interface DDMainViewController (){
+    NSMutableDictionary *_viewControllersByIdentifier;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
@@ -39,17 +41,27 @@
     } else {
         [self setNeedsStatusBarAppearanceUpdate];
     }
-   
+    _viewControllersByIdentifier = [NSMutableDictionary dictionary];
     
     
     RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
     [self.view addGestureRecognizer:longPress];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+//    if (self.childViewControllers.count < 1) {
+//        [self performSegueWithIdentifier:@"hardwareViewSegue" sender:self];
+//    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [[_viewControllersByIdentifier allKeys] enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop) {
+        if (![self.destinationIdentifier isEqualToString:key]) {
+            [_viewControllersByIdentifier removeObjectForKey:key];
+        }
+    }];
 }
 
 -(void) bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
@@ -90,6 +102,48 @@
 - (void)gridMenu:(RNGridMenu *)gridMenu willDismissWithSelectedItem:(RNGridMenuItem *)item atIndex:(NSInteger)itemIndex {
     NSLog(@"before problem");
     NSLog(@"Dismissed with item %ld: %@", (long)itemIndex, item.title);
+    @try {
+    
+        switch (itemIndex) {
+            case 0:
+                 [self performSegueWithIdentifier:@"HardwareViewSegue" sender:self];
+                break;
+            case 1:
+                [self performSegueWithIdentifier:@"OperatingSystemViewSegue" sender:self];
+                break;
+            case 2:
+                [self performSegueWithIdentifier:@"NetworkViewSegue" sender:self];
+                break;
+            case 3:
+                [self performSegueWithIdentifier:@"DateTimeViewSegue" sender:self];
+                break;
+            case 4:
+                [self performSegueWithIdentifier:@"BriefViewSegue" sender:self];
+                break;
+            case 5:
+                [self performSegueWithIdentifier:@"CompassViewSegue" sender:self];
+                break;
+            case 6:
+                [self performSegueWithIdentifier:@"MotionViewSegue" sender:self];
+                break;
+            case 7:
+                [self performSegueWithIdentifier:@"LocationViewSegue" sender:self];
+                break;
+            case 8:
+                [self performSegueWithIdentifier:@"BecibelMeterViewSegue" sender:self];
+                break;
+                
+            default:
+                break;
+        }
+        
+    }
+    @catch (NSException *exception) {
+        NSLog(@"exception : %@",exception);
+    }
+    @finally {
+        NSLog(@"Do nothing but back");
+    }
 }
 
 
@@ -224,5 +278,41 @@
     return version;
 }
 
+
+
+
+
+#pragma mark - Customize View Segue
+#pragma mark -
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (![segue isKindOfClass:[DDViewContainerSegue class]]) {
+        [super prepareForSegue:segue sender:sender];
+        return;
+    }
+    
+    self.oldViewController = self.destinationViewController;
+    
+    //if view controller isn't already contained in the viewControllers-Dictionary
+    if (![_viewControllersByIdentifier objectForKey:segue.identifier]) {
+        [_viewControllersByIdentifier setObject:segue.destinationViewController forKey:segue.identifier];
+    }
+    
+    self.destinationIdentifier = segue.identifier;
+    self.destinationViewController = [_viewControllersByIdentifier objectForKey:self.destinationIdentifier];
+    
+}
+
+
+#pragma mark - Navigation
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    self.destinationViewController.view.frame = self.detailsViewsContainer.bounds;
+}
 
 @end

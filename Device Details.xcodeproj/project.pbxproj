@@ -157,7 +157,8 @@
 		E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0F1892332F000224F8 /* ExternalAccessory.framework */; };
 		E176DB1218923338000224F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1118923338000224F8 /* Security.framework */; };
 		E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1318923367000224F8 /* CoreFoundation.framework */; };
-		E18F6E091935B43D00FA2106 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F6E081935B43D00FA2106 /* libFlurry_4.3.2.a */; };
+		E18F6E0E1936BAE200FA2106 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F6E0D1936BAE200FA2106 /* libFlurry_4.3.2.a */; };
+		E18F6E141936C96000FA2106 /* DDViewContainerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F6E131936C96000FA2106 /* DDViewContainerSegue.m */; };
 		E1B8B0871888B20900A20509 /* iPad 29.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0731888B20900A20509 /* iPad 29.png */; };
 		E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0741888B20900A20509 /* iPad 29@2x.png */; };
 		E1B8B0891888B20900A20509 /* iPad 40.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0751888B20900A20509 /* iPad 40.png */; };
@@ -380,8 +381,10 @@
 		E176DB0F1892332F000224F8 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		E176DB1118923338000224F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E176DB1318923367000224F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		E18F6E071935B43D00FA2106 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		E18F6E081935B43D00FA2106 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
+		E18F6E0C1936BAE200FA2106 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		E18F6E0D1936BAE200FA2106 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
+		E18F6E121936C96000FA2106 /* DDViewContainerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewContainerSegue.h; sourceTree = "<group>"; };
+		E18F6E131936C96000FA2106 /* DDViewContainerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewContainerSegue.m; sourceTree = "<group>"; };
 		E1B8B0731888B20900A20509 /* iPad 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29.png"; path = "Artworks/iPad 29.png"; sourceTree = "<group>"; };
 		E1B8B0741888B20900A20509 /* iPad 29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29@2x.png"; path = "Artworks/iPad 29@2x.png"; sourceTree = "<group>"; };
 		E1B8B0751888B20900A20509 /* iPad 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 40.png"; path = "Artworks/iPad 40.png"; sourceTree = "<group>"; };
@@ -423,7 +426,7 @@
 				49CE10E718766DE20020031C /* Foundation.framework in Frameworks */,
 				E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */,
 				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
-				E18F6E091935B43D00FA2106 /* libFlurry_4.3.2.a in Frameworks */,
+				E18F6E0E1936BAE200FA2106 /* libFlurry_4.3.2.a in Frameworks */,
 				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
 				E176DB1218923338000224F8 /* Security.framework in Frameworks */,
 				E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */,
@@ -467,6 +470,7 @@
 		4974349418D5C09400D3AC62 /* Third Party App ICONs */ = {
 			isa = PBXGroup;
 			children = (
+				490CFF2818D71C2100E2A878 /* SpectrumView.png */,
 				490CFF3218D722F100E2A878 /* Passwords.png */,
 				490CFF3018D71FF500E2A878 /* BigStopWatch.jpg */,
 				490CFF2E18D71E3300E2A878 /* LightBlue.png */,
@@ -489,8 +493,8 @@
 		49E8F29F18CDCF8400E98861 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				E18F6E071935B43D00FA2106 /* Flurry.h */,
-				E18F6E081935B43D00FA2106 /* libFlurry_4.3.2.a */,
+				E18F6E0C1936BAE200FA2106 /* Flurry.h */,
+				E18F6E0D1936BAE200FA2106 /* libFlurry_4.3.2.a */,
 			);
 			name = Flurry;
 			sourceTree = "<group>";
@@ -772,8 +776,8 @@
 			children = (
 				E137D19817CAF03D0001A6CF /* MainStoryboard.storyboard */,
 				4912672C187CF215001F66A5 /* Images.xcassets */,
-				E1E2748D1886468B00B25D84 /* Sources */,
 				E137D18617CAF03D0001A6CF /* Device Details */,
+				E1E2748D1886468B00B25D84 /* Sources */,
 				E137D1AA17CAF03D0001A6CF /* Device DetailsTests */,
 				E137D17F17CAF03D0001A6CF /* Frameworks */,
 				E137D17E17CAF03D0001A6CF /* Products */,
@@ -818,9 +822,10 @@
 			isa = PBXGroup;
 			children = (
 				49126741187D7CC4001F66A5 /* Settings.bundle */,
-				E1D1D2691835A9B50007E301 /* Third Party Tools */,
 				E137D18F17CAF03D0001A6CF /* DDAppDelegate.h */,
 				E137D19017CAF03D0001A6CF /* DDAppDelegate.m */,
+				E18F6E121936C96000FA2106 /* DDViewContainerSegue.h */,
+				E18F6E131936C96000FA2106 /* DDViewContainerSegue.m */,
 				499997631874F92900D3A605 /* DDMainViewController.h */,
 				499997641874F92900D3A605 /* DDMainViewController.m */,
 				499122BB188D51D100643FFE /* ALRangingViewController.h */,
@@ -829,6 +834,7 @@
 				499122BF188D5FD600643FFE /* ALDefaults.m */,
 				E137D19B17CAF03D0001A6CF /* DDViewController.h */,
 				E137D19C17CAF03D0001A6CF /* DDViewController.m */,
+				E1D1D2691835A9B50007E301 /* Third Party Tools */,
 				E137D18717CAF03D0001A6CF /* Supporting Files */,
 			);
 			path = "Device Details";
@@ -867,6 +873,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E18F6E0A1936AF2B00FA2106 /* Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				E137D19217CAF03D0001A6CF /* Default.png */,
+				E137D19417CAF03D0001A6CF /* Default@2x.png */,
+				49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */,
+				49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */,
+				E137D19617CAF03D0001A6CF /* Default-568h@2x.png */,
+			);
+			name = "Launch Images";
+			sourceTree = "<group>";
+		};
+		E18F6E0B1936AF4A00FA2106 /* ICONs */ = {
+			isa = PBXGroup;
+			children = (
+				E1B8B0841888B20900A20509 /* iTunesArtwork */,
+				E1B8B0851888B20900A20509 /* iTunesArtwork@2x */,
+				E1B8B0861888B20900A20509 /* Sign Info.png */,
+				E1B8B0821888B20900A20509 /* Icon.png */,
+				E1B8B0831888B20900A20509 /* Icon@2x.png */,
+				E1B8B07C1888B20900A20509 /* Icon-72.png */,
+				E1B8B07D1888B20900A20509 /* Icon-72@2x.png */,
+				E1B8B07E1888B20900A20509 /* Icon-Small-50.png */,
+				E1B8B07F1888B20900A20509 /* Icon-Small-50@2x.png */,
+				E1B8B0801888B20900A20509 /* Icon-Small.png */,
+				E1B8B0811888B20900A20509 /* Icon-Small@2x.png */,
+				49E7D88A188960B50096C450 /* iPhone 120.png */,
+				49E7D88B188960B50096C450 /* iPhone 120@2x.png */,
+				E1B8B0731888B20900A20509 /* iPad 29.png */,
+				E1B8B0741888B20900A20509 /* iPad 29@2x.png */,
+				E1B8B0751888B20900A20509 /* iPad 40.png */,
+				E1B8B0761888B20900A20509 /* iPad 40@2x.png */,
+				E1B8B0771888B20900A20509 /* iPad 76.png */,
+				E1B8B0781888B20900A20509 /* iPad 76@2x.png */,
+				E1B8B0791888B20900A20509 /* iPhone 29@2x.png */,
+				E1B8B07A1888B20900A20509 /* iPhone 40@2x.png */,
+				E1B8B07B1888B20900A20509 /* iPhone 60@2x.png */,
+				49E7D88618895EEE0096C450 /* iPhone 57.png */,
+				49E7D88718895EEE0096C450 /* iPhone 57@2x.png */,
+			);
+			name = ICONs;
+			sourceTree = "<group>";
+		};
 		E1D1D2691835A9B50007E301 /* Third Party Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -894,37 +943,9 @@
 		E1E2748D1886468B00B25D84 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */,
-				49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */,
+				E18F6E0B1936AF4A00FA2106 /* ICONs */,
+				E18F6E0A1936AF2B00FA2106 /* Launch Images */,
 				4974349418D5C09400D3AC62 /* Third Party App ICONs */,
-				E1B8B0731888B20900A20509 /* iPad 29.png */,
-				E1B8B0741888B20900A20509 /* iPad 29@2x.png */,
-				E1B8B0751888B20900A20509 /* iPad 40.png */,
-				E1B8B0761888B20900A20509 /* iPad 40@2x.png */,
-				E1B8B0771888B20900A20509 /* iPad 76.png */,
-				E1B8B0781888B20900A20509 /* iPad 76@2x.png */,
-				E1B8B0791888B20900A20509 /* iPhone 29@2x.png */,
-				E1B8B07A1888B20900A20509 /* iPhone 40@2x.png */,
-				E1B8B07B1888B20900A20509 /* iPhone 60@2x.png */,
-				49E7D88618895EEE0096C450 /* iPhone 57.png */,
-				49E7D88718895EEE0096C450 /* iPhone 57@2x.png */,
-				E1B8B07C1888B20900A20509 /* Icon-72.png */,
-				E1B8B07D1888B20900A20509 /* Icon-72@2x.png */,
-				E1B8B07E1888B20900A20509 /* Icon-Small-50.png */,
-				E1B8B07F1888B20900A20509 /* Icon-Small-50@2x.png */,
-				E1B8B0801888B20900A20509 /* Icon-Small.png */,
-				E1B8B0811888B20900A20509 /* Icon-Small@2x.png */,
-				49E7D88A188960B50096C450 /* iPhone 120.png */,
-				49E7D88B188960B50096C450 /* iPhone 120@2x.png */,
-				E1B8B0821888B20900A20509 /* Icon.png */,
-				E1B8B0831888B20900A20509 /* Icon@2x.png */,
-				490CFF2818D71C2100E2A878 /* SpectrumView.png */,
-				E137D19217CAF03D0001A6CF /* Default.png */,
-				E137D19417CAF03D0001A6CF /* Default@2x.png */,
-				E137D19617CAF03D0001A6CF /* Default-568h@2x.png */,
-				E1B8B0841888B20900A20509 /* iTunesArtwork */,
-				E1B8B0851888B20900A20509 /* iTunesArtwork@2x */,
-				E1B8B0861888B20900A20509 /* Sign Info.png */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -1170,6 +1191,7 @@
 				E10429AD189206FC0096B2AD /* ALHardware.m in Sources */,
 				E176DB08189231EF000224F8 /* ALProcessor.m in Sources */,
 				E10429AF189206FC0096B2AD /* ALLocalization.m in Sources */,
+				E18F6E141936C96000FA2106 /* DDViewContainerSegue.m in Sources */,
 				499997651874F92900D3A605 /* DDMainViewController.m in Sources */,
 				E10429B3189206FC0096B2AD /* ALSystem.m in Sources */,
 				E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */,
@@ -1345,6 +1367,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
@@ -1365,6 +1389,8 @@
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Device",
+					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
 					"$(PROJECT_DIR)/Device",

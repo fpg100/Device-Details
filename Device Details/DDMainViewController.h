@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 #import "RNGridMenu.h"
+#import "DDViewContainerSegue.h"
 
 @interface DDMainViewController : UIViewController <ADBannerViewDelegate,RNGridMenuDelegate> {
     
@@ -18,5 +19,10 @@
 
 //iAD
 @property(nonatomic,retain)IBOutlet ADBannerView *adView;
+
+@property (weak,nonatomic) UIViewController *destinationViewController;
+@property (strong, nonatomic) NSString *destinationIdentifier;
+@property (strong, nonatomic) UIViewController *oldViewController;
+@property (strong, nonatomic) IBOutlet UIView *detailsViewsContainer;
 
 @end

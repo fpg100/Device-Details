@@ -10,16 +10,13 @@
             <objects>
                 <viewController id="Esa-eX-NW8" customClass="DDMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZr-Ae-2Tl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" id="gHs-Hu-18N">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="2" kind="embed" id="CSt-Qz-E23"/>
-                                </connections>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3iT-vh-OKz">
                                 <rect key="frame" x="10" y="16" width="43" height="42"/>
@@ -42,38 +39,40 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Jqu-PE-jva"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="slr-Od-lmj" kind="custom" identifier="hardwareViewSegue" id="sxS-lh-Amy"/>
-                        <segue destination="rtj-KZ-pBW" kind="custom" identifier="dateTimeViewSegue" id="PAq-YQ-f9g"/>
-                        <segue destination="pRu-s4-Pnx" kind="custom" identifier="osViewSegue" id="JsS-qO-HIB"/>
-                        <segue destination="13F-Fz-hKe" kind="custom" identifier="networkViewSegue" id="Q7A-t3-Up3"/>
-                        <segue destination="qXK-hI-34P" kind="custom" identifier="briefViewSegue" id="o1e-4y-Xf8"/>
-                        <segue destination="syx-BE-1tH" kind="custom" identifier="compassViewSegue" id="iQi-D3-OwW"/>
-                        <segue destination="vCY-8B-4YC" kind="custom" identifier="becibelMeterViewSegue" id="mck-Jj-MyR"/>
-                        <segue destination="GSH-bD-u1h" kind="custom" identifier="locationViewSegue" id="PaB-lX-Idn"/>
-                        <segue destination="9uw-d1-q91" kind="custom" identifier="motionViewSegue" id="EQZ-40-dwm"/>
+                        <outlet property="detailsViewsContainer" destination="gHs-Hu-18N" id="BY4-i9-ZmK"/>
+                        <segue destination="pRu-s4-Pnx" kind="custom" identifier="OperatingSystemViewSegue" customClass="DDViewContainerSegue" id="JsS-qO-HIB"/>
+                        <segue destination="13F-Fz-hKe" kind="custom" identifier="NetworkViewSegue" customClass="DDViewContainerSegue" id="Q7A-t3-Up3"/>
+                        <segue destination="syx-BE-1tH" kind="custom" identifier="CompassViewSegue" customClass="DDViewContainerSegue" id="iQi-D3-OwW"/>
+                        <segue destination="vCY-8B-4YC" kind="custom" identifier="DecibelMeterViewSegue" customClass="DDViewContainerSegue" id="mck-Jj-MyR"/>
+                        <segue destination="GSH-bD-u1h" kind="custom" identifier="LocationViewSegue" customClass="DDViewContainerSegue" id="PaB-lX-Idn"/>
+                        <segue destination="9uw-d1-q91" kind="custom" identifier="MotionViewSegue" customClass="DDViewContainerSegue" id="EQZ-40-dwm"/>
+                        <segue destination="rtj-KZ-pBW" kind="custom" identifier="DateTimeViewSegue" customClass="DDViewContainerSegue" id="6Y6-Wh-G6b"/>
+                        <segue destination="qXK-hI-34P" kind="custom" identifier="BriefViewSegue" customClass="DDViewContainerSegue" id="Omf-Gs-cj0"/>
+                        <segue destination="slr-Od-lmj" kind="custom" identifier="HardwareViewSegue" customClass="DDViewContainerSegue" id="y9g-Ex-d03"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8h-qO-4yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="19"/>
+            <point key="canvasLocation" x="701" y="-57"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="DDViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="01d-Yw-n8y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Device Type:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0V1-xi-DiR">
@@ -1455,18 +1454,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="-813"/>
+            <point key="canvasLocation" x="701" y="-823"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kwR-iH-lzo">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="wIw-CI-WCD" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="s1R-BG-qhA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="WA8-q9-xEu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="罗盘朝向 ：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MYi-EK-RGZ">
@@ -1815,7 +1814,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="9uw-d1-q91" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UGc-Uu-0nc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Motion Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="snY-kR-HWa">
@@ -1880,7 +1879,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="GSH-bD-u1h" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PzR-AG-zv6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="l7H-7P-auP">
@@ -2191,7 +2190,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="rtj-KZ-pBW" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UI0-yy-6GU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h5m-GO-3XC">
@@ -2246,17 +2245,18 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sui-PO-Dck"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8V4-za-n4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="-57"/>
+            <point key="canvasLocation" x="1326" y="-57"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7fV-Hz-EvZ">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="slr-Od-lmj" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UEj-hP-z5z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hardware Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EOT-Ek-ixP">
@@ -2321,7 +2321,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="vCY-8B-4YC" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SaE-mw-rfO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Decibel Meter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9nE-0y-uG2">
@@ -2386,7 +2386,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="syx-BE-1tH" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ezY-86-psY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Compass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Bk-jw-jY8">
@@ -2451,7 +2451,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="13F-Fz-hKe" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5yC-AR-8c4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Network" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uvW-FG-6cc">
@@ -2516,7 +2516,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pRu-s4-Pnx" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dNb-hM-uLY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Operating System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R8B-cV-WZR">
@@ -2581,11 +2581,11 @@
             <objects>
                 <viewController id="qXK-hI-34P" customClass="DDViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6Y-SK-iI9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nZ2-4h-Z0a">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Device Type:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mns-oG-O94">
@@ -3981,6 +3981,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
