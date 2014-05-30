@@ -9,6 +9,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "DDMainViewController.h"
 #import "CMPopTipView.h"
+#import "YLGIFImage.h"
+#import "YLImageView.h"
 
 @interface DDMainViewController (){
     NSMutableDictionary *_viewControllersByIdentifier;
@@ -49,8 +51,11 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    YLImageView* imageView = [[YLImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    [self.detailsViewsContainer addSubview:imageView];
+    imageView.image = [YLGIFImage imageNamed:@"metrix.gif"];
 //    if (self.childViewControllers.count < 1) {
-//        [self performSegueWithIdentifier:@"hardwareViewSegue" sender:self];
+//        [self performSegueWithIdentifier:@"BriefViewSegue" sender:self];
 //    }
 }
 

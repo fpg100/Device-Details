@@ -19,6 +19,12 @@
 		49588AA7193778E8009F694B /* 1401391022_envelope_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AA6193778E8009F694B /* 1401391022_envelope_outline.png */; };
 		49588AA919377BFE009F694B /* broadcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AA819377BFE009F694B /* broadcast.png */; };
 		49588AAB19377FFF009F694B /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 49588AAA19377FFF009F694B /* radio.png */; };
+		49588AC719378DC8009F694B /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49588AC419378DC8009F694B /* YLGIFImage.m */; };
+		49588AC819378DC8009F694B /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49588AC619378DC8009F694B /* YLImageView.m */; };
+		49588ACA19378E53009F694B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49588AC919378E53009F694B /* ImageIO.framework */; };
+		49588ACC19378E60009F694B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49588ACB19378E60009F694B /* MobileCoreServices.framework */; };
+		49588ACE19378E6D009F694B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49588ACD19378E6D009F694B /* XCTest.framework */; };
+		49588AD019378F4B009F694B /* metrix.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49588ACF19378F4B009F694B /* metrix.gif */; };
 		497434A618D5C44100D3AC62 /* BigStopWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4974349C18D5C44100D3AC62 /* BigStopWatch.png */; };
 		49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49852AF317CE2A4F0086089A /* CoreMotion.framework */; };
 		499122BD188D51D100643FFE /* ALRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499122BC188D51D100643FFE /* ALRangingViewController.m */; };
@@ -215,6 +221,14 @@
 		49588AA6193778E8009F694B /* 1401391022_envelope_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1401391022_envelope_outline.png; sourceTree = "<group>"; };
 		49588AA819377BFE009F694B /* broadcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broadcast.png; sourceTree = "<group>"; };
 		49588AAA19377FFF009F694B /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
+		49588AC319378DC8009F694B /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		49588AC419378DC8009F694B /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		49588AC519378DC8009F694B /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		49588AC619378DC8009F694B /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		49588AC919378E53009F694B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		49588ACB19378E60009F694B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		49588ACD19378E6D009F694B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		49588ACF19378F4B009F694B /* metrix.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = metrix.gif; path = ../metrix.gif; sourceTree = "<group>"; };
 		4974349C18D5C44100D3AC62 /* BigStopWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigStopWatch.png; path = Artworks/BigStopWatch/BigStopWatch.png; sourceTree = "<group>"; };
 		49852AF317CE2A4F0086089A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		499122BB188D51D100643FFE /* ALRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRangingViewController.h; sourceTree = "<group>"; };
@@ -429,6 +443,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49588ACE19378E6D009F694B /* XCTest.framework in Frameworks */,
+				49588ACC19378E60009F694B /* MobileCoreServices.framework in Frameworks */,
+				49588ACA19378E53009F694B /* ImageIO.framework in Frameworks */,
 				49E8F29818CB25DF00E98861 /* Accelerate.framework in Frameworks */,
 				49E8F29618CB25D800E98861 /* QuartzCore.framework in Frameworks */,
 				49CE10E718766DE20020031C /* Foundation.framework in Frameworks */,
@@ -473,6 +490,18 @@
 				490CFF3618D7246800E2A878 /* CMPopTipView.m */,
 			);
 			path = CMPopTipView;
+			sourceTree = "<group>";
+		};
+		49588AC219378DC8009F694B /* YLGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				49588ACF19378F4B009F694B /* metrix.gif */,
+				49588AC319378DC8009F694B /* YLGIFImage.h */,
+				49588AC419378DC8009F694B /* YLGIFImage.m */,
+				49588AC519378DC8009F694B /* YLImageView.h */,
+				49588AC619378DC8009F694B /* YLImageView.m */,
+			);
+			path = YLGIFImage;
 			sourceTree = "<group>";
 		};
 		4974349418D5C09400D3AC62 /* Third Party App ICONs */ = {
@@ -808,6 +837,9 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49588ACD19378E6D009F694B /* XCTest.framework */,
+				49588ACB19378E60009F694B /* MobileCoreServices.framework */,
+				49588AC919378E53009F694B /* ImageIO.framework */,
 				49E8F29718CB25DF00E98861 /* Accelerate.framework */,
 				49E8F29518CB25D800E98861 /* QuartzCore.framework */,
 				E176DB1318923367000224F8 /* CoreFoundation.framework */,
@@ -931,6 +963,7 @@
 		E1D1D2691835A9B50007E301 /* Third Party Tools */ = {
 			isa = PBXGroup;
 			children = (
+				49588AC219378DC8009F694B /* YLGIFImage */,
 				49F7267418FC1E8300B0ED15 /* FRDLivelyButton */,
 				490CFF3418D7246800E2A878 /* CMPopTipView */,
 				49E8F29F18CDCF8400E98861 /* Flurry */,
@@ -1086,6 +1119,7 @@
 				E10429B8189206FC0096B2AD /* iPadAir.plist in Resources */,
 				E10429C3189206FC0096B2AD /* iPodTouch5.plist in Resources */,
 				E10429B5189206FC0096B2AD /* iPad2.plist in Resources */,
+				49588AD019378F4B009F694B /* metrix.gif in Resources */,
 				E1B8B0951888B20900A20509 /* Icon-Small@2x.png in Resources */,
 				49E8F39318CF34C400E98861 /* 1393698898_clock.png in Resources */,
 				E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */,
@@ -1211,6 +1245,8 @@
 				499997651874F92900D3A605 /* DDMainViewController.m in Sources */,
 				E10429B3189206FC0096B2AD /* ALSystem.m in Sources */,
 				E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */,
+				49588AC819378DC8009F694B /* YLImageView.m in Sources */,
+				49588AC719378DC8009F694B /* YLGIFImage.m in Sources */,
 				E10429AE189206FC0096B2AD /* ALJailbreak.m in Sources */,
 				49E8F29B18CB274400E98861 /* RNGridMenu.m in Sources */,
 				490CFF3718D7246800E2A878 /* CMPopTipView.m in Sources */,
@@ -1362,6 +1398,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
@@ -1402,6 +1442,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
