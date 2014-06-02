@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-//
+
+//Hardware and OS Details
+#include <sys/types.h>
+#import <sys/sysctl.h>
+#import <sys/utsname.h>
+#import <mach/mach.h>
+#define MB (1024*1024)
+#define GB (MB*1024)
 
 //Network Details
 #import "Reachability.h"
@@ -19,14 +26,6 @@
 #include <netinet/in.h>
 #import <arpa/inet.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
-
-//Hardware and OS Details
-#include <sys/types.h>
-#import <sys/sysctl.h>
-#import <sys/utsname.h>
-#import <mach/mach.h>
-#define MB (1024*1024)
-#define GB (MB*1024)
 
 //Location Details
 #import <CoreLocation/CoreLocation.h>

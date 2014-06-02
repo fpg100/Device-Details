@@ -53,7 +53,7 @@
 - (void)viewDidAppear:(BOOL)animated{
     YLImageView* imageView = [[YLImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     [self.detailsViewsContainer addSubview:imageView];
-    imageView.image = [YLGIFImage imageNamed:@"metrix.gif"];
+    imageView.image = [YLGIFImage imageNamed:@"matrix 1.gif"];
 //    if (self.childViewControllers.count < 1) {
 //        [self performSegueWithIdentifier:@"BriefViewSegue" sender:self];
 //    }

@@ -149,9 +149,9 @@
     deviceDimentionsLabel.text = [ALHardware dimensions];
     deviceWeightLabel.text = [ALHardware weight];
     
-    osNameLabel.text = [UIDevice currentDevice].systemName;
-    osVersionLabel.text = [UIDevice currentDevice].systemVersion;
-    osJailbrokenLabel.text = [NSString stringWithFormat:@"%@",([ALJailbreak isJailbroken]?@"YES":@"NO")];
+//    osNameLabel.text = [UIDevice currentDevice].systemName;
+//    osVersionLabel.text = [UIDevice currentDevice].systemVersion;
+//    osJailbrokenLabel.text = [NSString stringWithFormat:@"%@",([ALJailbreak isJailbroken]?@"YES":@"NO")];
     //    NSLog(@"Carrier Name: %@",[ALCarrier carrierName]);
     
     

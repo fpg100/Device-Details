@@ -369,19 +369,27 @@ CLGeocoder *geocoder;
     switch (reachabilityStatusIndexInt) {
         case NotReachable:
             networkTypeLabel.text = @"No Network";
+            ssidLabel.hidden = YES;
+            ssidTagLabel.hidden = YES;
+            externalIpAddrLabel.hidden = YES;
             break;
         case ReachableViaWWAN:
             networkTypeLabel.text = @"Cellular";
+            ssidLabel.hidden = YES;
+            ssidTagLabel.hidden = YES;
+            externalIpAddrLabel.hidden = YES;
             break;
         case ReachableViaWiFi:
             networkTypeLabel.text = @"WiFi";
             ssidLabel.text = [self getSSIDInfo];
+            [self updatePublicIP];
             ssidLabel.hidden = NO;
             ssidTagLabel.hidden = NO;
+            externalIpAddrLabel.hidden = NO;
+            networkIpMaskLabel.text = [ALNetwork WiFiNetmaskAddress];
             break;
-            
         default:
-        break;
+            break;
     }
     
     [self updatePublicIP];
