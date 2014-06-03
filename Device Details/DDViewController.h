@@ -27,7 +27,7 @@
 #import <arpa/inet.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 
-//Location Details
+//Location Details & Compass Details
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
 #import <MapKit/MapKit.h>
@@ -103,6 +103,14 @@
 @property (strong, nonatomic) IBOutlet UILabel *localDateTimeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *utcDateTimeLabel;
 
+//Compass Details
+@property (weak, nonatomic) IBOutlet UILabel *headingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *differWithGeomagneticLabel;
+@property (weak, nonatomic) IBOutlet UILabel *trueHeadingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xGeomagnetismLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yGeomagnetismLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zGeomagnetismLabel;
+
 //Location Details
 @property (retain, nonatomic) CLLocationManager *locationManager;
 @property (retain, nonatomic) CLLocation *startPoint;
@@ -113,12 +121,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *verticalAccuracyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *courseLabel;
-@property (weak, nonatomic) IBOutlet UILabel *headingLabel;
-@property (weak, nonatomic) IBOutlet UILabel *differWithGeomagneticLabel;
-@property (weak, nonatomic) IBOutlet UILabel *trueHeadingLabel;
-@property (weak, nonatomic) IBOutlet UILabel *xGeomagnetismLabel;
-@property (weak, nonatomic) IBOutlet UILabel *yGeomagnetismLabel;
-@property (weak, nonatomic) IBOutlet UILabel *zGeomagnetismLabel;
 @property (strong, nonatomic) NSMutableDictionary *placeDictionary;
 @property (weak, nonatomic) IBOutlet UILabel *placeNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *addressNumberLabel;

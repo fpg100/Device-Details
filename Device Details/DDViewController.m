@@ -77,6 +77,14 @@
 @synthesize localDateTimeLabel;
 @synthesize utcDateTimeLabel;
 
+//Compass Details
+@synthesize headingLabel;
+@synthesize differWithGeomagneticLabel;
+@synthesize trueHeadingLabel;
+@synthesize xGeomagnetismLabel;
+@synthesize yGeomagnetismLabel;
+@synthesize zGeomagnetismLabel;
+
 //Location Details
 @synthesize locationManager;
 @synthesize startPoint;
@@ -87,12 +95,6 @@
 @synthesize verticalAccuracyLabel;
 @synthesize speedLabel;
 @synthesize courseLabel;
-@synthesize headingLabel;
-@synthesize differWithGeomagneticLabel;
-@synthesize trueHeadingLabel;
-@synthesize xGeomagnetismLabel;
-@synthesize yGeomagnetismLabel;
-@synthesize zGeomagnetismLabel;
 @synthesize placeDictionary;
 
 @synthesize placeNameLabel;
