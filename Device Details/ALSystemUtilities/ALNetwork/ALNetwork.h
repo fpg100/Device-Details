@@ -16,6 +16,11 @@
 #include <net/if_dl.h>
 #include <sys/ioctl.h>
 
+#include <sys/socket.h> // Per msqr
+#include <net/if.h>
+#include <net/if_dl.h>
+#import <CommonCrypto/CommonDigest.h>
+
 @protocol ALNetworkDelegate <NSObject>
 
 /*!

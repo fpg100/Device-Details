@@ -1066,7 +1066,7 @@
 			name = "Device DetailsTests";
 			productName = "Device DetailsTests";
 			productReference = E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1080,6 +1080,11 @@
 				TargetAttributes = {
 					E137D17C17CAF03D0001A6CF = {
 						DevelopmentTeam = DQK83PW4RV;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
