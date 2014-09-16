@@ -12,20 +12,24 @@
 	<dict>
 		<key>B07C577C-9FA7-405D-A518-9B62E8260AF0</key>
 		<string>https://github.com/robert-yi-jones/Device-Details.git</string>
+		<key>DE4AB89EBEA4977FF171156D6E19A5B8463DE969</key>
+		<string>https://github.com/robert-yi-jones/Device-Details.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Device Details.xcodeproj/project.xcworkspace</string>
+	<string>Device Details.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B07C577C-9FA7-405D-A518-9B62E8260AF0</key>
+		<string>../../../Device-Details</string>
+		<key>DE4AB89EBEA4977FF171156D6E19A5B8463DE969</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/robert-yi-jones/Device-Details.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B07C577C-9FA7-405D-A518-9B62E8260AF0</string>
+	<string>DE4AB89EBEA4977FF171156D6E19A5B8463DE969</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>B07C577C-9FA7-405D-A518-9B62E8260AF0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Device-Details</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DE4AB89EBEA4977FF171156D6E19A5B8463DE969</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Device%20Details</string>
 		</dict>
 	</array>
 </dict>

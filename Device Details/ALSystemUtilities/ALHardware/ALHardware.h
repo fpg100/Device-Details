@@ -7,14 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <sys/utsname.h>
-#include <sys/types.h>
-#include <sys/sysctl.h>
 
-#include <sys/socket.h> // Per msqr
-#include <net/if.h>
-#include <net/if_dl.h>
-#import <CommonCrypto/CommonDigest.h>
 /*!
  * This class check some hardware (and software) informations
  */
