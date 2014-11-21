@@ -105,19 +105,21 @@
     if ([platform isEqualToString:@"iPhone6,2"])    deviceTypeLabel.text = @"iPhone 5s (LTE+CDMA)";
     if ([platform isEqualToString:@"iPhone7,1"])    deviceTypeLabel.text = @"iPhone 6 Plus";
     if ([platform isEqualToString:@"iPhone7,2"])    deviceTypeLabel.text = @"iPhone 6";
+    
     if ([platform isEqualToString:@"iPod1,1"])      deviceTypeLabel.text = @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      deviceTypeLabel.text = @"iPod Touch 2G";
     if ([platform isEqualToString:@"iPod3,1"])      deviceTypeLabel.text = @"iPod Touch 3G";
     if ([platform isEqualToString:@"iPod4,1"])      deviceTypeLabel.text = @"iPod Touch 4G";
     if ([platform isEqualToString:@"iPod5,1"])      deviceTypeLabel.text = @"iPod Touch 5G";
+    
     if ([platform isEqualToString:@"iPad1,1"])      deviceTypeLabel.text = @"iPad";
     if ([platform isEqualToString:@"iPad2,1"])      deviceTypeLabel.text = @"iPad 2 (WiFi)";
     if ([platform isEqualToString:@"iPad2,2"])      deviceTypeLabel.text = @"iPad 2 (GSM)";
     if ([platform isEqualToString:@"iPad2,3"])      deviceTypeLabel.text = @"iPad 2 (CDMA)";
-    if ([platform isEqualToString:@"iPad2,4"])      deviceTypeLabel.text = @"iPad 2 (WiFi) 2012";
-    if ([platform isEqualToString:@"iPad2,5"])      deviceTypeLabel.text = @"iPad Mini (WiFi)";
-    if ([platform isEqualToString:@"iPad2,6"])      deviceTypeLabel.text = @"iPad Mini (LTE)";
-    if ([platform isEqualToString:@"iPad2,7"])      deviceTypeLabel.text = @"iPad Mini (LTE+CDMA)";
+    if ([platform isEqualToString:@"iPad2,4"])      deviceTypeLabel.text = @"iPad 2 (WiFi) Mid 2012";
+    if ([platform isEqualToString:@"iPad2,5"])      deviceTypeLabel.text = @"iPad Mini (WiFi) 2012";
+    if ([platform isEqualToString:@"iPad2,6"])      deviceTypeLabel.text = @"iPad Mini (LTE) 2012";
+    if ([platform isEqualToString:@"iPad2,7"])      deviceTypeLabel.text = @"iPad Mini (LTE+CDMA) 2012";
     if ([platform isEqualToString:@"iPad3,1"])      deviceTypeLabel.text = @"iPad 3 (WiFi)";
     if ([platform isEqualToString:@"iPad3,2"])      deviceTypeLabel.text = @"iPad 3 (LTE+CDMA)";
     if ([platform isEqualToString:@"iPad3,3"])      deviceTypeLabel.text = @"iPad 3 (LTE)";
@@ -126,8 +128,14 @@
     if ([platform isEqualToString:@"iPad3,6"])      deviceTypeLabel.text = @"iPad 4 (LTE+CDMA)";
     if ([platform isEqualToString:@"iPad4,1"])      deviceTypeLabel.text = @"iPad Air (WiFi)";
     if ([platform isEqualToString:@"iPad4,2"])      deviceTypeLabel.text = @"iPad Air (LTE)";
-    if ([platform isEqualToString:@"iPad4,4"])      deviceTypeLabel.text = @"iPad Mini Retina (WiFi)";
-    if ([platform isEqualToString:@"iPad4,5"])      deviceTypeLabel.text = @"iPad Mini Retina (LTE)";
+    if ([platform isEqualToString:@"iPad4,4"])      deviceTypeLabel.text = @"iPad Mini 2 (WiFi)";
+    if ([platform isEqualToString:@"iPad4,5"])      deviceTypeLabel.text = @"iPad Mini 2 (LTE)";
+    if ([platform isEqualToString:@"iPad4,6"])      deviceTypeLabel.text = @"iPad Mini 2 (LTE)";
+    if ([platform isEqualToString:@"iPad4,7"])      deviceTypeLabel.text = @"iPad Mini 3 (WiFi)";
+    if ([platform isEqualToString:@"iPad4,8"])      deviceTypeLabel.text = @"iPad Mini 3 (LTE)";
+    if ([platform isEqualToString:@"iPad4,9"])      deviceTypeLabel.text = @"iPad Mini 3 (LTE)";
+    if ([platform isEqualToString:@"iPad5,3"])      deviceTypeLabel.text = @"iPad Air 2 (WiFi)";
+    if ([platform isEqualToString:@"iPad5,4"])      deviceTypeLabel.text = @"iPad Air 2 (LTE)";
     if ([platform isEqualToString:@"i386"])         deviceTypeLabel.text = @"Simulator";
     if ([platform isEqualToString:@"x86_64"])       deviceTypeLabel.text = @"Simulator";
     

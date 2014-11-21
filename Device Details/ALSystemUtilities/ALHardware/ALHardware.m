@@ -84,11 +84,17 @@
         [result isEqualToString:@"iPad3,6"])         type = @"iPad 4";
     if ([result isEqualToString:@"iPad4,1"]     ||
         [result isEqualToString:@"iPad4,2"])         type = @"iPad Air";
+    if ([result isEqualToString:@"iPad5,3"]     ||
+        [result isEqualToString:@"iPad5,4"])         type = @"iPad Air 2";
     if ([result isEqualToString:@"iPad2,5"]     ||
         [result isEqualToString:@"iPad2,6"]     ||
         [result isEqualToString:@"iPad2,7"])        type = @"iPad Mini";
     if ([result isEqualToString:@"iPad4,4"]     ||
-        [result isEqualToString:@"iPad4,5"])        type = @"iPad Mini Retina";
+        [result isEqualToString:@"iPad4,5"]     ||
+        [result isEqualToString:@"iPad4,6"])        type = @"iPad Mini Retina";
+    if ([result isEqualToString:@"iPad4,7"]     ||
+        [result isEqualToString:@"iPad4,8"]     ||
+        [result isEqualToString:@"iPad4,9"])        type = @"iPad Mini 3";
     if ([result isEqualToString:@"iPhone6,1"]   ||
         [result isEqualToString:@"iPhone6,2"])      type = @"iPhone 5s";
     if ([result isEqualToString:@"iPhone5,3"]   ||

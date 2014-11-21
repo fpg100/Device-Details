@@ -5,7 +5,7 @@
 	<key>standby</key>
 	<string>720</string>
 	<key>audio</key>
-	<string>10</string>
+	<string>140</string>
 	<key>video</key>
 	<string>10</string>
 	<key>dimensions</key>
@@ -13,7 +13,7 @@
 	<key>weight</key>
 	<string>308 g.</string>
 	<key>display-type</key>
-	<string>LED-backlit IPS LCD</string>
+	<string>LED-backlit IPS LCD, capacitive touchscreen</string>
 	<key>display-density</key>
 	<string>162 ppi</string>
 	<key>WLAN</key>

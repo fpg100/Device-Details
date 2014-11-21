@@ -22,7 +22,6 @@
 		49588AC819378DC8009F694B /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49588AC619378DC8009F694B /* YLImageView.m */; };
 		49588ACA19378E53009F694B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49588AC919378E53009F694B /* ImageIO.framework */; };
 		49588ACC19378E60009F694B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49588ACB19378E60009F694B /* MobileCoreServices.framework */; };
-		49588ACE19378E6D009F694B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49588ACD19378E6D009F694B /* XCTest.framework */; };
 		49588AD019378F4B009F694B /* matrix 0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49588ACF19378F4B009F694B /* matrix 0.gif */; };
 		49588AD61938CF36009F694B /* DDHardwareDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49588AD51938CF36009F694B /* DDHardwareDetailsViewController.m */; };
 		497434A618D5C44100D3AC62 /* BigStopWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4974349C18D5C44100D3AC62 /* BigStopWatch.png */; };
@@ -160,8 +159,10 @@
 		E137D1B217CAF03D0001A6CF /* Device_DetailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */; };
 		E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */; };
 		E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */; };
+		E140EEBC1A1EAE4500115ACD /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E140EEBB1A1EAE4500115ACD /* libFlurry_5.4.0.a */; };
+		E140EEBE1A1EB97F00115ACD /* iPadMini3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E140EEBD1A1EB97F00115ACD /* iPadMini3.plist */; };
+		E140EEC01A1EBB6D00115ACD /* iPadAir2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E140EEBF1A1EBB6D00115ACD /* iPadAir2.plist */; };
 		E166EA71193D753600B5AD78 /* DDDateTimeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E166EA70193D753600B5AD78 /* DDDateTimeDetailsViewController.m */; };
-		E166EA74193D928900B5AD78 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E166EA73193D928900B5AD78 /* libFlurry_4.3.2.a */; };
 		E166EA7A193DADC500B5AD78 /* DDCompassDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E166EA79193DADC500B5AD78 /* DDCompassDetailsViewController.m */; };
 		E176DB0518923034000224F8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB0418923034000224F8 /* Reachability.m */; };
 		E176DB08189231EF000224F8 /* ALProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB07189231EF000224F8 /* ALProcessor.m */; };
@@ -233,7 +234,6 @@
 		49588AC619378DC8009F694B /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
 		49588AC919378E53009F694B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		49588ACB19378E60009F694B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		49588ACD19378E6D009F694B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		49588ACF19378F4B009F694B /* matrix 0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "matrix 0.gif"; path = "../matrix 0.gif"; sourceTree = "<group>"; };
 		49588AD41938CF36009F694B /* DDHardwareDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHardwareDetailsViewController.h; sourceTree = "<group>"; };
 		49588AD51938CF36009F694B /* DDHardwareDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHardwareDetailsViewController.m; sourceTree = "<group>"; };
@@ -403,10 +403,12 @@
 		E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device_DetailsTests.m; sourceTree = "<group>"; };
 		E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E140EEBB1A1EAE4500115ACD /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.4.0.a; sourceTree = "<group>"; };
+		E140EEBD1A1EB97F00115ACD /* iPadMini3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini3.plist; sourceTree = "<group>"; };
+		E140EEBF1A1EBB6D00115ACD /* iPadAir2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir2.plist; sourceTree = "<group>"; };
 		E166EA6F193D753600B5AD78 /* DDDateTimeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDDateTimeDetailsViewController.h; path = ViewControllers/DDDateTimeDetailsViewController.h; sourceTree = "<group>"; };
 		E166EA70193D753600B5AD78 /* DDDateTimeDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDDateTimeDetailsViewController.m; path = ViewControllers/DDDateTimeDetailsViewController.m; sourceTree = "<group>"; };
 		E166EA72193D928900B5AD78 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		E166EA73193D928900B5AD78 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		E166EA78193DADC500B5AD78 /* DDCompassDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDCompassDetailsViewController.h; path = ViewControllers/DDCompassDetailsViewController.h; sourceTree = "<group>"; };
 		E166EA79193DADC500B5AD78 /* DDCompassDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDCompassDetailsViewController.m; path = ViewControllers/DDCompassDetailsViewController.m; sourceTree = "<group>"; };
 		E176DB0318923034000224F8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.h"; sourceTree = SOURCE_ROOT; };
@@ -464,7 +466,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49588ACE19378E6D009F694B /* XCTest.framework in Frameworks */,
 				49588ACC19378E60009F694B /* MobileCoreServices.framework in Frameworks */,
 				49588ACA19378E53009F694B /* ImageIO.framework in Frameworks */,
 				49E8F29818CB25DF00E98861 /* Accelerate.framework in Frameworks */,
@@ -480,11 +481,11 @@
 				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
+				E140EEBC1A1EAE4500115ACD /* libFlurry_5.4.0.a in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
 				E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */,
-				E166EA74193D928900B5AD78 /* libFlurry_4.3.2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				E166EA72193D928900B5AD78 /* Flurry.h */,
-				E166EA73193D928900B5AD78 /* libFlurry_4.3.2.a */,
+				E140EEBB1A1EAE4500115ACD /* libFlurry_5.4.0.a */,
 			);
 			name = Flurry;
 			sourceTree = "<group>";
@@ -807,8 +808,10 @@
 				E1042999189206FC0096B2AD /* iPad3.plist */,
 				E104299A189206FC0096B2AD /* iPad4.plist */,
 				E104299B189206FC0096B2AD /* iPadAir.plist */,
+				E140EEBF1A1EBB6D00115ACD /* iPadAir2.plist */,
 				E104299C189206FC0096B2AD /* iPadMini.plist */,
 				E104299D189206FC0096B2AD /* iPadMiniRetina.plist */,
+				E140EEBD1A1EB97F00115ACD /* iPadMini3.plist */,
 			);
 			path = iPad;
 			sourceTree = "<group>";
@@ -861,7 +864,6 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				49588ACD19378E6D009F694B /* XCTest.framework */,
 				49588ACB19378E60009F694B /* MobileCoreServices.framework */,
 				49588AC919378E53009F694B /* ImageIO.framework */,
 				49E8F29718CB25DF00E98861 /* Accelerate.framework */,
@@ -1190,6 +1192,7 @@
 				49E8F36418CF34C400E98861 /* 1393698288_menu-24.png in Resources */,
 				49E8F37218CF34C400E98861 /* 1393698701_calendar.png in Resources */,
 				49E8F36A18CF34C400E98861 /* 1393698549_video.png in Resources */,
+				E140EEBE1A1EB97F00115ACD /* iPadMini3.plist in Resources */,
 				49E8F2AD18CDDC9C00E98861 /* attachment.png in Resources */,
 				E10429C0189206FC0096B2AD /* iPhone5s.plist in Resources */,
 				49E7D88818895EEE0096C450 /* iPhone 57.png in Resources */,
@@ -1215,6 +1218,7 @@
 				49E8F2B118CDDC9C00E98861 /* download.png in Resources */,
 				49E8F38718CF34C400E98861 /* 1393698839_location.png in Resources */,
 				49E8F39218CF34C400E98861 /* 1393698894_tv.png in Resources */,
+				E140EEC01A1EBB6D00115ACD /* iPadAir2.plist in Resources */,
 				E1B8B0941888B20900A20509 /* Icon-Small.png in Resources */,
 				E1B8B0901888B20900A20509 /* Icon-72.png in Resources */,
 				49E8F39118CF34C400E98861 /* 1393698876_t-shirt.png in Resources */,
@@ -1480,6 +1484,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
@@ -1504,6 +1510,8 @@
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Device",
+					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
 					"$(PROJECT_DIR)/Device",

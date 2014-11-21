@@ -135,7 +135,7 @@
                 [self performSegueWithIdentifier:@"LocationViewSegue" sender:self];
                 break;
             case 8:
-                [self performSegueWithIdentifier:@"BecibelMeterViewSegue" sender:self];
+                [self performSegueWithIdentifier:@"DecibelMeterViewSegue" sender:self];
                 break;
                 
             default:
