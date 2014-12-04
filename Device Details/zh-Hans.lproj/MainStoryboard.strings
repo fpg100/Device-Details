@@ -1,0 +1,1074 @@
+
+/* Class = "IBUILabel"; text = "ZIP Code:"; ObjectID = "07e-ms-LSe"; */
+"07e-ms-LSe.text" = "ZIP Code:";
+
+/* Class = "IBUILabel"; text = "Device Name:"; ObjectID = "0Ol-Qc-2YL"; */
+"0Ol-Qc-2YL.text" = "Device Name:";
+
+/* Class = "IBUILabel"; text = "Device Type:"; ObjectID = "0V1-xi-DiR"; */
+"0V1-xi-DiR.text" = "Device Type:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "0jI-rs-51m"; */
+"0jI-rs-51m.text" = "---";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "0nH-mG-FgI"; */
+"0nH-mG-FgI.text" = "---";
+
+/* Class = "IBUILabel"; text = "CPU:"; ObjectID = "10M-0m-U1D"; */
+"10M-0m-U1D.text" = "CPU:";
+
+/* Class = "IBUILabel"; text = "Ture Heading:"; ObjectID = "16f-1K-eNt"; */
+"16f-1K-eNt.text" = "Ture Heading:";
+
+/* Class = "IBUILabel"; text = "Compass"; ObjectID = "1Bk-jw-jY8"; */
+"1Bk-jw-jY8.text" = "Compass";
+
+/* Class = "IBUILabel"; text = "393108C4-6155-497C-B545-FAED8490C7B7"; ObjectID = "1Mz-5T-13h"; */
+"1Mz-5T-13h.text" = "393108C4-6155-497C-B545-FAED8490C7B7";
+
+/* Class = "IBUILabel"; text = "Ocean:"; ObjectID = "1Z6-uG-UFx"; */
+"1Z6-uG-UFx.text" = "Ocean:";
+
+/* Class = "IBUILabel"; text = "Camera Front:"; ObjectID = "1b5-4f-McW"; */
+"1b5-4f-McW.text" = "Camera Front:";
+
+/* Class = "IBUILabel"; text = "Compass Details"; ObjectID = "1gB-Np-PuZ"; */
+"1gB-Np-PuZ.text" = "Compass Details";
+
+/* Class = "IBUILabel"; text = "Decibel Meter"; ObjectID = "1mT-vm-pbT"; */
+"1mT-vm-pbT.text" = "Decibel Meter";
+
+/* Class = "IBUILabel"; text = "重力加速度值 ："; ObjectID = "1ol-gp-CiI"; */
+"1ol-gp-CiI.text" = "重力加速度值 ：";
+
+/* Class = "IBUIButton"; normalTitle = "BigStopWatch"; ObjectID = "1ox-Hk-Fml"; */
+"1ox-Hk-Fml.normalTitle" = "BigStopWatch";
+
+/* Class = "IBUILabel"; text = "Someone's phone"; ObjectID = "1wk-nr-gJn"; */
+"1wk-nr-gJn.text" = "Someone's phone";
+
+/* Class = "IBUILabel"; text = " Screen Brightness:"; ObjectID = "244-1o-rdz"; */
+"244-1o-rdz.text" = " Screen Brightness:";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "25A-Sd-gi6"; */
+"25A-Sd-gi6.text" = "z:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "29k-YP-bZ4"; */
+"29k-YP-bZ4.text" = "--";
+
+/* Class = "IBUILabel"; text = "WiFi Network Name"; ObjectID = "2In-ne-4bq"; */
+"2In-ne-4bq.text" = "WiFi Network Name";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "2JR-dq-KqT"; */
+"2JR-dq-KqT.text" = "z:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "2nY-6X-ELD"; */
+"2nY-6X-ELD.text" = "---";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "3DB-Xd-xhL"; */
+"3DB-Xd-xhL.text" = "---";
+
+/* Class = "IBUILabel"; text = "100"; ObjectID = "3GD-Sd-YAL"; */
+"3GD-Sd-YAL.text" = "100";
+
+/* Class = "IBUILabel"; text = "罗盘信息"; ObjectID = "3SP-Cx-vbz"; */
+"3SP-Cx-vbz.text" = "罗盘信息";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "3vh-OV-aQI"; */
+"3vh-OV-aQI.text" = "--";
+
+/* Class = "IBUILabel"; text = "Used Storage:"; ObjectID = "41F-Ml-mOh"; */
+"41F-Ml-mOh.text" = "Used Storage:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "45l-eA-Thx"; */
+"45l-eA-Thx.text" = "--";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "4Ns-r4-8nN"; */
+"4Ns-r4-8nN.text" = "359°";
+
+/* Class = "IBUILabel"; text = "IP Address:"; ObjectID = "4Uo-mB-qnQ"; */
+"4Uo-mB-qnQ.text" = "IP Address:";
+
+/* Class = "IBUILabel"; text = "SSID:"; ObjectID = "4ht-SY-Va4"; */
+"4ht-SY-Va4.text" = "SSID:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "4tF-hm-3my"; */
+"4tF-hm-3my.text" = "--";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "54k-JD-Qy9"; */
+"54k-JD-Qy9.text" = "359°";
+
+/* Class = "IBUILabel"; text = "3.1GB"; ObjectID = "5QW-zO-5rc"; */
+"5QW-zO-5rc.text" = "3.1GB";
+
+/* Class = "IBUILabel"; text = "Neighborhood:"; ObjectID = "5ZF-gs-8Nh"; */
+"5ZF-gs-8Nh.text" = "Neighborhood:";
+
+/* Class = "IBUILabel"; text = "External IP Address:"; ObjectID = "5Zk-GF-FU4"; */
+"5Zk-GF-FU4.text" = "External IP Address:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "6TZ-O1-YcN"; */
+"6TZ-O1-YcN.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "6bk-Jd-hi5"; */
+"6bk-Jd-hi5.text" = "--";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "6hk-uA-DuJ"; */
+"6hk-uA-DuJ.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "6oo-I2-zv9"; */
+"6oo-I2-zv9.text" = "--";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "7Pi-kv-dGJ"; */
+"7Pi-kv-dGJ.text" = "z:";
+
+/* Class = "IBUILabel"; text = "Free RAM:"; ObjectID = "7QD-uJ-FzI"; */
+"7QD-uJ-FzI.text" = "Free RAM:";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "7ap-1F-QBm"; */
+"7ap-1F-QBm.text" = "x:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "7mZ-qB-Kta"; */
+"7mZ-qB-Kta.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "83q-DV-MEc"; */
+"83q-DV-MEc.text" = "--";
+
+/* Class = "IBUILabel"; text = "旋转速率 ："; ObjectID = "8Yc-aG-L4g"; */
+"8Yc-aG-L4g.text" = "旋转速率 ：";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "8aV-3L-6SH"; */
+"8aV-3L-6SH.text" = "...";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "8e3-sl-Wed"; */
+"8e3-sl-Wed.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "92O-Ou-oVd"; */
+"92O-Ou-oVd.text" = "--";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "93q-RH-iF2"; */
+"93q-RH-iF2.text" = "z:";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "9Hx-EP-pCd"; */
+"9Hx-EP-pCd.text" = "359°";
+
+/* Class = "IBUILabel"; text = "Horizontal Accuracy:"; ObjectID = "9jM-j1-hjx"; */
+"9jM-j1-hjx.text" = "Horizontal Accuracy:";
+
+/* Class = "IBUILabel"; text = "Hardware Details"; ObjectID = "9lz-yw-4PK"; */
+"9lz-yw-4PK.text" = "Hardware Details";
+
+/* Class = "IBUILabel"; text = "Decibel Meter"; ObjectID = "9nE-0y-uG2"; */
+"9nE-0y-uG2.text" = "Decibel Meter";
+
+/* Class = "IBUILabel"; text = "Date Time"; ObjectID = "AOi-cL-V5d"; */
+"AOi-cL-V5d.text" = "Date Time";
+
+/* Class = "IBUILabel"; text = " Screen Brightness:"; ObjectID = "BS3-at-jBf"; */
+"BS3-at-jBf.text" = " Screen Brightness:";
+
+/* Class = "IBUILabel"; text = "运动信息"; ObjectID = "BdQ-NL-tBv"; */
+"BdQ-NL-tBv.text" = "运动信息";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Bei-Er-DAC"; */
+"Bei-Er-DAC.text" = "--";
+
+/* Class = "IBUILabel"; text = "Network Type:"; ObjectID = "BqH-GY-PBm"; */
+"BqH-GY-PBm.text" = "Network Type:";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "Bqc-mW-Qnh"; */
+"Bqc-mW-Qnh.text" = "...";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "C33-KZ-rL9"; */
+"C33-KZ-rL9.text" = "z:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "C9E-kO-m9f"; */
+"C9E-kO-m9f.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "CCB-wT-dNx"; */
+"CCB-wT-dNx.text" = "--";
+
+/* Class = "IBUILabel"; text = "IP Mask:"; ObjectID = "CUT-Os-DFy"; */
+"CUT-Os-DFy.text" = "IP Mask:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "CiN-IX-GvN"; */
+"CiN-IX-GvN.text" = "--";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "CoF-h1-U2w"; */
+"CoF-h1-U2w.text" = "---";
+
+/* Class = "IBUILabel"; text = "To Geomagnetic:"; ObjectID = "D1N-Iv-uyY"; */
+"D1N-Iv-uyY.text" = "To Geomagnetic:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "D6K-yi-Opn"; */
+"D6K-yi-Opn.text" = "--";
+
+/* Class = "IBUILabel"; text = "----"; ObjectID = "D97-Ue-FId"; */
+"D97-Ue-FId.text" = "----";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "D9C-Rd-pDq"; */
+"D9C-Rd-pDq.text" = "359°";
+
+/* Class = "IBUILabel"; text = "Ocean:"; ObjectID = "DMX-TS-Pfa"; */
+"DMX-TS-Pfa.text" = "Ocean:";
+
+/* Class = "IBUILabel"; text = "3.1GB"; ObjectID = "Dct-N9-qud"; */
+"Dct-N9-qud.text" = "3.1GB";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Dnp-YD-l4j"; */
+"Dnp-YD-l4j.text" = "--";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "Dry-Q9-TqE"; */
+"Dry-Q9-TqE.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "E9j-WQ-ZJJ"; */
+"E9j-WQ-ZJJ.text" = "--";
+
+/* Class = "IBUILabel"; text = "Free RAM:"; ObjectID = "EJY-PA-Ti8"; */
+"EJY-PA-Ti8.text" = "Free RAM:";
+
+/* Class = "IBUILabel"; text = "Network Type:"; ObjectID = "FDe-7m-OZS"; */
+"FDe-7m-OZS.text" = "Network Type:";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "FGC-EO-ShT"; */
+"FGC-EO-ShT.text" = "y:";
+
+/* Class = "IBUILabel"; text = "Name:"; ObjectID = "Ffg-N3-tG5"; */
+"Ffg-N3-tG5.text" = "Name:";
+
+/* Class = "IBUILabel"; text = "Back:"; ObjectID = "FoZ-8y-KAL"; */
+"FoZ-8y-KAL.text" = "Back:";
+
+/* Class = "IBUILabel"; text = "Vertical Accuracy:"; ObjectID = "Fqz-Kr-Gzc"; */
+"Fqz-Kr-Gzc.text" = "Vertical Accuracy:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Fzd-yX-6ZW"; */
+"Fzd-yX-6ZW.text" = "--";
+
+/* Class = "IBUILabel"; text = "Neighborhood:"; ObjectID = "GMz-cN-KK5"; */
+"GMz-cN-KK5.text" = "Neighborhood:";
+
+/* Class = "IBUILabel"; text = "Local Date Time:"; ObjectID = "GYj-vd-A2o"; */
+"GYj-vd-A2o.text" = "Local Date Time:";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "GuE-BL-n7U"; */
+"GuE-BL-n7U.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "H0l-Tc-oCa"; */
+"H0l-Tc-oCa.text" = "y:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "H3X-Wa-dfR"; */
+"H3X-Wa-dfR.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "HB5-fj-FSG"; */
+"HB5-fj-FSG.text" = "--";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "HH2-iU-v0v"; */
+"HH2-iU-v0v.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "HnC-YB-hLs"; */
+"HnC-YB-hLs.text" = "--";
+
+/* Class = "IBUILabel"; text = "Size of RAM:"; ObjectID = "Hnp-dC-sAw"; */
+"Hnp-dC-sAw.text" = "Size of RAM:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "HoK-mb-VhK"; */
+"HoK-mb-VhK.text" = "---";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "Ht7-KB-W1a"; */
+"Ht7-KB-W1a.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "Hwo-9q-io7"; */
+"Hwo-9q-io7.text" = "---";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "IHX-bL-vNh"; */
+"IHX-bL-vNh.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "IP Address:"; ObjectID = "IIg-4e-ESl"; */
+"IIg-4e-ESl.text" = "IP Address:";
+
+/* Class = "IBUILabel"; text = "Longitude:"; ObjectID = "IVe-kE-yYA"; */
+"IVe-kE-yYA.text" = "Longitude:";
+
+/* Class = "IBUILabel"; text = "Name:"; ObjectID = "IbK-et-qWA"; */
+"IbK-et-qWA.text" = "Name:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Ifu-tf-FKx"; */
+"Ifu-tf-FKx.text" = "--";
+
+/* Class = "IBUILabel"; text = "Average Power:"; ObjectID = "Ijr-7a-hVv"; */
+"Ijr-7a-hVv.text" = "Average Power:";
+
+/* Class = "IBUILabel"; text = "City:"; ObjectID = "ImK-2P-o68"; */
+"ImK-2P-o68.text" = "City:";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "IyM-d9-lMZ"; */
+"IyM-d9-lMZ.text" = "x:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "J5R-tg-ObZ"; */
+"J5R-tg-ObZ.text" = "--";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "JFY-5W-VFs"; */
+"JFY-5W-VFs.text" = "x:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "JOk-M1-jPc"; */
+"JOk-M1-jPc.text" = "--";
+
+/* Class = "IBUILabel"; text = "Peak Power:"; ObjectID = "JSv-as-1Yd"; */
+"JSv-as-1Yd.text" = "Peak Power:";
+
+/* Class = "IBUILabel"; text = "Number:"; ObjectID = "JtP-3U-MT0"; */
+"JtP-3U-MT0.text" = "Number:";
+
+/* Class = "IBUILabel"; text = "UTC Date Time:"; ObjectID = "K08-zw-Meu"; */
+"K08-zw-Meu.text" = "UTC Date Time:";
+
+/* Class = "IBUILabel"; text = "iPhone 3GS"; ObjectID = "K2D-7B-yem"; */
+"K2D-7B-yem.text" = "iPhone 3GS";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "K3L-oo-jpd"; */
+"K3L-oo-jpd.text" = "---";
+
+/* Class = "IBUILabel"; text = "Dimensions:"; ObjectID = "KGW-v6-DCp"; */
+"KGW-v6-DCp.text" = "Dimensions:";
+
+/* Class = "IBUILabel"; text = "100"; ObjectID = "KLH-IO-juu"; */
+"KLH-IO-juu.text" = "100";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "KPj-jM-8cI"; */
+"KPj-jM-8cI.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "KPo-dR-R35"; */
+"KPo-dR-R35.text" = "--";
+
+/* Class = "IBUILabel"; text = "no"; ObjectID = "Kbo-qj-bJx"; */
+"Kbo-qj-bJx.text" = "no";
+
+/* Class = "IBUILabel"; text = "CPU:"; ObjectID = "LAu-Pf-5eG"; */
+"LAu-Pf-5eG.text" = "CPU:";
+
+/* Class = "IBUILabel"; text = "Size of RAM:"; ObjectID = "LJh-rB-jOS"; */
+"LJh-rB-jOS.text" = "Size of RAM:";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "LRq-HS-mXf"; */
+"LRq-HS-mXf.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Lb7-ht-Rgd"; */
+"Lb7-ht-Rgd.text" = "--";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "LmA-ol-22c"; */
+"LmA-ol-22c.text" = "x:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "Lqb-tb-Seo"; */
+"Lqb-tb-Seo.text" = "---";
+
+/* Class = "IBUILabel"; text = "State:"; ObjectID = "Lrw-6P-5os"; */
+"Lrw-6P-5os.text" = "State:";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "LwO-My-HTz"; */
+"LwO-My-HTz.text" = "z:";
+
+/* Class = "IBUILabel"; text = "3.1GB"; ObjectID = "M1I-UK-Mac"; */
+"M1I-UK-Mac.text" = "3.1GB";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "MMh-Ga-Dbe"; */
+"MMh-Ga-Dbe.text" = "...";
+
+/* Class = "IBUILabel"; text = "Inland Water:"; ObjectID = "MPn-3U-hVH"; */
+"MPn-3U-hVH.text" = "Inland Water:";
+
+/* Class = "IBUILabel"; text = "罗盘朝向 ："; ObjectID = "MYi-EK-RGZ"; */
+"MYi-EK-RGZ.text" = "罗盘朝向 ：";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "MgF-s5-1vY"; */
+"MgF-s5-1vY.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "Mib-4G-sXg"; */
+"Mib-4G-sXg.text" = "z:";
+
+/* Class = "IBUILabel"; text = "Size of Storage:"; ObjectID = "MjR-Gj-D5i"; */
+"MjR-Gj-D5i.text" = "Size of Storage:";
+
+/* Class = "IBUILabel"; text = "Remaining Storage:"; ObjectID = "Mpc-up-GXW"; */
+"Mpc-up-GXW.text" = "Remaining Storage:";
+
+/* Class = "IBUILabel"; text = "Jailbroken:"; ObjectID = "Mpr-jv-hdF"; */
+"Mpr-jv-hdF.text" = "Jailbroken:";
+
+/* Class = "IBUILabel"; text = "Network Details"; ObjectID = "Msq-yF-zxu"; */
+"Msq-yF-zxu.text" = "Network Details";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "Mzz-db-3rx"; */
+"Mzz-db-3rx.text" = "x:";
+
+/* Class = "IBUILabel"; text = "My Favorite Free Apps :)"; ObjectID = "N4t-JL-dvE"; */
+"N4t-JL-dvE.text" = "My Favorite Free Apps :)";
+
+/* Class = "IBUILabel"; text = "OS Version:"; ObjectID = "NG7-mW-D1L"; */
+"NG7-mW-D1L.text" = "OS Version:";
+
+/* Class = "IBUILabel"; text = "Location Details"; ObjectID = "NPM-2x-DOa"; */
+"NPM-2x-DOa.text" = "Location Details";
+
+/* Class = "IBUILabel"; text = "MAC Address:"; ObjectID = "Ncm-5Z-AtZ"; */
+"Ncm-5Z-AtZ.text" = "MAC Address:";
+
+/* Class = "IBUILabel"; text = "no"; ObjectID = "O3B-bY-Nue"; */
+"O3B-bY-Nue.text" = "no";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "O8P-F1-gyu"; */
+"O8P-F1-gyu.text" = "--";
+
+/* Class = "IBUIButton"; normalTitle = "SpectrumView"; ObjectID = "OQK-Oq-Uys"; */
+"OQK-Oq-Uys.normalTitle" = "SpectrumView";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "OWk-Qg-gVW"; */
+"OWk-Qg-gVW.text" = "x:";
+
+/* Class = "IBUILabel"; text = "iPhone 1,2"; ObjectID = "Occ-BG-gET"; */
+"Occ-BG-gET.text" = "iPhone 1,2";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "P6i-yB-XBk"; */
+"P6i-yB-XBk.text" = "y:";
+
+/* Class = "IBUILabel"; text = "Geomagnetism:"; ObjectID = "PDI-Yi-YRE"; */
+"PDI-Yi-YRE.text" = "Geomagnetism:";
+
+/* Class = "IBUILabel"; text = "GPU:"; ObjectID = "PbO-cs-vLB"; */
+"PbO-cs-vLB.text" = "GPU:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "Pk0-Pa-H4k"; */
+"Pk0-Pa-H4k.text" = "---";
+
+/* Class = "IBUILabel"; text = "Bluetooth:"; ObjectID = "Pq9-VH-3EX"; */
+"Pq9-VH-3EX.text" = "Bluetooth:";
+
+/* Class = "IBUILabel"; text = "County:"; ObjectID = "PwI-g7-086"; */
+"PwI-g7-086.text" = "County:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Q23-LF-SfX"; */
+"Q23-LF-SfX.text" = "--";
+
+/* Class = "IBUILabel"; text = "Altitude:"; ObjectID = "Q4c-Ts-AzF"; */
+"Q4c-Ts-AzF.text" = "Altitude:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "QFz-dG-pDM"; */
+"QFz-dG-pDM.text" = "---";
+
+/* Class = "IBUILabel"; text = "To Geomagnetic:"; ObjectID = "QSC-pI-tqH"; */
+"QSC-pI-tqH.text" = "To Geomagnetic:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "QXs-i2-J5R"; */
+"QXs-i2-J5R.text" = "---";
+
+/* Class = "IBUILabel"; text = "Remaining Storage:"; ObjectID = "Qzc-E2-ZAk"; */
+"Qzc-E2-ZAk.text" = "Remaining Storage:";
+
+/* Class = "IBUILabel"; text = "Operating System"; ObjectID = "R8B-cV-WZR"; */
+"R8B-cV-WZR.text" = "Operating System";
+
+/* Class = "IBUILabel"; text = "6.1.3"; ObjectID = "RBx-Ne-6J3"; */
+"RBx-Ne-6J3.text" = "6.1.3";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "RZi-8i-vkg"; */
+"RZi-8i-vkg.text" = "z:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Rfe-qj-Ox8"; */
+"Rfe-qj-Ox8.text" = "--";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "RrL-8P-XdA"; */
+"RrL-8P-XdA.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "SUO-St-NtL"; */
+"SUO-St-NtL.text" = "--";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "Sc9-OV-CJE"; */
+"Sc9-OV-CJE.text" = "x:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "SgV-9e-pSf"; */
+"SgV-9e-pSf.text" = "--";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "Snc-Wm-PVF"; */
+"Snc-Wm-PVF.text" = "...";
+
+/* Class = "IBUILabel"; text = "Device Mode:"; ObjectID = "Snh-9W-FBR"; */
+"Snh-9W-FBR.text" = "Device Mode:";
+
+/* Class = "IBUILabel"; text = "Device Name:"; ObjectID = "TF2-WA-nZa"; */
+"TF2-WA-nZa.text" = "Device Name:";
+
+/* Class = "IBUILabel"; text = "Horizontal Accuracy:"; ObjectID = "TNO-xt-KDq"; */
+"TNO-xt-KDq.text" = "Horizontal Accuracy:";
+
+/* Class = "IBUILabel"; text = "Inland Water:"; ObjectID = "TQV-ld-hLf"; */
+"TQV-ld-hLf.text" = "Inland Water:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "TSY-P4-r9u"; */
+"TSY-P4-r9u.text" = "---";
+
+/* Class = "IBUILabel"; text = "iPhone OS"; ObjectID = "Tgi-Wk-pJM"; */
+"Tgi-Wk-pJM.text" = "iPhone OS";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "Tlr-IJ-Nw3"; */
+"Tlr-IJ-Nw3.text" = "z:";
+
+/* Class = "IBUILabel"; text = "CPU Usage For App:"; ObjectID = "U5v-oa-IHF"; */
+"U5v-oa-IHF.text" = "CPU Usage For App:";
+
+/* Class = "IBUILabel"; text = "3.1GB"; ObjectID = "UWL-tx-eix"; */
+"UWL-tx-eix.text" = "3.1GB";
+
+/* Class = "IBUILabel"; text = "OS Name:"; ObjectID = "UfW-Cz-WHa"; */
+"UfW-Cz-WHa.text" = "OS Name:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Unl-yU-TNq"; */
+"Unl-yU-TNq.text" = "--";
+
+/* Class = "IBUILabel"; text = "UUID:"; ObjectID = "V4I-7f-qly"; */
+"V4I-7f-qly.text" = "UUID:";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "V4i-jb-icS"; */
+"V4i-jb-icS.text" = "x:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "V9N-9u-Umz"; */
+"V9N-9u-Umz.text" = "---";
+
+/* Class = "IBUILabel"; text = "WLAN:"; ObjectID = "VBv-5w-FjI"; */
+"VBv-5w-FjI.text" = "WLAN:";
+
+/* Class = "IBUILabel"; text = "Course:"; ObjectID = "VEO-RY-Lgd"; */
+"VEO-RY-Lgd.text" = "Course:";
+
+/* Class = "IBUILabel"; text = "Size of Storage:"; ObjectID = "VeX-Wg-Jxx"; */
+"VeX-Wg-Jxx.text" = "Size of Storage:";
+
+/* Class = "IBUILabel"; text = "iPhone OS"; ObjectID = "VzX-CB-Qnl"; */
+"VzX-CB-Qnl.text" = "iPhone OS";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "WHO-Vh-q8N"; */
+"WHO-Vh-q8N.text" = "--";
+
+/* Class = "IBUIButton"; normalTitle = "LightBlue"; ObjectID = "WSX-D0-7yi"; */
+"WSX-D0-7yi.normalTitle" = "LightBlue";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "WWy-Nq-nSt"; */
+"WWy-Nq-nSt.text" = "359°";
+
+/* Class = "IBUILabel"; text = "County:"; ObjectID = "WhN-iy-MzW"; */
+"WhN-iy-MzW.text" = "County:";
+
+/* Class = "IBUILabel"; text = "Device Code:"; ObjectID = "Wj0-ll-jDc"; */
+"Wj0-ll-jDc.text" = "Device Code:";
+
+/* Class = "IBUILabel"; text = "GPU:"; ObjectID = "Wv7-B5-RVg"; */
+"Wv7-B5-RVg.text" = "GPU:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Wzh-AK-uPP"; */
+"Wzh-AK-uPP.text" = "--";
+
+/* Class = "IBUILabel"; text = "OS Name:"; ObjectID = "X1S-mj-D3V"; */
+"X1S-mj-D3V.text" = "OS Name:";
+
+/* Class = "IBUIButton"; normalTitle = "Fing"; ObjectID = "XDc-yC-t7e"; */
+"XDc-yC-t7e.normalTitle" = "Fing";
+
+/* Class = "IBUILabel"; text = "16GB"; ObjectID = "XGp-O6-e4A"; */
+"XGp-O6-e4A.text" = "16GB";
+
+/* Class = "IBUILabel"; text = "ZIP Code:"; ObjectID = "XUS-oc-Wer"; */
+"XUS-oc-Wer.text" = "ZIP Code:";
+
+/* Class = "IBUILabel"; text = "Average Power:"; ObjectID = "Xad-8g-qQJ"; */
+"Xad-8g-qQJ.text" = "Average Power:";
+
+/* Class = "IBUILabel"; text = "Rotate Rate:"; ObjectID = "Xdv-S5-QF6"; */
+"Xdv-S5-QF6.text" = "Rotate Rate:";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "XsQ-aw-Qo5"; */
+"XsQ-aw-Qo5.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "Y7m-8f-MHZ"; */
+"Y7m-8f-MHZ.text" = "--";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "Y7t-3u-wdP"; */
+"Y7t-3u-wdP.text" = "---";
+
+/* Class = "IBUILabel"; text = "Jailbroken:"; ObjectID = "YT9-4y-gVF"; */
+"YT9-4y-gVF.text" = "Jailbroken:";
+
+/* Class = "IBUILabel"; text = "WiFi"; ObjectID = "YVt-JA-Dxn"; */
+"YVt-JA-Dxn.text" = "WiFi";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "YXv-uz-xhL"; */
+"YXv-uz-xhL.text" = "359°";
+
+/* Class = "IBUILabel"; text = "City:"; ObjectID = "Ybg-Na-HD7"; */
+"Ybg-Na-HD7.text" = "City:";
+
+/* Class = "IBUILabel"; text = "Screen Density:"; ObjectID = "YeZ-Tg-mWY"; */
+"YeZ-Tg-mWY.text" = "Screen Density:";
+
+/* Class = "IBUILabel"; text = "Camera Front:"; ObjectID = "YkH-88-Zqc"; */
+"YkH-88-Zqc.text" = "Camera Front:";
+
+/* Class = "IBUILabel"; text = "Back:"; ObjectID = "Ykx-yi-QoS"; */
+"Ykx-yi-QoS.text" = "Back:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "YnK-8O-TSI"; */
+"YnK-8O-TSI.text" = "--";
+
+/* Class = "IBUILabel"; text = "Longitude:"; ObjectID = "Ytf-NP-yG0"; */
+"Ytf-NP-yG0.text" = "Longitude:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "ZNM-Kh-6fn"; */
+"ZNM-Kh-6fn.text" = "--";
+
+/* Class = "IBUILabel"; text = "100"; ObjectID = "ZT5-Vc-0Bv"; */
+"ZT5-Vc-0Bv.text" = "100";
+
+/* Class = "IBUILabel"; text = "Weight:"; ObjectID = "ZpE-03-npO"; */
+"ZpE-03-npO.text" = "Weight:";
+
+/* Class = "IBUILabel"; text = "MAC Address:"; ObjectID = "a4l-k6-nOw"; */
+"a4l-k6-nOw.text" = "MAC Address:";
+
+/* Class = "IBUILabel"; text = "OS Details"; ObjectID = "a8D-kY-xNT"; */
+"a8D-kY-xNT.text" = "OS Details";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "aEi-9I-Lnp"; */
+"aEi-9I-Lnp.text" = "---";
+
+/* Class = "IBUILabel"; text = "WLAN:"; ObjectID = "aIY-aY-EdI"; */
+"aIY-aY-EdI.text" = "WLAN:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "aZj-te-8sH"; */
+"aZj-te-8sH.text" = "--";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "amA-Mi-Yep"; */
+"amA-Mi-Yep.text" = "y:";
+
+/* Class = "IBUILabel"; text = "External IP Address:"; ObjectID = "awY-hE-LFg"; */
+"awY-hE-LFg.text" = "External IP Address:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "b7R-9N-IzF"; */
+"b7R-9N-IzF.text" = "--";
+
+/* Class = "IBUILabel"; text = "Screen Type:"; ObjectID = "bf7-U4-dHR"; */
+"bf7-U4-dHR.text" = "Screen Type:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "bq9-9J-X8N"; */
+"bq9-9J-X8N.text" = "---";
+
+/* Class = "IBUILabel"; text = "Ture Heading:"; ObjectID = "bvj-Ya-rrx"; */
+"bvj-Ya-rrx.text" = "Ture Heading:";
+
+/* Class = "IBUILabel"; text = "Nation:"; ObjectID = "c51-oc-AnY"; */
+"c51-oc-AnY.text" = "Nation:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "cDq-ds-KvX"; */
+"cDq-ds-KvX.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "cNW-pW-v7f"; */
+"cNW-pW-v7f.text" = "--";
+
+/* Class = "IBUILabel"; text = "Used Storage:"; ObjectID = "cRk-9Z-Bj2"; */
+"cRk-9Z-Bj2.text" = "Used Storage:";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "cVp-1s-ZMo"; */
+"cVp-1s-ZMo.text" = "359°";
+
+/* Class = "IBUILabel"; text = "Country Code:"; ObjectID = "ccI-ba-shz"; */
+"ccI-ba-shz.text" = "Country Code:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "cdV-Fh-XoS"; */
+"cdV-Fh-XoS.text" = "--";
+
+/* Class = "IBUILabel"; text = "Local Date Time:"; ObjectID = "chP-jc-Scm"; */
+"chP-jc-Scm.text" = "Local Date Time:";
+
+/* Class = "IBUILabel"; text = "393108C4-6155-497C-B545-FAED8490C7B7"; ObjectID = "ciJ-Sm-RCe"; */
+"ciJ-Sm-RCe.text" = "393108C4-6155-497C-B545-FAED8490C7B7";
+
+/* Class = "IBUILabel"; text = "----"; ObjectID = "cyD-qn-uj7"; */
+"cyD-qn-uj7.text" = "----";
+
+/* Class = "IBUILabel"; text = "SSID:"; ObjectID = "dBd-QJ-iRA"; */
+"dBd-QJ-iRA.text" = "SSID:";
+
+/* Class = "IBUILabel"; text = "Motion Details"; ObjectID = "dQA-qB-x7q"; */
+"dQA-qB-x7q.text" = "Motion Details";
+
+/* Class = "IBUILabel"; text = "Vertical Accuracy:"; ObjectID = "dT3-kk-xyi"; */
+"dT3-kk-xyi.text" = "Vertical Accuracy:";
+
+/* Class = "IBUILabel"; text = "iPhone 1,2"; ObjectID = "dTL-pP-Uem"; */
+"dTL-pP-Uem.text" = "iPhone 1,2";
+
+/* Class = "IBUILabel"; text = "OS Version:"; ObjectID = "dTZ-js-bey"; */
+"dTZ-js-bey.text" = "OS Version:";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "dW2-4b-R2V"; */
+"dW2-4b-R2V.text" = "x:";
+
+/* Class = "IBUILabel"; text = "Speed:"; ObjectID = "dgY-zL-sfs"; */
+"dgY-zL-sfs.text" = "Speed:";
+
+/* Class = "IBUILabel"; text = "Geomagnetism:"; ObjectID = "e1W-bj-oNv"; */
+"e1W-bj-oNv.text" = "Geomagnetism:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "e2x-7i-3jF"; */
+"e2x-7i-3jF.text" = "--";
+
+/* Class = "IBUILabel"; text = "Date Time"; ObjectID = "eU0-rC-qis"; */
+"eU0-rC-qis.text" = "Date Time";
+
+/* Class = "IBUILabel"; text = "Screen Density:"; ObjectID = "eba-mb-eq3"; */
+"eba-mb-eq3.text" = "Screen Density:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "ebd-u9-UA1"; */
+"ebd-u9-UA1.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "efJ-oz-GNj"; */
+"efJ-oz-GNj.text" = "--";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "eg3-li-dWa"; */
+"eg3-li-dWa.text" = "---";
+
+/* Class = "IBUILabel"; text = "100"; ObjectID = "enc-Dn-jT5"; */
+"enc-Dn-jT5.text" = "100";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "f0R-sU-O0h"; */
+"f0R-sU-O0h.text" = "359°";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "f1p-ty-vjz"; */
+"f1p-ty-vjz.text" = "--";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "fE7-6F-iXI"; */
+"fE7-6F-iXI.text" = "...";
+
+/* Class = "IBUILabel"; text = "Latitude:"; ObjectID = "fS2-o3-kgO"; */
+"fS2-o3-kgO.text" = "Latitude:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "g1Y-mH-mSC"; */
+"g1Y-mH-mSC.text" = "--";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "g9B-I6-pgP"; */
+"g9B-I6-pgP.text" = "359°";
+
+/* Class = "IBUILabel"; text = "UUID:"; ObjectID = "gAJ-Cg-mXl"; */
+"gAJ-Cg-mXl.text" = "UUID:";
+
+/* Class = "IBUILabel"; text = "Bluetooth:"; ObjectID = "gE6-72-PX4"; */
+"gE6-72-PX4.text" = "Bluetooth:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "gIE-yX-kdR"; */
+"gIE-yX-kdR.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "gT5-7N-cDI"; */
+"gT5-7N-cDI.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "gbn-g9-ID7"; */
+"gbn-g9-ID7.text" = "--";
+
+/* Class = "IBUILabel"; text = "Device Mode:"; ObjectID = "gem-Gg-Z0B"; */
+"gem-Gg-Z0B.text" = "Device Mode:";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "ggq-A7-Krd"; */
+"ggq-A7-Krd.text" = "z:";
+
+/* Class = "IBUILabel"; text = "iPad"; ObjectID = "gjB-MC-0z7"; */
+"gjB-MC-0z7.text" = "iPad";
+
+/* Class = "IBUILabel"; text = "Screen Size:"; ObjectID = "hAh-rI-wy4"; */
+"hAh-rI-wy4.text" = "Screen Size:";
+
+/* Class = "IBUILabel"; text = "真实朝向 ："; ObjectID = "hZH-he-Ukn"; */
+"hZH-he-Ukn.text" = "真实朝向 ：";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "hqY-LJ-EQb"; */
+"hqY-LJ-EQb.text" = "--";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "i4C-sA-aFK"; */
+"i4C-sA-aFK.text" = "y:";
+
+/* Class = "IBUILabel"; text = "Magnetic Field:"; ObjectID = "i6z-aS-hRQ"; */
+"i6z-aS-hRQ.text" = "Magnetic Field:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "iE3-8n-EK0"; */
+"iE3-8n-EK0.text" = "---";
+
+/* Class = "IBUILabel"; text = "WiFi Network Name"; ObjectID = "iFk-U2-h4L"; */
+"iFk-U2-h4L.text" = "WiFi Network Name";
+
+/* Class = "IBUILabel"; text = "359.9°"; ObjectID = "iMF-Ta-Dwy"; */
+"iMF-Ta-Dwy.text" = "359.9°";
+
+/* Class = "IBUILabel"; text = "Address:"; ObjectID = "iVb-px-meL"; */
+"iVb-px-meL.text" = "Address:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "iuz-ji-k3x"; */
+"iuz-ji-k3x.text" = "---";
+
+/* Class = "IBUILabel"; text = "z:"; ObjectID = "jGr-n9-n0O"; */
+"jGr-n9-n0O.text" = "z:";
+
+/* Class = "IBUILabel"; text = "6.1.3"; ObjectID = "jYw-64-Sg2"; */
+"jYw-64-Sg2.text" = "6.1.3";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "jbv-LF-nJt"; */
+"jbv-LF-nJt.text" = "359°";
+
+/* Class = "IBUILabel"; text = "359°"; ObjectID = "jeR-AS-fyw"; */
+"jeR-AS-fyw.text" = "359°";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "k0b-lI-y0n"; */
+"k0b-lI-y0n.text" = "--";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "kb6-z0-GhC"; */
+"kb6-z0-GhC.text" = "y:";
+
+/* Class = "IBUILabel"; text = "100"; ObjectID = "km8-bu-2RW"; */
+"km8-bu-2RW.text" = "100";
+
+/* Class = "IBUILabel"; text = "Peak Power:"; ObjectID = "ksp-O4-bdp"; */
+"ksp-O4-bdp.text" = "Peak Power:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "l39-A1-Exx"; */
+"l39-A1-Exx.text" = "--";
+
+/* Class = "IBUILabel"; text = "Weight:"; ObjectID = "l4n-lk-bhi"; */
+"l4n-lk-bhi.text" = "Weight:";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "lW3-GK-4IS"; */
+"lW3-GK-4IS.text" = "---";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "lZL-2y-3OC"; */
+"lZL-2y-3OC.text" = "---";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "lau-fs-gvH"; */
+"lau-fs-gvH.text" = "---";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "lot-4t-OPk"; */
+"lot-4t-OPk.text" = "--";
+
+/* Class = "IBUILabel"; text = "Altitude:"; ObjectID = "lvW-AO-f9C"; */
+"lvW-AO-f9C.text" = "Altitude:";
+
+/* Class = "IBUILabel"; text = "地磁偏角 ："; ObjectID = "mwD-xJ-kPJ"; */
+"mwD-xJ-kPJ.text" = "地磁偏角 ：";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "n9m-Cx-8Dn"; */
+"n9m-Cx-8Dn.text" = "y:";
+
+/* Class = "IBUILabel"; text = "WiFi"; ObjectID = "nT9-FV-nrK"; */
+"nT9-FV-nrK.text" = "WiFi";
+
+/* Class = "IBUILabel"; text = "Someone's phone"; ObjectID = "nVX-xl-9U1"; */
+"nVX-xl-9U1.text" = "Someone's phone";
+
+/* Class = "IBUILabel"; text = "Screen Type:"; ObjectID = "ndH-9H-Mvs"; */
+"ndH-9H-Mvs.text" = "Screen Type:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "nie-mG-PB0"; */
+"nie-mG-PB0.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "nzS-Ej-mc9"; */
+"nzS-Ej-mc9.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "o2e-Q1-l1Q"; */
+"o2e-Q1-l1Q.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "o9g-S1-lzy"; */
+"o9g-S1-lzy.text" = "--";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "oNe-UV-6gM"; */
+"oNe-UV-6gM.text" = "y:";
+
+/* Class = "IBUILabel"; text = "Gyro Rate:"; ObjectID = "oOf-CO-juZ"; */
+"oOf-CO-juZ.text" = "Gyro Rate:";
+
+/* Class = "IBUILabel"; text = "Average Power:"; ObjectID = "od4-Q4-Efs"; */
+"od4-Q4-Efs.text" = "Average Power:";
+
+/* Class = "IBUILabel"; text = "地磁 ："; ObjectID = "ofQ-LR-I7i"; */
+"ofQ-LR-I7i.text" = "地磁 ：";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "p8V-uq-15p"; */
+"p8V-uq-15p.text" = "---";
+
+/* Class = "IBUILabel"; text = "Address:"; ObjectID = "pMJ-B3-Sod"; */
+"pMJ-B3-Sod.text" = "Address:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "phB-Vx-I1D"; */
+"phB-Vx-I1D.text" = "--";
+
+/* Class = "IBUILabel"; text = "磁场值 ："; ObjectID = "pnR-WY-581"; */
+"pnR-WY-581.text" = "磁场值 ：";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "pt6-41-RY6"; */
+"pt6-41-RY6.text" = "--";
+
+/* Class = "IBUILabel"; text = "Device Code:"; ObjectID = "qOb-6E-me7"; */
+"qOb-6E-me7.text" = "Device Code:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "qXg-44-LQ3"; */
+"qXg-44-LQ3.text" = "--";
+
+/* Class = "IBUILabel"; text = "16GB"; ObjectID = "qh6-HA-Nt0"; */
+"qh6-HA-Nt0.text" = "16GB";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "qvG-4F-omv"; */
+"qvG-4F-omv.text" = "--";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "r2U-Uw-4xv"; */
+"r2U-Uw-4xv.text" = "...";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "r8Q-1p-8oe"; */
+"r8Q-1p-8oe.text" = "---";
+
+/* Class = "IBUILabel"; text = "iPad"; ObjectID = "rH4-4h-aPm"; */
+"rH4-4h-aPm.text" = "iPad";
+
+/* Class = "IBUILabel"; text = "陀螺值 ："; ObjectID = "rWh-IS-l70"; */
+"rWh-IS-l70.text" = "陀螺值 ：";
+
+/* Class = "IBUILabel"; text = "Areas of Interest:"; ObjectID = "rbq-4n-9en"; */
+"rbq-4n-9en.text" = "Areas of Interest:";
+
+/* Class = "IBUILabel"; text = "Device Type:"; ObjectID = "rcF-NH-ojR"; */
+"rcF-NH-ojR.text" = "Device Type:";
+
+/* Class = "IBUILabel"; text = "Country Code:"; ObjectID = "rjt-ed-exg"; */
+"rjt-ed-exg.text" = "Country Code:";
+
+/* Class = "IBUILabel"; text = "Compass Heading:"; ObjectID = "s1g-q2-VvN"; */
+"s1g-q2-VvN.text" = "Compass Heading:";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "s3F-wF-ROb"; */
+"s3F-wF-ROb.text" = "y:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "sNW-uz-UeN"; */
+"sNW-uz-UeN.text" = "--";
+
+/* Class = "IBUILabel"; text = "Compass Heading:"; ObjectID = "sbu-en-dnT"; */
+"sbu-en-dnT.text" = "Compass Heading:";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "sdp-Vr-RJU"; */
+"sdp-Vr-RJU.text" = "y:";
+
+/* Class = "IBUILabel"; text = "y:"; ObjectID = "skl-Uo-aXK"; */
+"skl-Uo-aXK.text" = "y:";
+
+/* Class = "IBUILabel"; text = "Motion Details"; ObjectID = "snY-kR-HWa"; */
+"snY-kR-HWa.text" = "Motion Details";
+
+/* Class = "IBUILabel"; text = "Dimensions:"; ObjectID = "sqN-8n-ohC"; */
+"sqN-8n-ohC.text" = "Dimensions:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "t94-FT-bcK"; */
+"t94-FT-bcK.text" = "--";
+
+/* Class = "IBUILabel"; text = "---"; ObjectID = "tBc-Q0-abr"; */
+"tBc-Q0-abr.text" = "---";
+
+/* Class = "IBUILabel"; text = "Location Details"; ObjectID = "tSm-9Z-f5d"; */
+"tSm-9Z-f5d.text" = "Location Details";
+
+/* Class = "IBUILabel"; text = "CPU Usage For App:"; ObjectID = "tu8-rl-rxo"; */
+"tu8-rl-rxo.text" = "CPU Usage For App:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "u1n-R8-Uld"; */
+"u1n-R8-Uld.text" = "--";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "uAP-ds-rXL"; */
+"uAP-ds-rXL.text" = "x:";
+
+/* Class = "IBUILabel"; text = "State:"; ObjectID = "uSv-Pu-oF4"; */
+"uSv-Pu-oF4.text" = "State:";
+
+/* Class = "IBUILabel"; text = "Gravity:"; ObjectID = "v40-65-Fyd"; */
+"v40-65-Fyd.text" = "Gravity:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "v4J-kf-HuQ"; */
+"v4J-kf-HuQ.text" = "--";
+
+/* Class = "IBUILabel"; text = "Peak Power:"; ObjectID = "vP1-fB-JdG"; */
+"vP1-fB-JdG.text" = "Peak Power:";
+
+/* Class = "IBUILabel"; text = "Processor Number:"; ObjectID = "vbk-Ki-TGL"; */
+"vbk-Ki-TGL.text" = "Processor Number:";
+
+/* Class = "IBUILabel"; text = "Nation:"; ObjectID = "vf8-Gq-zeV"; */
+"vf8-Gq-zeV.text" = "Nation:";
+
+/* Class = "IBUILabel"; text = "Screen Size:"; ObjectID = "vjm-lQ-D8I"; */
+"vjm-lQ-D8I.text" = "Screen Size:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "vwj-eL-ec9"; */
+"vwj-eL-ec9.text" = "--";
+
+/* Class = "IBUILabel"; text = "Number:"; ObjectID = "vzS-AZ-2hK"; */
+"vzS-AZ-2hK.text" = "Number:";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "w50-Y4-yob"; */
+"w50-Y4-yob.text" = "...";
+
+/* Class = "IBUILabel"; text = "..."; ObjectID = "wSY-BN-1hY"; */
+"wSY-BN-1hY.text" = "...";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "wZK-AC-loN"; */
+"wZK-AC-loN.text" = "--";
+
+/* Class = "IBUILabel"; text = "Network Details"; ObjectID = "wdd-0s-nBY"; */
+"wdd-0s-nBY.text" = "Network Details";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "woD-d5-aeZ"; */
+"woD-d5-aeZ.text" = "--";
+
+/* Class = "IBUILabel"; text = "iPhone 3GS"; ObjectID = "wz9-Py-2dF"; */
+"wz9-Py-2dF.text" = "iPhone 3GS";
+
+/* Class = "IBUILabel"; text = "Areas of Interest:"; ObjectID = "xFc-6I-0qq"; */
+"xFc-6I-0qq.text" = "Areas of Interest:";
+
+/* Class = "IBUILabel"; text = "UTC Date Time:"; ObjectID = "xjD-1y-AZs"; */
+"xjD-1y-AZs.text" = "UTC Date Time:";
+
+/* Class = "IBUILabel"; text = "IP Mask:"; ObjectID = "xnP-Uf-lcz"; */
+"xnP-Uf-lcz.text" = "IP Mask:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "yEz-EI-d4w"; */
+"yEz-EI-d4w.text" = "--";
+
+/* Class = "IBUILabel"; text = "x:"; ObjectID = "yVa-Lq-fgb"; */
+"yVa-Lq-fgb.text" = "x:";
+
+/* Class = "IBUILabel"; text = "Latitude:"; ObjectID = "ywK-0T-lwR"; */
+"ywK-0T-lwR.text" = "Latitude:";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "z9R-Df-XUo"; */
+"z9R-Df-XUo.text" = "--";
+
+/* Class = "IBUILabel"; text = "Speed:"; ObjectID = "zAz-e4-m3X"; */
+"zAz-e4-m3X.text" = "Speed:";
+
+/* Class = "IBUILabel"; text = "100"; ObjectID = "zDi-ap-nmc"; */
+"zDi-ap-nmc.text" = "100";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "zFb-Hu-Y3L"; */
+"zFb-Hu-Y3L.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "zKQ-cW-mbg"; */
+"zKQ-cW-mbg.text" = "--";
+
+/* Class = "IBUILabel"; text = "--"; ObjectID = "zM0-z1-USh"; */
+"zM0-z1-USh.text" = "--";
+
+/* Class = "IBUILabel"; text = "Hardware Details"; ObjectID = "znv-v1-bQR"; */
+"znv-v1-bQR.text" = "Hardware Details";
+
+/* Class = "IBUILabel"; text = "Processor Number:"; ObjectID = "zsI-nr-pjs"; */
+"zsI-nr-pjs.text" = "Processor Number:";
+
+/* Class = "IBUILabel"; text = "Course:"; ObjectID = "zx2-TU-d4b"; */
+"zx2-TU-d4b.text" = "Course:";
