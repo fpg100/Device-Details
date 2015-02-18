@@ -5,7 +5,7 @@
 	<key>standby</key>
 	<string>720</string>
 	<key>audio</key>
-	<string>140</string>
+	<string>10</string>
 	<key>video</key>
 	<string>10</string>
 	<key>dimensions</key>

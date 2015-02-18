@@ -142,6 +142,9 @@
 		E10429C2189206FC0096B2AD /* iPodTouch4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A7189206FC0096B2AD /* iPodTouch4.plist */; };
 		E10429C3189206FC0096B2AD /* iPodTouch5.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A8189206FC0096B2AD /* iPodTouch5.plist */; };
 		E10429C5189220FA0096B2AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E10429C4189220FA0096B2AD /* README.md */; };
+		E10B8B841A91A23600CC5B39 /* libFlurry_6.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10B8B831A91A23600CC5B39 /* libFlurry_6.0.0.a */; };
+		E10B8B871A91A39E00CC5B39 /* iPhone6.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10B8B851A91A39E00CC5B39 /* iPhone6.plist */; };
+		E10B8B881A91A39E00CC5B39 /* iPhone6Plus.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10B8B861A91A39E00CC5B39 /* iPhone6Plus.plist */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
 		E137D18B17CAF03D0001A6CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E137D18917CAF03D0001A6CF /* InfoPlist.strings */; };
@@ -159,7 +162,6 @@
 		E137D1B217CAF03D0001A6CF /* Device_DetailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */; };
 		E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */; };
 		E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */; };
-		E140EEBC1A1EAE4500115ACD /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E140EEBB1A1EAE4500115ACD /* libFlurry_5.4.0.a */; };
 		E140EEBE1A1EB97F00115ACD /* iPadMini3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E140EEBD1A1EB97F00115ACD /* iPadMini3.plist */; };
 		E140EEC01A1EBB6D00115ACD /* iPadAir2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E140EEBF1A1EBB6D00115ACD /* iPadAir2.plist */; };
 		E166EA71193D753600B5AD78 /* DDDateTimeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E166EA70193D753600B5AD78 /* DDDateTimeDetailsViewController.m */; };
@@ -379,6 +381,9 @@
 		E10429A7189206FC0096B2AD /* iPodTouch4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch4.plist; sourceTree = "<group>"; };
 		E10429A8189206FC0096B2AD /* iPodTouch5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch5.plist; sourceTree = "<group>"; };
 		E10429C4189220FA0096B2AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E10B8B831A91A23600CC5B39 /* libFlurry_6.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.0.0.a; sourceTree = "<group>"; };
+		E10B8B851A91A39E00CC5B39 /* iPhone6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone6.plist; sourceTree = "<group>"; };
+		E10B8B861A91A39E00CC5B39 /* iPhone6Plus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone6Plus.plist; sourceTree = "<group>"; };
 		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -392,7 +397,6 @@
 		E137D19217CAF03D0001A6CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Device Details/Default.png"; sourceTree = "<group>"; };
 		E137D19417CAF03D0001A6CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Device Details/Default@2x.png"; sourceTree = "<group>"; };
 		E137D19617CAF03D0001A6CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Device Details/Default-568h@2x.png"; sourceTree = "<group>"; };
-		E137D19917CAF03D0001A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E137D19B17CAF03D0001A6CF /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
 		E137D19C17CAF03D0001A6CF /* DDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
 		E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Device DetailsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -403,7 +407,6 @@
 		E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device_DetailsTests.m; sourceTree = "<group>"; };
 		E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		E140EEBB1A1EAE4500115ACD /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.4.0.a; sourceTree = "<group>"; };
 		E140EEBD1A1EB97F00115ACD /* iPadMini3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini3.plist; sourceTree = "<group>"; };
 		E140EEBF1A1EBB6D00115ACD /* iPadAir2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir2.plist; sourceTree = "<group>"; };
 		E166EA6F193D753600B5AD78 /* DDDateTimeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDDateTimeDetailsViewController.h; path = ViewControllers/DDDateTimeDetailsViewController.h; sourceTree = "<group>"; };
@@ -456,9 +459,11 @@
 		E1D1D26D1835AA130007E301 /* F3BarGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarGauge.h; sourceTree = "<group>"; };
 		E1D1D26E1835AA130007E301 /* F3BarGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarGauge.m; sourceTree = "<group>"; };
 		E1D1D2711835AA650007E301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E1D96C8F1888BDB100DC6CF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
 		E1D96C901888BDB100DC6CF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E1D96C911888BDB100DC6CF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E1DE0CDD1A31157700A5FE8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E1DE0CE01A31169E00A5FE8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		E1DE0CE21A3116A100A5FE8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -467,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49588ACC19378E60009F694B /* MobileCoreServices.framework in Frameworks */,
+				E10B8B841A91A23600CC5B39 /* libFlurry_6.0.0.a in Frameworks */,
 				49588ACA19378E53009F694B /* ImageIO.framework in Frameworks */,
 				49E8F29818CB25DF00E98861 /* Accelerate.framework in Frameworks */,
 				49E8F29618CB25D800E98861 /* QuartzCore.framework in Frameworks */,
@@ -481,7 +487,6 @@
 				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
-				E140EEBC1A1EAE4500115ACD /* libFlurry_5.4.0.a in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
@@ -556,7 +561,7 @@
 			isa = PBXGroup;
 			children = (
 				E166EA72193D928900B5AD78 /* Flurry.h */,
-				E140EEBB1A1EAE4500115ACD /* libFlurry_5.4.0.a */,
+				E10B8B831A91A23600CC5B39 /* libFlurry_6.0.0.a */,
 			);
 			name = Flurry;
 			sourceTree = "<group>";
@@ -825,6 +830,8 @@
 				E10429A2189206FC0096B2AD /* iPhone5.plist */,
 				E10429A3189206FC0096B2AD /* iPhone5c.plist */,
 				E10429A4189206FC0096B2AD /* iPhone5s.plist */,
+				E10B8B851A91A39E00CC5B39 /* iPhone6.plist */,
+				E10B8B861A91A39E00CC5B39 /* iPhone6Plus.plist */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -1081,7 +1088,7 @@
 				ORGANIZATIONNAME = "Robert Yi Jiang";
 				TargetAttributes = {
 					E137D17C17CAF03D0001A6CF = {
-						DevelopmentTeam = DQK83PW4RV;
+						DevelopmentTeam = GR44ZFBFYS;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -1115,6 +1122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10B8B871A91A39E00CC5B39 /* iPhone6.plist in Resources */,
 				49E8F38B18CF34C400E98861 /* 1393698854_banknote.png in Resources */,
 				49E8F37A18CF34C400E98861 /* 1393698761_params.png in Resources */,
 				E1B8B0891888B20900A20509 /* iPad 40.png in Resources */,
@@ -1242,6 +1250,7 @@
 				490CFF2918D71C2100E2A878 /* SpectrumView.png in Resources */,
 				49E8F36B18CF34C400E98861 /* 1393698637_vallet.png in Resources */,
 				490CFF2B18D71D6D00E2A878 /* Fing.png in Resources */,
+				E10B8B881A91A39E00CC5B39 /* iPhone6Plus.plist in Resources */,
 				49E8F38E18CF34C400E98861 /* 1393698864_cloud.png in Resources */,
 				49126742187D7CC4001F66A5 /* Settings.bundle in Resources */,
 				E10429BE189206FC0096B2AD /* iPhone5.plist in Resources */,
@@ -1359,8 +1368,9 @@
 		E137D19817CAF03D0001A6CF /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E137D19917CAF03D0001A6CF /* en */,
-				E1D96C8F1888BDB100DC6CF4 /* zh-Hans */,
+				E1DE0CDD1A31157700A5FE8C /* Base */,
+				E1DE0CE01A31169E00A5FE8C /* en */,
+				E1DE0CE21A3116A100A5FE8C /* zh-Hans */,
 			);
 			name = MainStoryboard.storyboard;
 			path = "Device Details";
@@ -1456,8 +1466,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Device",
+					Details,
+					"$(PROJECT_DIR)/Device",
+					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
 					"$(PROJECT_DIR)/Device",
@@ -1488,7 +1502,7 @@
 					Details,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1508,8 +1522,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Device",
+					Details,
+					"$(PROJECT_DIR)/Device",
+					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
 					"$(PROJECT_DIR)/Device",
@@ -1540,7 +1558,7 @@
 					Details,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

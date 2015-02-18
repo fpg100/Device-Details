@@ -27,7 +27,7 @@
 	<key>cpu</key>
 	<string>Apple A5X</string>
 	<key>gpu</key>
-	<string>PowerVR SGX543MP4 (4-core)</string>
+	<string>PowerVR SGX543MP4 (quad-core graphics)</string>
 	<key>siri</key>
 	<string>Yes</string>
 	<key>touch-id</key>

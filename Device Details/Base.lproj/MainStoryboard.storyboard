@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Esa-eX-NW8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Esa-eX-NW8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -16,6 +16,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="2" kind="custom" identifier="BriefViewSegue" customClass="DDViewContainerSegue" id="Bhv-Jo-3ru"/>
+                                </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3iT-vh-OKz">
                                 <rect key="frame" x="10" y="20" width="43" height="42"/>
@@ -59,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8h-qO-4yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="-81"/>
+            <point key="canvasLocation" x="323" y="-449"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5">
@@ -1363,6 +1366,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K8i-IY-7cO"/>
                     <connections>
                         <outlet property="addressLabel" destination="Bei-Er-DAC" id="Uup-Jt-oqd"/>
                         <outlet property="addressNumberLabel" destination="cdV-Fh-XoS" id="nnE-kO-iAc"/>
@@ -2608,6 +2612,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jWd-yl-P0S"/>
                     <connections>
                         <outlet property="deviceBluetoothLabel" destination="0jI-rs-51m" id="SHD-Dh-RiI"/>
                         <outlet property="deviceCameraBackLabel" destination="lau-fs-gvH" id="RnE-BP-whZ"/>
@@ -3079,7 +3084,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCI-nm-3Lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2757" y="-658"/>
+            <point key="canvasLocation" x="2895" y="-872"/>
+        </scene>
+        <!--New Site-->
+        <scene sceneID="M3q-OC-hhz">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="Js7-yC-Nj5" customClass="RUDSiteSettingContainerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uoR-wl-95H">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="EBN-zN-c7F">
+                                <rect key="frame" x="0.0" y="-66" width="320" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="RM6-QP-RDZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-43" maxX="0.0" maxY="43"/>
+                                <connections>
+                                    <segue destination="2" kind="embed" id="xdV-A1-NPY"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="New Site" id="Xcp-0p-2Bf">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="y7h-UK-weO">
+                            <connections>
+                                <action selector="siteSettingsSaveButtonTouched:" destination="Js7-yC-Nj5" id="2FZ-ZU-qcO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="siteSettingsViewContainer" destination="RM6-QP-RDZ" id="fQ6-0W-eEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ew-ZC-nH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="-865"/>
         </scene>
     </scenes>
     <resources>
@@ -3095,4 +3140,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Bhv-Jo-3ru"/>
+    </inferredMetricsTieBreakers>
 </document>
