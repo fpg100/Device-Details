@@ -13,7 +13,7 @@
 	<key>weight</key>
 	<string>652 g.</string>
 	<key>display-type</key>
-	<string>LED-backlit IPS LCD</string>
+	<string>LED-backlit IPS LCD, capacitive touchscreen</string>
 	<key>display-density</key>
 	<string>264 ppi</string>
 	<key>WLAN</key>
@@ -27,7 +27,7 @@
 	<key>cpu</key>
 	<string>Apple A6X</string>
 	<key>gpu</key>
-	<string>PowerVR SGX554MP4 (quad-core)</string>
+	<string>PowerVR SGX554MP4 (quad-core graphics)</string>
 	<key>siri</key>
 	<string>Yes</string>
 	<key>touch-id</key>

@@ -21,10 +21,7 @@
 		499997621874F38E00D3A605 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499997611874F38D00D3A605 /* iAd.framework */; };
 		499997651874F92900D3A605 /* DDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499997641874F92900D3A605 /* DDMainViewController.m */; };
 		49C63AE218D9C93D00BA5877 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C63AE118D9C93D00BA5877 /* Log.m */; };
-		49CE10B4187668B00020031C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		49CE10E718766DE20020031C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18217CAF03D0001A6CF /* Foundation.framework */; };
-		49CE10EA1876734B0020031C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		49CE10EB187673530020031C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		49D75E6318D88E4000E7A48A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49D75E6518D88E4000E7A48A /* Localizable.strings */; };
 		49E0D52B19080BD1002F8679 /* AppleLogoFlat.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E0D52A19080BD1002F8679 /* AppleLogoFlat.png */; };
 		49E0D535190810B1002F8679 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E0D532190810B1002F8679 /* Calendar.png */; };
@@ -106,6 +103,26 @@
 		49EAECF119263C22008A8D58 /* iPhone4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */; };
 		49EAECF219263C22008A8D58 /* iPhone5@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */; };
 		49F7267718FC1E8300B0ED15 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */; };
+		A237C37A1B06164B0071D30F /* iPad2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3671B06164B0071D30F /* iPad2.plist */; };
+		A237C37B1B06164B0071D30F /* iPad3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3681B06164B0071D30F /* iPad3.plist */; };
+		A237C37C1B06164B0071D30F /* iPad4.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3691B06164B0071D30F /* iPad4.plist */; };
+		A237C37D1B06164B0071D30F /* iPadAir.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C36A1B06164B0071D30F /* iPadAir.plist */; };
+		A237C37E1B06164B0071D30F /* iPadMini.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C36B1B06164B0071D30F /* iPadMini.plist */; };
+		A237C37F1B06164B0071D30F /* iPadMiniRetina.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C36C1B06164B0071D30F /* iPadMiniRetina.plist */; };
+		A237C3801B06164B0071D30F /* iPhone3Gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C36E1B06164B0071D30F /* iPhone3Gs.plist */; };
+		A237C3811B06164B0071D30F /* iPhone4.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C36F1B06164B0071D30F /* iPhone4.plist */; };
+		A237C3821B06164B0071D30F /* iPhone4s.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3701B06164B0071D30F /* iPhone4s.plist */; };
+		A237C3831B06164B0071D30F /* iPhone5.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3711B06164B0071D30F /* iPhone5.plist */; };
+		A237C3841B06164B0071D30F /* iPhone5c.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3721B06164B0071D30F /* iPhone5c.plist */; };
+		A237C3851B06164B0071D30F /* iPhone5s.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3731B06164B0071D30F /* iPhone5s.plist */; };
+		A237C3861B06164B0071D30F /* iPhone6.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3741B06164B0071D30F /* iPhone6.plist */; };
+		A237C3871B06164B0071D30F /* iPhone6Plus.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3751B06164B0071D30F /* iPhone6Plus.plist */; };
+		A237C3881B06164B0071D30F /* iPodTouch3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3771B06164B0071D30F /* iPodTouch3.plist */; };
+		A237C3891B06164B0071D30F /* iPodTouch4.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3781B06164B0071D30F /* iPodTouch4.plist */; };
+		A237C38A1B06164B0071D30F /* iPodTouch5.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3791B06164B0071D30F /* iPodTouch5.plist */; };
+		A237C38D1B0626600071D30F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A237C38C1B0626600071D30F /* Reachability.m */; };
+		A237C38F1B062EE30071D30F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A237C38E1B062EE30071D30F /* ExternalAccessory.framework */; };
+		A2F706351B0631B8005092F0 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F706341B0631B8005092F0 /* libFlurry_6.3.0.a */; };
 		E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042969189206FC0096B2AD /* ALAccessory.m */; };
 		E10429AA189206FC0096B2AD /* ALBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296C189206FC0096B2AD /* ALBattery.m */; };
 		E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296F189206FC0096B2AD /* ALCarrier.m */; };
@@ -116,21 +133,6 @@
 		E10429B0189206FC0096B2AD /* ALMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = E104297E189206FC0096B2AD /* ALMemory.m */; };
 		E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042981189206FC0096B2AD /* ALNetwork.m */; };
 		E10429B3189206FC0096B2AD /* ALSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042986189206FC0096B2AD /* ALSystem.m */; };
-		E10429B5189206FC0096B2AD /* iPad2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1042998189206FC0096B2AD /* iPad2.plist */; };
-		E10429B6189206FC0096B2AD /* iPad3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1042999189206FC0096B2AD /* iPad3.plist */; };
-		E10429B7189206FC0096B2AD /* iPad4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299A189206FC0096B2AD /* iPad4.plist */; };
-		E10429B8189206FC0096B2AD /* iPadAir.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299B189206FC0096B2AD /* iPadAir.plist */; };
-		E10429B9189206FC0096B2AD /* iPadMini.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299C189206FC0096B2AD /* iPadMini.plist */; };
-		E10429BA189206FC0096B2AD /* iPadMiniRetina.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299D189206FC0096B2AD /* iPadMiniRetina.plist */; };
-		E10429BB189206FC0096B2AD /* iPhone3Gs.plist in Resources */ = {isa = PBXBuildFile; fileRef = E104299F189206FC0096B2AD /* iPhone3Gs.plist */; };
-		E10429BC189206FC0096B2AD /* iPhone4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A0189206FC0096B2AD /* iPhone4.plist */; };
-		E10429BD189206FC0096B2AD /* iPhone4s.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A1189206FC0096B2AD /* iPhone4s.plist */; };
-		E10429BE189206FC0096B2AD /* iPhone5.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A2189206FC0096B2AD /* iPhone5.plist */; };
-		E10429BF189206FC0096B2AD /* iPhone5c.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A3189206FC0096B2AD /* iPhone5c.plist */; };
-		E10429C0189206FC0096B2AD /* iPhone5s.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A4189206FC0096B2AD /* iPhone5s.plist */; };
-		E10429C1189206FC0096B2AD /* iPodTouch3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A6189206FC0096B2AD /* iPodTouch3.plist */; };
-		E10429C2189206FC0096B2AD /* iPodTouch4.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A7189206FC0096B2AD /* iPodTouch4.plist */; };
-		E10429C3189206FC0096B2AD /* iPodTouch5.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10429A8189206FC0096B2AD /* iPodTouch5.plist */; };
 		E10429C5189220FA0096B2AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E10429C4189220FA0096B2AD /* README.md */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
@@ -142,22 +144,14 @@
 		E137D19717CAF03D0001A6CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E137D19617CAF03D0001A6CF /* Default-568h@2x.png */; };
 		E137D19A17CAF03D0001A6CF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E137D19817CAF03D0001A6CF /* MainStoryboard.storyboard */; };
 		E137D19D17CAF03D0001A6CF /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E137D19C17CAF03D0001A6CF /* DDViewController.m */; };
-		E137D1A517CAF03D0001A6CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1A417CAF03D0001A6CF /* SenTestingKit.framework */; };
-		E137D1A617CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
-		E137D1A717CAF03D0001A6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18217CAF03D0001A6CF /* Foundation.framework */; };
-		E137D1AF17CAF03D0001A6CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E137D1AD17CAF03D0001A6CF /* InfoPlist.strings */; };
-		E137D1B217CAF03D0001A6CF /* Device_DetailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */; };
 		E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */; };
 		E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */; };
-		E176DB0518923034000224F8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB0418923034000224F8 /* Reachability.m */; };
 		E176DB08189231EF000224F8 /* ALProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E176DB07189231EF000224F8 /* ALProcessor.m */; };
 		E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB09189232FB000224F8 /* CFNetwork.framework */; };
 		E176DB0C1892331A000224F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0B1892331A000224F8 /* AudioToolbox.framework */; };
 		E176DB0E18923326000224F8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0D18923326000224F8 /* CoreTelephony.framework */; };
-		E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0F1892332F000224F8 /* ExternalAccessory.framework */; };
 		E176DB1218923338000224F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1118923338000224F8 /* Security.framework */; };
 		E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1318923367000224F8 /* CoreFoundation.framework */; };
-		E18F6E061935730400FA2106 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18F6E051935730400FA2106 /* libFlurry_4.3.2.a */; };
 		E1B8B0871888B20900A20509 /* iPad 29.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0731888B20900A20509 /* iPad 29.png */; };
 		E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0741888B20900A20509 /* iPad 29@2x.png */; };
 		E1B8B0891888B20900A20509 /* iPad 40.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0751888B20900A20509 /* iPad 40.png */; };
@@ -183,16 +177,6 @@
 		E1D1D2701835AA130007E301 /* F3BarGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D1D26E1835AA130007E301 /* F3BarGauge.m */; };
 		E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D1D2711835AA650007E301 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E137D1A817CAF03D0001A6CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E137D17517CAF03D0001A6CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E137D17C17CAF03D0001A6CF;
-			remoteInfo = "Device Details";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		490CFF2818D71C2100E2A878 /* SpectrumView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SpectrumView.png; path = Artworks/SpectrumView/SpectrumView.png; sourceTree = SOURCE_ROOT; };
@@ -299,6 +283,28 @@
 		49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhone5@2x.jpg"; sourceTree = "<group>"; };
 		49F7267518FC1E8300B0ED15 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
 		49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
+		A237C3621B06117C0071D30F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		A237C3671B06164B0071D30F /* iPad2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad2.plist; sourceTree = "<group>"; };
+		A237C3681B06164B0071D30F /* iPad3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad3.plist; sourceTree = "<group>"; };
+		A237C3691B06164B0071D30F /* iPad4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad4.plist; sourceTree = "<group>"; };
+		A237C36A1B06164B0071D30F /* iPadAir.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir.plist; sourceTree = "<group>"; };
+		A237C36B1B06164B0071D30F /* iPadMini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini.plist; sourceTree = "<group>"; };
+		A237C36C1B06164B0071D30F /* iPadMiniRetina.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMiniRetina.plist; sourceTree = "<group>"; };
+		A237C36E1B06164B0071D30F /* iPhone3Gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone3Gs.plist; sourceTree = "<group>"; };
+		A237C36F1B06164B0071D30F /* iPhone4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone4.plist; sourceTree = "<group>"; };
+		A237C3701B06164B0071D30F /* iPhone4s.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone4s.plist; sourceTree = "<group>"; };
+		A237C3711B06164B0071D30F /* iPhone5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5.plist; sourceTree = "<group>"; };
+		A237C3721B06164B0071D30F /* iPhone5c.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5c.plist; sourceTree = "<group>"; };
+		A237C3731B06164B0071D30F /* iPhone5s.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5s.plist; sourceTree = "<group>"; };
+		A237C3741B06164B0071D30F /* iPhone6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone6.plist; sourceTree = "<group>"; };
+		A237C3751B06164B0071D30F /* iPhone6Plus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone6Plus.plist; sourceTree = "<group>"; };
+		A237C3771B06164B0071D30F /* iPodTouch3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch3.plist; sourceTree = "<group>"; };
+		A237C3781B06164B0071D30F /* iPodTouch4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch4.plist; sourceTree = "<group>"; };
+		A237C3791B06164B0071D30F /* iPodTouch5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch5.plist; sourceTree = "<group>"; };
+		A237C38B1B0626600071D30F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A237C38C1B0626600071D30F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A237C38E1B062EE30071D30F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A2F706341B0631B8005092F0 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		E1042968189206FC0096B2AD /* ALAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAccessory.h; sourceTree = "<group>"; };
 		E1042969189206FC0096B2AD /* ALAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAccessory.m; sourceTree = "<group>"; };
 		E104296B189206FC0096B2AD /* ALBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBattery.h; sourceTree = "<group>"; };
@@ -330,21 +336,6 @@
 		E1042990189206FC0096B2AD /* ALSystem_NetworkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_NetworkConstants.h; sourceTree = "<group>"; };
 		E1042991189206FC0096B2AD /* ALSystem_ProcessorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_ProcessorConstants.h; sourceTree = "<group>"; };
 		E1042992189206FC0096B2AD /* ALSystemConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystemConstants.h; sourceTree = "<group>"; };
-		E1042998189206FC0096B2AD /* iPad2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad2.plist; sourceTree = "<group>"; };
-		E1042999189206FC0096B2AD /* iPad3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad3.plist; sourceTree = "<group>"; };
-		E104299A189206FC0096B2AD /* iPad4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad4.plist; sourceTree = "<group>"; };
-		E104299B189206FC0096B2AD /* iPadAir.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir.plist; sourceTree = "<group>"; };
-		E104299C189206FC0096B2AD /* iPadMini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini.plist; sourceTree = "<group>"; };
-		E104299D189206FC0096B2AD /* iPadMiniRetina.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMiniRetina.plist; sourceTree = "<group>"; };
-		E104299F189206FC0096B2AD /* iPhone3Gs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone3Gs.plist; sourceTree = "<group>"; };
-		E10429A0189206FC0096B2AD /* iPhone4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone4.plist; sourceTree = "<group>"; };
-		E10429A1189206FC0096B2AD /* iPhone4s.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone4s.plist; sourceTree = "<group>"; };
-		E10429A2189206FC0096B2AD /* iPhone5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5.plist; sourceTree = "<group>"; };
-		E10429A3189206FC0096B2AD /* iPhone5c.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5c.plist; sourceTree = "<group>"; };
-		E10429A4189206FC0096B2AD /* iPhone5s.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone5s.plist; sourceTree = "<group>"; };
-		E10429A6189206FC0096B2AD /* iPodTouch3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch3.plist; sourceTree = "<group>"; };
-		E10429A7189206FC0096B2AD /* iPodTouch4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch4.plist; sourceTree = "<group>"; };
-		E10429A8189206FC0096B2AD /* iPodTouch5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPodTouch5.plist; sourceTree = "<group>"; };
 		E10429C4189220FA0096B2AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -356,32 +347,22 @@
 		E137D18E17CAF03D0001A6CF /* Device Details-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Device Details-Prefix.pch"; sourceTree = "<group>"; };
 		E137D18F17CAF03D0001A6CF /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		E137D19017CAF03D0001A6CF /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
-		E137D19217CAF03D0001A6CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		E137D19417CAF03D0001A6CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		E137D19617CAF03D0001A6CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E137D19217CAF03D0001A6CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Device Details/Default.png"; sourceTree = "<group>"; };
+		E137D19417CAF03D0001A6CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Device Details/Default@2x.png"; sourceTree = "<group>"; };
+		E137D19617CAF03D0001A6CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Device Details/Default-568h@2x.png"; sourceTree = "<group>"; };
 		E137D19917CAF03D0001A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E137D19B17CAF03D0001A6CF /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
 		E137D19C17CAF03D0001A6CF /* DDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
-		E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Device DetailsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D1A417CAF03D0001A6CF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E137D1AC17CAF03D0001A6CF /* Device DetailsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device DetailsTests-Info.plist"; sourceTree = "<group>"; };
-		E137D1AE17CAF03D0001A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E137D1B017CAF03D0001A6CF /* Device_DetailsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device_DetailsTests.h; sourceTree = "<group>"; };
-		E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device_DetailsTests.m; sourceTree = "<group>"; };
 		E137D1BB17CAFF770001A6CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		E176DB0318923034000224F8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.h"; sourceTree = SOURCE_ROOT; };
-		E176DB0418923034000224F8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "Device Details/ALSystemUtilities/ALNetwork/Reachability.m"; sourceTree = SOURCE_ROOT; };
 		E176DB06189231EF000224F8 /* ALProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALProcessor.h; sourceTree = "<group>"; };
 		E176DB07189231EF000224F8 /* ALProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALProcessor.m; sourceTree = "<group>"; };
 		E176DB09189232FB000224F8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E176DB0B1892331A000224F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E176DB0D18923326000224F8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		E176DB0F1892332F000224F8 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		E176DB1118923338000224F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E176DB1318923367000224F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		E18F6E041935730400FA2106 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		E18F6E051935730400FA2106 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		E1B8B0731888B20900A20509 /* iPad 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29.png"; path = "Artworks/iPad 29.png"; sourceTree = "<group>"; };
 		E1B8B0741888B20900A20509 /* iPad 29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29@2x.png"; path = "Artworks/iPad 29@2x.png"; sourceTree = "<group>"; };
 		E1B8B0751888B20900A20509 /* iPad 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 40.png"; path = "Artworks/iPad 40.png"; sourceTree = "<group>"; };
@@ -410,7 +391,6 @@
 		E1D1D2711835AA650007E301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E1D96C8F1888BDB100DC6CF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
 		E1D96C901888BDB100DC6CF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		E1D96C911888BDB100DC6CF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,37 +398,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A237C38F1B062EE30071D30F /* ExternalAccessory.framework in Frameworks */,
 				49E8F29818CB25DF00E98861 /* Accelerate.framework in Frameworks */,
 				49E8F29618CB25D800E98861 /* QuartzCore.framework in Frameworks */,
 				49CE10E718766DE20020031C /* Foundation.framework in Frameworks */,
 				E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */,
 				E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */,
-				E18F6E061935730400FA2106 /* libFlurry_4.3.2.a in Frameworks */,
 				E137D1BC17CAFF770001A6CF /* SystemConfiguration.framework in Frameworks */,
 				E176DB1218923338000224F8 /* Security.framework in Frameworks */,
-				E176DB101892332F000224F8 /* ExternalAccessory.framework in Frameworks */,
 				E176DB0E18923326000224F8 /* CoreTelephony.framework in Frameworks */,
 				E176DB0C1892331A000224F8 /* AudioToolbox.framework in Frameworks */,
 				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
+				A2F706351B0631B8005092F0 /* libFlurry_6.3.0.a in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
 				E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E137D19F17CAF03D0001A6CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E137D1A717CAF03D0001A6CF /* Foundation.framework in Frameworks */,
-				49CE10EB187673530020031C /* (null) in Frameworks */,
-				49CE10EA1876734B0020031C /* (null) in Frameworks */,
-				49CE10B4187668B00020031C /* (null) in Frameworks */,
-				E137D1A517CAF03D0001A6CF /* SenTestingKit.framework in Frameworks */,
-				E137D1A617CAF03D0001A6CF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,15 +451,6 @@
 				49E8F29A18CB274400E98861 /* RNGridMenu.m */,
 			);
 			name = RNGrid;
-			sourceTree = "<group>";
-		};
-		49E8F29F18CDCF8400E98861 /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				E18F6E041935730400FA2106 /* Flurry.h */,
-				E18F6E051935730400FA2106 /* libFlurry_4.3.2.a */,
-			);
-			name = Flurry;
 			sourceTree = "<group>";
 		};
 		49E8F2B518CDDCEC00E98861 /* icons */ = {
@@ -581,6 +539,65 @@
 			path = FRDLivelyButton;
 			sourceTree = "<group>";
 		};
+		A237C3611B06117C0071D30F /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				A237C3621B06117C0071D30F /* Flurry.h */,
+				A2F706341B0631B8005092F0 /* libFlurry_6.3.0.a */,
+			);
+			name = Flurry;
+			path = ThirdPartyLib/Flurry;
+			sourceTree = "<group>";
+		};
+		A237C3651B06164B0071D30F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A237C3661B06164B0071D30F /* iPad */,
+				A237C36D1B06164B0071D30F /* iPhone */,
+				A237C3761B06164B0071D30F /* iPodTouch */,
+			);
+			name = Resources;
+			path = "Device Details/ALSystemUtilities/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		A237C3661B06164B0071D30F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A237C3671B06164B0071D30F /* iPad2.plist */,
+				A237C3681B06164B0071D30F /* iPad3.plist */,
+				A237C3691B06164B0071D30F /* iPad4.plist */,
+				A237C36A1B06164B0071D30F /* iPadAir.plist */,
+				A237C36B1B06164B0071D30F /* iPadMini.plist */,
+				A237C36C1B06164B0071D30F /* iPadMiniRetina.plist */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		A237C36D1B06164B0071D30F /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A237C36E1B06164B0071D30F /* iPhone3Gs.plist */,
+				A237C36F1B06164B0071D30F /* iPhone4.plist */,
+				A237C3701B06164B0071D30F /* iPhone4s.plist */,
+				A237C3711B06164B0071D30F /* iPhone5.plist */,
+				A237C3721B06164B0071D30F /* iPhone5c.plist */,
+				A237C3731B06164B0071D30F /* iPhone5s.plist */,
+				A237C3741B06164B0071D30F /* iPhone6.plist */,
+				A237C3751B06164B0071D30F /* iPhone6Plus.plist */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		A237C3761B06164B0071D30F /* iPodTouch */ = {
+			isa = PBXGroup;
+			children = (
+				A237C3771B06164B0071D30F /* iPodTouch3.plist */,
+				A237C3781B06164B0071D30F /* iPodTouch4.plist */,
+				A237C3791B06164B0071D30F /* iPodTouch5.plist */,
+			);
+			path = iPodTouch;
+			sourceTree = "<group>";
+		};
 		E1042966189206FC0096B2AD /* ALSystemUtilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,8 +615,8 @@
 				E104297F189206FC0096B2AD /* ALNetwork */,
 				E1042982189206FC0096B2AD /* ALProcessor */,
 				E1042987189206FC0096B2AD /* ALSystemConstants */,
+				A237C3651B06164B0071D30F /* Resources */,
 				E1042993189206FC0096B2AD /* Reachability */,
-				E1042996189206FC0096B2AD /* Resources */,
 			);
 			path = ALSystemUtilities;
 			sourceTree = "<group>";
@@ -715,56 +732,10 @@
 		E1042993189206FC0096B2AD /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				E176DB0318923034000224F8 /* Reachability.h */,
-				E176DB0418923034000224F8 /* Reachability.m */,
+				A237C38B1B0626600071D30F /* Reachability.h */,
+				A237C38C1B0626600071D30F /* Reachability.m */,
 			);
 			path = Reachability;
-			sourceTree = "<group>";
-		};
-		E1042996189206FC0096B2AD /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E1042997189206FC0096B2AD /* iPad */,
-				E104299E189206FC0096B2AD /* iPhone */,
-				E10429A5189206FC0096B2AD /* iPodTouch */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		E1042997189206FC0096B2AD /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				E1042998189206FC0096B2AD /* iPad2.plist */,
-				E1042999189206FC0096B2AD /* iPad3.plist */,
-				E104299A189206FC0096B2AD /* iPad4.plist */,
-				E104299B189206FC0096B2AD /* iPadAir.plist */,
-				E104299C189206FC0096B2AD /* iPadMini.plist */,
-				E104299D189206FC0096B2AD /* iPadMiniRetina.plist */,
-			);
-			path = iPad;
-			sourceTree = "<group>";
-		};
-		E104299E189206FC0096B2AD /* iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				E104299F189206FC0096B2AD /* iPhone3Gs.plist */,
-				E10429A0189206FC0096B2AD /* iPhone4.plist */,
-				E10429A1189206FC0096B2AD /* iPhone4s.plist */,
-				E10429A2189206FC0096B2AD /* iPhone5.plist */,
-				E10429A3189206FC0096B2AD /* iPhone5c.plist */,
-				E10429A4189206FC0096B2AD /* iPhone5s.plist */,
-			);
-			path = iPhone;
-			sourceTree = "<group>";
-		};
-		E10429A5189206FC0096B2AD /* iPodTouch */ = {
-			isa = PBXGroup;
-			children = (
-				E10429A6189206FC0096B2AD /* iPodTouch3.plist */,
-				E10429A7189206FC0096B2AD /* iPodTouch4.plist */,
-				E10429A8189206FC0096B2AD /* iPodTouch5.plist */,
-			);
-			path = iPodTouch;
 			sourceTree = "<group>";
 		};
 		E137D17417CAF03D0001A6CF = {
@@ -774,7 +745,6 @@
 				4912672C187CF215001F66A5 /* Images.xcassets */,
 				E1E2748D1886468B00B25D84 /* Sources */,
 				E137D18617CAF03D0001A6CF /* Device Details */,
-				E137D1AA17CAF03D0001A6CF /* Device DetailsTests */,
 				E137D17F17CAF03D0001A6CF /* Frameworks */,
 				E137D17E17CAF03D0001A6CF /* Products */,
 			);
@@ -784,7 +754,6 @@
 			isa = PBXGroup;
 			children = (
 				E137D17D17CAF03D0001A6CF /* Details.app */,
-				E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -792,11 +761,11 @@
 		E137D17F17CAF03D0001A6CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A237C38E1B062EE30071D30F /* ExternalAccessory.framework */,
 				49E8F29718CB25DF00E98861 /* Accelerate.framework */,
 				49E8F29518CB25D800E98861 /* QuartzCore.framework */,
 				E176DB1318923367000224F8 /* CoreFoundation.framework */,
 				E176DB1118923338000224F8 /* Security.framework */,
-				E176DB0F1892332F000224F8 /* ExternalAccessory.framework */,
 				E176DB0D18923326000224F8 /* CoreTelephony.framework */,
 				E176DB0B1892331A000224F8 /* AudioToolbox.framework */,
 				E176DB09189232FB000224F8 /* CFNetwork.framework */,
@@ -818,7 +787,6 @@
 			isa = PBXGroup;
 			children = (
 				49126741187D7CC4001F66A5 /* Settings.bundle */,
-				E1D1D2691835A9B50007E301 /* Third Party Tools */,
 				E137D18F17CAF03D0001A6CF /* DDAppDelegate.h */,
 				E137D19017CAF03D0001A6CF /* DDAppDelegate.m */,
 				499997631874F92900D3A605 /* DDMainViewController.h */,
@@ -829,6 +797,7 @@
 				499122BF188D5FD600643FFE /* ALDefaults.m */,
 				E137D19B17CAF03D0001A6CF /* DDViewController.h */,
 				E137D19C17CAF03D0001A6CF /* DDViewController.m */,
+				E1D1D2691835A9B50007E301 /* Third Party Tools */,
 				E137D18717CAF03D0001A6CF /* Supporting Files */,
 			);
 			path = "Device Details";
@@ -841,9 +810,6 @@
 				E137D18917CAF03D0001A6CF /* InfoPlist.strings */,
 				E137D18C17CAF03D0001A6CF /* main.m */,
 				E137D18E17CAF03D0001A6CF /* Device Details-Prefix.pch */,
-				E137D19217CAF03D0001A6CF /* Default.png */,
-				E137D19417CAF03D0001A6CF /* Default@2x.png */,
-				E137D19617CAF03D0001A6CF /* Default-568h@2x.png */,
 				49D75E6518D88E4000E7A48A /* Localizable.strings */,
 				49C63AE018D9C8E500BA5877 /* Log.h */,
 				49C63AE118D9C93D00BA5877 /* Log.m */,
@@ -851,31 +817,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E137D1AA17CAF03D0001A6CF /* Device DetailsTests */ = {
-			isa = PBXGroup;
-			children = (
-				E137D1B017CAF03D0001A6CF /* Device_DetailsTests.h */,
-				E137D1B117CAF03D0001A6CF /* Device_DetailsTests.m */,
-				E137D1AB17CAF03D0001A6CF /* Supporting Files */,
-			);
-			path = "Device DetailsTests";
-			sourceTree = "<group>";
-		};
-		E137D1AB17CAF03D0001A6CF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E137D1AC17CAF03D0001A6CF /* Device DetailsTests-Info.plist */,
-				E137D1AD17CAF03D0001A6CF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		E1D1D2691835A9B50007E301 /* Third Party Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A237C3611B06117C0071D30F /* Flurry */,
 				49F7267418FC1E8300B0ED15 /* FRDLivelyButton */,
 				490CFF3418D7246800E2A878 /* CMPopTipView */,
-				49E8F29F18CDCF8400E98861 /* Flurry */,
 				49E8F29C18CB274B00E98861 /* RNGrid */,
 				E1042966189206FC0096B2AD /* ALSystemUtilities */,
 				E1D1D26A1835A9DA0007E301 /* Decibel Meter */,
@@ -897,6 +844,9 @@
 		E1E2748D1886468B00B25D84 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E137D19217CAF03D0001A6CF /* Default.png */,
+				E137D19417CAF03D0001A6CF /* Default@2x.png */,
+				E137D19617CAF03D0001A6CF /* Default-568h@2x.png */,
 				49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */,
 				49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */,
 				4974349418D5C09400D3AC62 /* Third Party App ICONs */,
@@ -949,25 +899,6 @@
 			productReference = E137D17D17CAF03D0001A6CF /* Details.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E137D1A217CAF03D0001A6CF /* Device DetailsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E137D1B817CAF03D0001A6CF /* Build configuration list for PBXNativeTarget "Device DetailsTests" */;
-			buildPhases = (
-				E137D19E17CAF03D0001A6CF /* Sources */,
-				E137D19F17CAF03D0001A6CF /* Frameworks */,
-				E137D1A017CAF03D0001A6CF /* Resources */,
-				E137D1A117CAF03D0001A6CF /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E137D1A917CAF03D0001A6CF /* PBXTargetDependency */,
-			);
-			name = "Device DetailsTests";
-			productName = "Device DetailsTests";
-			productReference = E137D1A317CAF03D0001A6CF /* Device DetailsTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -980,6 +911,11 @@
 				TargetAttributes = {
 					E137D17C17CAF03D0001A6CF = {
 						DevelopmentTeam = DQK83PW4RV;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -998,7 +934,6 @@
 			projectRoot = "";
 			targets = (
 				E137D17C17CAF03D0001A6CF /* Details */,
-				E137D1A217CAF03D0001A6CF /* Device DetailsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1013,20 +948,23 @@
 				E1B8B0891888B20900A20509 /* iPad 40.png in Resources */,
 				49E8F38518CF34C400E98861 /* 1393698827_vynil.png in Resources */,
 				49E8F38218CF34C400E98861 /* 1393698800_fire.png in Resources */,
+				A237C37D1B06164B0071D30F /* iPadAir.plist in Resources */,
 				49E8F2B318CDDC9C00E98861 /* file.png in Resources */,
+				A237C3851B06164B0071D30F /* iPhone5s.plist in Resources */,
 				E1B8B08E1888B20900A20509 /* iPhone 40@2x.png in Resources */,
+				A237C37A1B06164B0071D30F /* iPad2.plist in Resources */,
 				49E8F2B018CDDC9C00E98861 /* cube.png in Resources */,
 				49E8F37B18CF34C400E98861 /* 1393698765_eye.png in Resources */,
-				E10429BD189206FC0096B2AD /* iPhone4s.plist in Resources */,
 				49E8F38418CF34C400E98861 /* 1393698816_heart.png in Resources */,
 				49E8F36D18CF34C400E98861 /* 1393698671_megaphone.png in Resources */,
+				A237C38A1B06164B0071D30F /* iPodTouch5.plist in Resources */,
 				E1B8B0911888B20900A20509 /* Icon-72@2x.png in Resources */,
 				497434A618D5C44100D3AC62 /* BigStopWatch.png in Resources */,
 				E1B8B09A1888B20900A20509 /* Sign Info.png in Resources */,
 				49D75E6318D88E4000E7A48A /* Localizable.strings in Resources */,
-				E10429BF189206FC0096B2AD /* iPhone5c.plist in Resources */,
 				49E8F38118CF34C400E98861 /* 1393698796_food.png in Resources */,
 				49E8F39818CF34C400E98861 /* 1393698948_tag.png in Resources */,
+				A237C37E1B06164B0071D30F /* iPadMini.plist in Resources */,
 				49E8F2AC18CDDC9C00E98861 /* arrow.png in Resources */,
 				49E8F36518CF34C400E98861 /* 1393698316_photo-24.png in Resources */,
 				49E8F37918CF34C400E98861 /* 1393698756_shop.png in Resources */,
@@ -1042,17 +980,13 @@
 				49E8F37618CF34C400E98861 /* 1393698730_truck.png in Resources */,
 				49E8F39B18CF34C400E98861 /* 1393698982_photo.png in Resources */,
 				49E8F38F18CF34C400E98861 /* 1393698868_bubble.png in Resources */,
+				A237C3801B06164B0071D30F /* iPhone3Gs.plist in Resources */,
 				E1B8B0991888B20900A20509 /* iTunesArtwork@2x in Resources */,
 				E1B8B0931888B20900A20509 /* Icon-Small-50@2x.png in Resources */,
 				E137D19317CAF03D0001A6CF /* Default.png in Resources */,
 				E1B8B08A1888B20900A20509 /* iPad 40@2x.png in Resources */,
-				E10429C2189206FC0096B2AD /* iPodTouch4.plist in Resources */,
-				E10429BB189206FC0096B2AD /* iPhone3Gs.plist in Resources */,
 				49E8F37C18CF34C400E98861 /* 1393698769_search.png in Resources */,
 				49E8F36F18CF34C400E98861 /* 1393698675_key.png in Resources */,
-				E10429B8189206FC0096B2AD /* iPadAir.plist in Resources */,
-				E10429C3189206FC0096B2AD /* iPodTouch5.plist in Resources */,
-				E10429B5189206FC0096B2AD /* iPad2.plist in Resources */,
 				E1B8B0951888B20900A20509 /* Icon-Small@2x.png in Resources */,
 				49E8F39318CF34C400E98861 /* 1393698898_clock.png in Resources */,
 				E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */,
@@ -1063,14 +997,16 @@
 				49E8F38C18CF34C400E98861 /* 1393698859_clip.png in Resources */,
 				E137D19517CAF03D0001A6CF /* Default@2x.png in Resources */,
 				49E8F36E18CF34C400E98861 /* 1393698673_camera.png in Resources */,
+				A237C3821B06164B0071D30F /* iPhone4s.plist in Resources */,
 				E137D19717CAF03D0001A6CF /* Default-568h@2x.png in Resources */,
 				E1B8B0981888B20900A20509 /* iTunesArtwork in Resources */,
 				E1B8B0961888B20900A20509 /* Icon.png in Resources */,
 				49E8F39F18CF34C400E98861 /* compass-512.png in Resources */,
-				E10429C1189206FC0096B2AD /* iPodTouch3.plist in Resources */,
 				E137D19A17CAF03D0001A6CF /* MainStoryboard.storyboard in Resources */,
+				A237C37F1B06164B0071D30F /* iPadMiniRetina.plist in Resources */,
+				A237C37B1B06164B0071D30F /* iPad3.plist in Resources */,
+				A237C3891B06164B0071D30F /* iPodTouch4.plist in Resources */,
 				49E8F37F18CF34C400E98861 /* 1393698785_bulb.png in Resources */,
-				E10429BC189206FC0096B2AD /* iPhone4.plist in Resources */,
 				49E8F38918CF34C400E98861 /* 1393698843_like.png in Resources */,
 				49E8F38618CF34C400E98861 /* 1393698830_phone.png in Resources */,
 				49E8F2B218CDDC9C00E98861 /* enter.png in Resources */,
@@ -1083,19 +1019,19 @@
 				49E8F37218CF34C400E98861 /* 1393698701_calendar.png in Resources */,
 				49E8F36A18CF34C400E98861 /* 1393698549_video.png in Resources */,
 				49E8F2AD18CDDC9C00E98861 /* attachment.png in Resources */,
-				E10429C0189206FC0096B2AD /* iPhone5s.plist in Resources */,
+				A237C3811B06164B0071D30F /* iPhone4.plist in Resources */,
 				49E7D88818895EEE0096C450 /* iPhone 57.png in Resources */,
 				E1B8B0871888B20900A20509 /* iPad 29.png in Resources */,
 				49E8F37518CF34C400E98861 /* 1393698718_note.png in Resources */,
-				E10429B6189206FC0096B2AD /* iPad3.plist in Resources */,
 				49E8F39018CF34C400E98861 /* 1393698872_stack.png in Resources */,
 				49E8F37418CF34C400E98861 /* 1393698709_settings.png in Resources */,
 				49E8F2AF18CDDC9C00E98861 /* bluetooth.png in Resources */,
-				E10429BA189206FC0096B2AD /* iPadMiniRetina.plist in Resources */,
 				49E0D535190810B1002F8679 /* Calendar.png in Resources */,
 				49E0D52B19080BD1002F8679 /* AppleLogoFlat.png in Resources */,
 				49E8F39718CF34C400E98861 /* 1393698940_data.png in Resources */,
+				A237C3871B06164B0071D30F /* iPhone6Plus.plist in Resources */,
 				49E8F36918CF34C400E98861 /* 1393698456_heart-24.png in Resources */,
+				A237C3881B06164B0071D30F /* iPodTouch3.plist in Resources */,
 				490CFF2F18D71E3300E2A878 /* LightBlue.png in Resources */,
 				49E8F37D18CF34C400E98861 /* 1393698773_study.png in Resources */,
 				E1B8B0921888B20900A20509 /* Icon-Small-50.png in Resources */,
@@ -1110,10 +1046,10 @@
 				E1B8B0901888B20900A20509 /* Icon-72.png in Resources */,
 				49E8F39118CF34C400E98861 /* 1393698876_t-shirt.png in Resources */,
 				490CFF3118D71FF500E2A878 /* BigStopWatch.jpg in Resources */,
-				E10429B9189206FC0096B2AD /* iPadMini.plist in Resources */,
 				49E8F2B418CDDC9C00E98861 /* github.png in Resources */,
-				E10429B7189206FC0096B2AD /* iPad4.plist in Resources */,
 				49E8F38018CF34C400E98861 /* 1393698792_lab.png in Resources */,
+				A237C3861B06164B0071D30F /* iPhone6.plist in Resources */,
+				A237C37C1B06164B0071D30F /* iPad4.plist in Resources */,
 				49E8F39918CF34C400E98861 /* 1393698952_trash.png in Resources */,
 				49E7D88918895EEE0096C450 /* iPhone 57@2x.png in Resources */,
 				49E8F37718CF34C400E98861 /* 1393698733_world.png in Resources */,
@@ -1124,43 +1060,20 @@
 				49E8F36618CF34C400E98861 /* 1393698334_photo-24.png in Resources */,
 				E1B8B0971888B20900A20509 /* Icon@2x.png in Resources */,
 				490CFF2918D71C2100E2A878 /* SpectrumView.png in Resources */,
+				A237C3841B06164B0071D30F /* iPhone5c.plist in Resources */,
 				49E8F36B18CF34C400E98861 /* 1393698637_vallet.png in Resources */,
 				490CFF2B18D71D6D00E2A878 /* Fing.png in Resources */,
 				49E8F38E18CF34C400E98861 /* 1393698864_cloud.png in Resources */,
 				49126742187D7CC4001F66A5 /* Settings.bundle in Resources */,
-				E10429BE189206FC0096B2AD /* iPhone5.plist in Resources */,
 				49E8F37318CF34C400E98861 /* 1393698705_display.png in Resources */,
 				49E8F2AE18CDDC9C00E98861 /* block.png in Resources */,
 				49E8F39A18CF34C400E98861 /* 1393698960_lock.png in Resources */,
 				49E8F38818CF34C400E98861 /* 1393698840_cup.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E137D1A017CAF03D0001A6CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E137D1AF17CAF03D0001A6CF /* InfoPlist.strings in Resources */,
+				A237C3831B06164B0071D30F /* iPhone5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E137D1A117CAF03D0001A6CF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E137D17917CAF03D0001A6CF /* Sources */ = {
@@ -1171,6 +1084,7 @@
 				E176DB08189231EF000224F8 /* ALProcessor.m in Sources */,
 				E10429AF189206FC0096B2AD /* ALLocalization.m in Sources */,
 				499997651874F92900D3A605 /* DDMainViewController.m in Sources */,
+				A237C38D1B0626600071D30F /* Reachability.m in Sources */,
 				E10429B3189206FC0096B2AD /* ALSystem.m in Sources */,
 				E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */,
 				E10429AE189206FC0096B2AD /* ALJailbreak.m in Sources */,
@@ -1181,7 +1095,6 @@
 				49C63AE218D9C93D00BA5877 /* Log.m in Sources */,
 				E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */,
 				E10429AC189206FC0096B2AD /* ALDisk.m in Sources */,
-				E176DB0518923034000224F8 /* Reachability.m in Sources */,
 				E137D19117CAF03D0001A6CF /* DDAppDelegate.m in Sources */,
 				E137D19D17CAF03D0001A6CF /* DDViewController.m in Sources */,
 				49F7267718FC1E8300B0ED15 /* FRDLivelyButton.m in Sources */,
@@ -1194,23 +1107,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E137D19E17CAF03D0001A6CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E137D1B217CAF03D0001A6CF /* Device_DetailsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E137D1A917CAF03D0001A6CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E137D17C17CAF03D0001A6CF /* Details */;
-			targetProxy = E137D1A817CAF03D0001A6CF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49D75E6518D88E4000E7A48A /* Localizable.strings */ = {
@@ -1239,15 +1136,6 @@
 			);
 			name = MainStoryboard.storyboard;
 			path = "Device Details";
-			sourceTree = "<group>";
-		};
-		E137D1AD17CAF03D0001A6CF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E137D1AE17CAF03D0001A6CF /* en */,
-				E1D96C911888BDB100DC6CF4 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1283,7 +1171,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MACH_O_TYPE = mh_execute;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1300,8 +1188,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1311,7 +1199,7 @@
 				MACH_O_TYPE = mh_execute;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1322,8 +1210,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
@@ -1343,9 +1231,13 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1356,8 +1248,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yi JIANG (DQK83PW4RV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yi JIANG (DQK83PW4RV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
@@ -1377,47 +1269,15 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4D611741-645F-4547-BB4D-DBEC8EFEEB79";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E137D1B917CAF03D0001A6CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Device Details.app/Device Details";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
-					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
-				INFOPLIST_FILE = "Device DetailsTests/Device DetailsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E137D1BA17CAF03D0001A6CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Device Details.app/Device Details";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
-					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
-				INFOPLIST_FILE = "Device DetailsTests/Device DetailsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -1438,15 +1298,6 @@
 			buildConfigurations = (
 				E137D1B617CAF03D0001A6CF /* Debug */,
 				E137D1B717CAF03D0001A6CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E137D1B817CAF03D0001A6CF /* Build configuration list for PBXNativeTarget "Device DetailsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E137D1B917CAF03D0001A6CF /* Debug */,
-				E137D1BA17CAF03D0001A6CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
