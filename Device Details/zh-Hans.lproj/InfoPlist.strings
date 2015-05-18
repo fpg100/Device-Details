@@ -1,4 +1,4 @@
 /* Localized versions of Info.plist keys */
 "CFBundleDisplayName" = "设备详情";
-
+"NSLocationWhenInUseUsageDescription" = "本应用需要为您显示地理位置详情。";
 
