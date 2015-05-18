@@ -193,9 +193,14 @@ CLGeocoder *geocoder;
 - (void)initLocationDetails{
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [locationManager requestWhenInUseAuthorization];
+    }
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     locationManager.distanceFilter = 5.0f;
     [locationManager startUpdatingLocation];
+    
     locationManager.headingFilter = kCLHeadingFilterNone;
     [locationManager startUpdatingHeading];
     placeDictionary = [[NSMutableDictionary alloc] init];
@@ -840,7 +845,7 @@ CLGeocoder *geocoder;
        didUpdateHeading:(CLHeading *)newHeading{
     
 //    [headingLabel setText:[NSString stringWithFormat:@"%.1fmi",newHeading.magneticHeading]];
-    headingLabel.Text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.magneticHeading];
+    headingLabel.text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.magneticHeading];
     differWithGeomagneticLabel.text =[NSString stringWithFormat:@"%.1fmi",newHeading.headingAccuracy];
     trueHeadingLabel.text = [NSString stringWithFormat:@"%.2f\u00B0",newHeading.trueHeading];
     xGeomagnetismLabel.text = [NSString stringWithFormat:@"%.1f\u00B0",newHeading.x];

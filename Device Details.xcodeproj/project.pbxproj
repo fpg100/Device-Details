@@ -103,7 +103,6 @@
 		49EAECF119263C22008A8D58 /* iPhone4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EAECEF19263C22008A8D58 /* iPhone4@2x.jpg */; };
 		49EAECF219263C22008A8D58 /* iPhone5@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */; };
 		49F7267718FC1E8300B0ED15 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */; };
-		A210D9981B0A3D7D00D6E892 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A210D9971B0A3D7D00D6E892 /* libFlurry_6.3.0.a */; };
 		A237C37A1B06164B0071D30F /* iPad2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3671B06164B0071D30F /* iPad2.plist */; };
 		A237C37B1B06164B0071D30F /* iPad3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3681B06164B0071D30F /* iPad3.plist */; };
 		A237C37C1B06164B0071D30F /* iPad4.plist in Resources */ = {isa = PBXBuildFile; fileRef = A237C3691B06164B0071D30F /* iPad4.plist */; };
@@ -124,6 +123,7 @@
 		A237C38D1B0626600071D30F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A237C38C1B0626600071D30F /* Reachability.m */; };
 		A237C38F1B062EE30071D30F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A237C38E1B062EE30071D30F /* ExternalAccessory.framework */; };
 		A248740D1B0A42950066CE1E /* iPadMini3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A248740C1B0A42950066CE1E /* iPadMini3.plist */; };
+		A248740F1B0A487E0066CE1E /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A248740E1B0A487E0066CE1E /* libFlurry_6.3.0.a */; };
 		E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042969189206FC0096B2AD /* ALAccessory.m */; };
 		E10429AA189206FC0096B2AD /* ALBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296C189206FC0096B2AD /* ALBattery.m */; };
 		E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296F189206FC0096B2AD /* ALCarrier.m */; };
@@ -284,7 +284,6 @@
 		49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhone5@2x.jpg"; sourceTree = "<group>"; };
 		49F7267518FC1E8300B0ED15 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
 		49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
-		A210D9971B0A3D7D00D6E892 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		A237C3621B06117C0071D30F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		A237C3671B06164B0071D30F /* iPad2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad2.plist; sourceTree = "<group>"; };
 		A237C3681B06164B0071D30F /* iPad3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad3.plist; sourceTree = "<group>"; };
@@ -307,6 +306,9 @@
 		A237C38C1B0626600071D30F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A237C38E1B062EE30071D30F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		A248740C1B0A42950066CE1E /* iPadMini3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini3.plist; sourceTree = "<group>"; };
+		A248740E1B0A487E0066CE1E /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
+		A24874131B0A50150066CE1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Device Details-Info.plist"; sourceTree = "<group>"; };
+		A24874141B0A50280066CE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Device Details-Info.plist"; sourceTree = "<group>"; };
 		E1042968189206FC0096B2AD /* ALAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAccessory.h; sourceTree = "<group>"; };
 		E1042969189206FC0096B2AD /* ALAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAccessory.m; sourceTree = "<group>"; };
 		E104296B189206FC0096B2AD /* ALBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBattery.h; sourceTree = "<group>"; };
@@ -343,7 +345,6 @@
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E137D18417CAF03D0001A6CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E137D18817CAF03D0001A6CF /* Device Details-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Device Details-Info.plist"; sourceTree = "<group>"; };
 		E137D18A17CAF03D0001A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E137D18C17CAF03D0001A6CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E137D18E17CAF03D0001A6CF /* Device Details-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Device Details-Prefix.pch"; sourceTree = "<group>"; };
@@ -413,7 +414,7 @@
 				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
-				A210D9981B0A3D7D00D6E892 /* libFlurry_6.3.0.a in Frameworks */,
+				A248740F1B0A487E0066CE1E /* libFlurry_6.3.0.a in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
@@ -544,7 +545,7 @@
 		A237C3611B06117C0071D30F /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				A210D9971B0A3D7D00D6E892 /* libFlurry_6.3.0.a */,
+				A248740E1B0A487E0066CE1E /* libFlurry_6.3.0.a */,
 				A237C3621B06117C0071D30F /* Flurry.h */,
 			);
 			name = Flurry;
@@ -809,7 +810,7 @@
 		E137D18717CAF03D0001A6CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E137D18817CAF03D0001A6CF /* Device Details-Info.plist */,
+				A24874111B0A500B0066CE1E /* Device Details-Info.plist */,
 				E137D18917CAF03D0001A6CF /* InfoPlist.strings */,
 				E137D18C17CAF03D0001A6CF /* main.m */,
 				E137D18E17CAF03D0001A6CF /* Device Details-Prefix.pch */,
@@ -1123,6 +1124,15 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		A24874111B0A500B0066CE1E /* Device Details-Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A24874131B0A50150066CE1E /* zh-Hans */,
+				A24874141B0A50280066CE1E /* en */,
+			);
+			name = "Device Details-Info.plist";
+			sourceTree = "<group>";
+		};
 		E137D18917CAF03D0001A6CF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1157,8 +1167,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yi JIANG (DQK83PW4RV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yi JIANG (DQK83PW4RV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1192,8 +1202,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yi JIANG (DQK83PW4RV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yi JIANG (DQK83PW4RV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1214,8 +1224,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
@@ -1235,6 +1245,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
 					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
@@ -1254,8 +1266,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yi JIANG (98FCLL49MZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
@@ -1275,6 +1287,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
 					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
