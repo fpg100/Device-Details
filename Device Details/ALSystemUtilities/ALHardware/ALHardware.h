@@ -159,4 +159,8 @@
  */
 + (BOOL)touchID;
 
++ (NSString *)screenSize;
++ (NSString *)screenResolution;
+
+
 @end

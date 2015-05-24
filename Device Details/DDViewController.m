@@ -271,7 +271,9 @@ CLGeocoder *geocoder;
     deviceGpuLabel.text = [ALHardware gpu];
     deviceRAMTotalSizeLabel.text = [NSString stringWithFormat:@"%ldMB",[ALMemory totalMemory]];
     deviceRAMFreeSizeLabel.text = [NSString stringWithFormat:@"%.1fMB",[ALMemory freeMemory]];
-    deviceScreenSizeLabel.text = [NSString stringWithFormat:@"%ld * %ld",[ALHardware screenHeight],(long)[ALHardware screenWidth]];
+//    deviceScreenSizeLabel.text = [NSString stringWithFormat:@"%ld * %ld",[ALHardware screenHeight],(long)[ALHardware screenWidth]];
+    
+    deviceScreenSizeLabel.text = [NSString stringWithFormat:@"%@ (%@)",[ALHardware screenSize],[ALHardware screenResolution]];
     deviceScreenTypeLabel.text = [ALHardware displayType];
     deviceScreenDensityLabel.text = [ALHardware displayDensity];
     deviceScreenBrightness.text = [NSString stringWithFormat:@"%.2f",[ALHardware brightness]];

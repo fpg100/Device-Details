@@ -177,6 +177,14 @@
     return [[self infoForDevice] objectForKey:@"display-density"];
 }
 
++ (NSString *)screenSize {
+    return [[self infoForDevice] objectForKey:@"screen-size"];
+}
+
++ (NSString *)screenResolution {
+    return [[self infoForDevice] objectForKey:@"screen-resolution"];
+}
+
 + (NSString *)WLAN {
     return [[self infoForDevice] objectForKey:@"WLAN"];
 }

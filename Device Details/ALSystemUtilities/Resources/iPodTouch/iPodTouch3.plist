@@ -26,5 +26,13 @@
 	<string>833 MHz Cortex-A8 (locked at 600)</string>
 	<key>gpu</key>
 	<string>PowerVR SGX 535</string>
+	<key>screen-size</key>
+	<string>4.7&quot;</string>
+	<key>screen-resolution</key>
+	<string>1136x640</string>
+	<key>screen-size - 2</key>
+	<string>3.5&quot;</string>
+	<key>screen-resolution - 2</key>
+	<string>480x320</string>
 </dict>
 </plist>

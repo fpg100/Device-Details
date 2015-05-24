@@ -15,7 +15,7 @@
 	<key>display-type</key>
 	<string>LED-backlit IPS LCD, capacitive touchscreen</string>
 	<key>display-density</key>
-	<string>324 ppi</string>
+	<string>326 ppi</string>
 	<key>WLAN</key>
 	<string>WiFi 802.11 a/b/g/n</string>
 	<key>bluetooth</key>
@@ -34,5 +34,9 @@
 	<string>Yes</string>
 	<key>sim</key>
 	<string>Nano-SIM</string>
+	<key>screen-size</key>
+	<string>7.9&quot;</string>
+	<key>screen-resolution</key>
+	<string>2048x1536</string>
 </dict>
 </plist>

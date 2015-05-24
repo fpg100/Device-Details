@@ -42,5 +42,9 @@
 	<string>Yes</string>
 	<key>touch-id</key>
 	<string>Yes</string>
+	<key>screen-size</key>
+	<string>4&quot;</string>
+	<key>screen-resolution</key>
+	<string>1136x640</string>
 </dict>
 </plist>
