@@ -123,7 +123,7 @@
 		A237C38D1B0626600071D30F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A237C38C1B0626600071D30F /* Reachability.m */; };
 		A237C38F1B062EE30071D30F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A237C38E1B062EE30071D30F /* ExternalAccessory.framework */; };
 		A248740D1B0A42950066CE1E /* iPadMini3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A248740C1B0A42950066CE1E /* iPadMini3.plist */; };
-		A2678C181B12161E008F8C3F /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2678C171B12161E008F8C3F /* libFlurry_6.3.0.a */; };
+		A248825E1B134FB000EDB03F /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A248825D1B134FB000EDB03F /* libFlurry_6.3.0.a */; };
 		A2678C1A1B121CC4008F8C3F /* iPadAir2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2678C191B121CC4008F8C3F /* iPadAir2.plist */; };
 		E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042969189206FC0096B2AD /* ALAccessory.m */; };
 		E10429AA189206FC0096B2AD /* ALBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296C189206FC0096B2AD /* ALBattery.m */; };
@@ -308,7 +308,7 @@
 		A237C38E1B062EE30071D30F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		A248740C1B0A42950066CE1E /* iPadMini3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini3.plist; sourceTree = "<group>"; };
 		A24874141B0A50280066CE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Device Details-Info.plist"; sourceTree = "<group>"; };
-		A2678C171B12161E008F8C3F /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
+		A248825D1B134FB000EDB03F /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		A2678C191B121CC4008F8C3F /* iPadAir2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir2.plist; sourceTree = "<group>"; };
 		E1042968189206FC0096B2AD /* ALAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAccessory.h; sourceTree = "<group>"; };
 		E1042969189206FC0096B2AD /* ALAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAccessory.m; sourceTree = "<group>"; };
@@ -415,7 +415,7 @@
 				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
-				A2678C181B12161E008F8C3F /* libFlurry_6.3.0.a in Frameworks */,
+				A248825E1B134FB000EDB03F /* libFlurry_6.3.0.a in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
@@ -546,7 +546,7 @@
 		A237C3611B06117C0071D30F /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				A2678C171B12161E008F8C3F /* libFlurry_6.3.0.a */,
+				A248825D1B134FB000EDB03F /* libFlurry_6.3.0.a */,
 				A237C3621B06117C0071D30F /* Flurry.h */,
 			);
 			name = Flurry;
@@ -1259,6 +1259,8 @@
 					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
 					Details/ThirdPartyLib/Flurry,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "79c73060-b48f-484c-9231-53d0e98d328b";
@@ -1293,6 +1295,8 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
 					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",

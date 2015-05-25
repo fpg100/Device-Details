@@ -20,8 +20,12 @@
 	<string>2.1</string>
 	<key>camera-primary</key>
 	<string>HD 720p</string>
+	<key>camera-primary-video</key>
+	<string>1080p HD (30 fps)</string>
 	<key>camera-secondary</key>
 	<string>VGA</string>
+	<key>camera-secondary-video</key>
+	<string>720p HD</string>
 	<key>cpu</key>
 	<string>Apple A4 800 MHz</string>
 	<key>gpu</key>

@@ -20,8 +20,12 @@
 	<string>4.0</string>
 	<key>camera-primary</key>
 	<string>5.0 MP</string>
+	<key>camera-primary-video</key>
+	<string>1080p HD (30 fps)</string>
 	<key>camera-secondary</key>
 	<string>1.2 MP</string>
+	<key>camera-secondary-video</key>
+	<string>720p HD</string>
 	<key>cpu</key>
 	<string>Apple A5</string>
 	<key>gpu</key>

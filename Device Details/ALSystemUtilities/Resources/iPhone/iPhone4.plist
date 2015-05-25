@@ -31,9 +31,13 @@
 	<key>bluetooth</key>
 	<string>2.1</string>
 	<key>camera-primary</key>
-	<string>5.0 MP</string>
+	<string>5.0 MP ƒ/2.8</string>
+	<key>camera-primary-video</key>
+	<string>720p HD (30 fps)</string>
 	<key>camera-secondary</key>
-	<string>VGA 480p</string>
+	<string>0.3 MP</string>
+	<key>camera-secondary-video</key>
+	<string>480p VGA (30 fps)</string>
 	<key>cpu</key>
 	<string>Apple A4 a 800 MHz</string>
 	<key>gpu</key>

@@ -31,8 +31,12 @@
 	<key>bluetooth</key>
 	<string>2.1</string>
 	<key>camera-primary</key>
-	<string>3.15 MP</string>
+	<string>3.15 MP ƒ/2.8</string>
+	<key>camera-primary-video</key>
+	<string>480p (30 fps)</string>
 	<key>camera-secondary</key>
+	<string>No</string>
+	<key>camera-secondary-video</key>
 	<string>No</string>
 	<key>cpu</key>
 	<string>600 MHz Cortex-A8</string>

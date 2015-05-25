@@ -21,9 +21,13 @@
 	<key>bluetooth</key>
 	<string>4.0</string>
 	<key>camera-primary</key>
-	<string>5 MP</string>
+	<string>5 MP ƒ/2.4</string>
+	<key>camera-primary-video</key>
+	<string>1080p HD</string>
 	<key>camera-secondary</key>
 	<string>1.2 MP</string>
+	<key>camera-secondary-video</key>
+	<string>720p HD</string>
 	<key>cpu</key>
 	<string>Apple A7 64 bit / M7</string>
 	<key>gpu</key>

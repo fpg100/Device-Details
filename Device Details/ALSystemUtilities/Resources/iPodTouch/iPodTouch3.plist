@@ -20,8 +20,12 @@
 	<string>2.1</string>
 	<key>camera-primary</key>
 	<string>No</string>
+	<key>camera-primary-video</key>
+	<string>1080p HD (30 fps)</string>
 	<key>camera-secondary</key>
 	<string>No</string>
+	<key>camera-secondary-video</key>
+	<string>720p HD</string>
 	<key>cpu</key>
 	<string>833 MHz Cortex-A8 (locked at 600)</string>
 	<key>gpu</key>

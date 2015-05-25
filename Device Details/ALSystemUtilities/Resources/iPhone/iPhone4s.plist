@@ -31,9 +31,13 @@
 	<key>bluetooth</key>
 	<string>4.0</string>
 	<key>camera-primary</key>
-	<string>8.0 MP</string>
+	<string>8.0 MP ƒ/2.8</string>
+	<key>camera-primary-video</key>
+	<string>1080p HD (30 fps)</string>
 	<key>camera-secondary</key>
-	<string>VGA 480p</string>
+	<string>0.3 MP</string>
+	<key>camera-secondary-video</key>
+	<string>480p VGA (30 fps)</string>
 	<key>cpu</key>
 	<string>Apple A5 da 800Mhz</string>
 	<key>gpu</key>
