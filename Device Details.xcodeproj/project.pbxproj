@@ -136,6 +136,7 @@
 		E10429B1189206FC0096B2AD /* ALNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042981189206FC0096B2AD /* ALNetwork.m */; };
 		E10429B3189206FC0096B2AD /* ALSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042986189206FC0096B2AD /* ALSystem.m */; };
 		E10429C5189220FA0096B2AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E10429C4189220FA0096B2AD /* README.md */; };
+		E10945EA1B14486D007B48E9 /* DDAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = E10945E91B14486D007B48E9 /* DDAnalytics.m */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
 		E137D18B17CAF03D0001A6CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E137D18917CAF03D0001A6CF /* InfoPlist.strings */; };
@@ -342,6 +343,9 @@
 		E1042991189206FC0096B2AD /* ALSystem_ProcessorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem_ProcessorConstants.h; sourceTree = "<group>"; };
 		E1042992189206FC0096B2AD /* ALSystemConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystemConstants.h; sourceTree = "<group>"; };
 		E10429C4189220FA0096B2AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E10945E31B1446E9007B48E9 /* DDAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAnalytics.h; path = DDLib/DDAnalytics.h; sourceTree = "<group>"; };
+		E10945E91B14486D007B48E9 /* DDAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnalytics.m; sourceTree = "<group>"; };
+		E10945EB1B14487E007B48E9 /* DDAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAnalytics.h; sourceTree = "<group>"; };
 		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -744,6 +748,15 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		E10945E41B144801007B48E9 /* DDLib */ = {
+			isa = PBXGroup;
+			children = (
+				E10945E91B14486D007B48E9 /* DDAnalytics.m */,
+				E10945EB1B14487E007B48E9 /* DDAnalytics.h */,
+			);
+			path = DDLib;
+			sourceTree = "<group>";
+		};
 		E137D17417CAF03D0001A6CF = {
 			isa = PBXGroup;
 			children = (
@@ -794,6 +807,7 @@
 			children = (
 				49126741187D7CC4001F66A5 /* Settings.bundle */,
 				E137D18F17CAF03D0001A6CF /* DDAppDelegate.h */,
+				E10945E31B1446E9007B48E9 /* DDAnalytics.h */,
 				E137D19017CAF03D0001A6CF /* DDAppDelegate.m */,
 				499997631874F92900D3A605 /* DDMainViewController.h */,
 				499997641874F92900D3A605 /* DDMainViewController.m */,
@@ -826,6 +840,7 @@
 		E1D1D2691835A9B50007E301 /* Third Party Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E10945E41B144801007B48E9 /* DDLib */,
 				A237C3611B06117C0071D30F /* Flurry */,
 				49F7267418FC1E8300B0ED15 /* FRDLivelyButton */,
 				490CFF3418D7246800E2A878 /* CMPopTipView */,
@@ -1111,6 +1126,7 @@
 				499122C0188D5FD600643FFE /* ALDefaults.m in Sources */,
 				499122BD188D51D100643FFE /* ALRangingViewController.m in Sources */,
 				E10429AA189206FC0096B2AD /* ALBattery.m in Sources */,
+				E10945EA1B14486D007B48E9 /* DDAnalytics.m in Sources */,
 				E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>810A1680-8525-423E-8EEA-570C1F74C42F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Device Details</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DE4AB89EBEA4977FF171156D6E19A5B8463DE969</key>
 		<string>https://github.com/robert-yi-jones/Device-Details.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Device Details.xcodeproj/project.xcworkspace</string>
+	<string>Device Details.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DE4AB89EBEA4977FF171156D6E19A5B8463DE969</key>
