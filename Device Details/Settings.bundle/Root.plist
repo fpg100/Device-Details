@@ -21,7 +21,7 @@
 			<key>Key</key>
 			<string>BundleVersion</string>
 			<key>DefaultValue</key>
-			<string>2.0.4  (3rd Jun, 2015)</string>
+			<string>2.1 (3rd Jun, 2015)</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>AutocorrectionType</key>
