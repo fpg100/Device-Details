@@ -136,6 +136,17 @@
 + (NSString *)cameraSecondary;
 
 /*!
+ Details about primary camera video quality of the device
+ @return NSString with details about primary camera video quality
+ */
++ (NSString *)videoPrimary;
+
+/*!
+ Details about secondary camera video quality of the device
+ @return NSString with details about secondary camera video quality
+ */
++ (NSString *)videoSecondary;
+/*!
  The cpu of the device
  @return NSString with the cpu of the device
  */

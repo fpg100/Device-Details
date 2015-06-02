@@ -201,6 +201,14 @@
     return [[self infoForDevice] objectForKey:@"camera-secondary"];
 }
 
++ (NSString *)videoPrimary {
+    return [[self infoForDevice] objectForKey:@"camera-primary-video"];
+}
+
++ (NSString *)videoSecondary {
+    return [[self infoForDevice] objectForKey:@"camera-secondary-video"];
+}
+
 + (NSString *)cpu {
     return [[self infoForDevice] objectForKey:@"cpu"];
 }

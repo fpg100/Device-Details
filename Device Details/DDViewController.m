@@ -52,6 +52,8 @@
 @synthesize deviceBluetoothLabel;
 @synthesize deviceCameraFrontLabel;
 @synthesize deviceCameraBackLabel;
+@synthesize deviceVideoFrontLabel;
+@synthesize deviceVideoBackLabel;
 @synthesize deviceDimentionsLabel;
 @synthesize deviceWeightLabel;
 
@@ -281,6 +283,8 @@ CLGeocoder *geocoder;
     deviceBluetoothLabel.text = [ALHardware bluetooth];
     deviceCameraFrontLabel.text = [ALHardware cameraSecondary];
     deviceCameraBackLabel.text = [ALHardware cameraPrimary];
+    deviceVideoFrontLabel.text = [ALHardware videoSecondary];
+    deviceVideoBackLabel.text = [ALHardware videoPrimary];
     deviceDimentionsLabel.text = [ALHardware dimensions];
     deviceWeightLabel.text = [ALHardware weight];
     

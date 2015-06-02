@@ -79,6 +79,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *deviceBluetoothLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceCameraFrontLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceCameraBackLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceVideoFrontLabel;
+@property (weak, nonatomic) IBOutlet UILabel *deviceVideoBackLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceDimentionsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deviceWeightLabel;
 
