@@ -1,4 +1,4 @@
-Device-Details (iOS 7 project)
+Device-Details (iOS project)
 ==============
 
 This is an opened project of the app <a href="https://itunes.apple.com/au/app/device-details-information/id793582130?mt=8" title="Title">
