@@ -105,6 +105,8 @@
 //Date Time
 @property (strong, nonatomic) IBOutlet UILabel *localDateTimeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *utcDateTimeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *bootTimeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *uptimeLabel;
 
 //Location Details
 @property (retain, nonatomic) CLLocationManager *locationManager;

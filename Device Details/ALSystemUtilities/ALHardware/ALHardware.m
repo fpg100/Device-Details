@@ -103,12 +103,17 @@
     return type;
 }
 
-+ (NSString *)bootTime {
++ (NSDate *)bootTime {
+    return [NSDate dateWithTimeIntervalSince1970:([[NSDate date] timeIntervalSince1970] - [[NSProcessInfo processInfo] systemUptime])];
+}
+
++ (NSString *)uptime {
     NSInteger ti = (NSInteger)[[NSProcessInfo processInfo] systemUptime];
     NSInteger seconds = ti % 60;
     NSInteger minutes = (ti / 60) % 60;
-    NSInteger hours = (ti / 3600);
-    return [NSString stringWithFormat:@"%02li:%02li:%02li", (long)hours, (long)minutes, (long)seconds];
+    NSInteger hours = (ti / 3600) % 24;
+    NSInteger days = ti / (3600*24);
+    return [NSString stringWithFormat:@"%01li days %02li:%02li:%02li", (long)days, (long)hours, (long)minutes, (long)seconds];
 }
 
 + (BOOL)proximitySensor {

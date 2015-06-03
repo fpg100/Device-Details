@@ -62,10 +62,12 @@
 + (NSString *)platformType;
 
 /*!
- Get the boot time in hours, minutes and seconds
+ Get the boot time in Days, hours, minutes and seconds
  @return NSString represents the boot time in hours, minutes and seconds
  */
 + (NSDate *)bootTime;
+
++ (NSString *)uptime;
 
 /*!
  Check for the proximity sensor

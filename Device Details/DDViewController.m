@@ -78,6 +78,8 @@
 //Date Time
 @synthesize localDateTimeLabel;
 @synthesize utcDateTimeLabel;
+@synthesize bootTimeLabel;
+@synthesize uptimeLabel;
 
 //Location Details
 @synthesize locationManager;
@@ -686,6 +688,13 @@ CLGeocoder *geocoder;
                                    selector:@selector(timerTick:)
                                    userInfo:nil
                                     repeats:YES];
+    static NSDateFormatter *bootDateFormatter;
+    [bootDateFormatter setTimeZone:[NSTimeZone localTimeZone]];
+    if (!bootDateFormatter) {
+        bootDateFormatter = [[NSDateFormatter alloc] init];
+        bootDateFormatter.dateFormat = @"EE dd-MMM-yyyy HH:mm:ss";  // very simple format  "18:47:22 28-Nov-2013"
+    }
+    bootTimeLabel.text = [bootDateFormatter stringFromDate:[ALHardware bootTime]];
 }
 
 - (void)timerTick:(NSTimer *)timer {
@@ -694,7 +703,7 @@ CLGeocoder *geocoder;
     static NSDateFormatter *dateFormatter;
     if (!dateFormatter) {
         dateFormatter = [[NSDateFormatter alloc] init];
-        dateFormatter.dateFormat = @"HH:mm:ss  dd-MMM-yyyy";  // very simple format  "18:47:22 28-Nov-2013"
+        dateFormatter.dateFormat = @"EE dd-MMM-yyyy HH:mm:ss";  // very simple format  "18:47:22 28-Nov-2013"
     }
     localDateTimeLabel.text = [dateFormatter stringFromDate:now];
     
@@ -704,9 +713,11 @@ CLGeocoder *geocoder;
         utcDateFormatter = [[NSDateFormatter alloc] init];
         NSTimeZone *utcTimeZone = [NSTimeZone timeZoneWithName:@"UTC"];
         [utcDateFormatter setTimeZone:utcTimeZone];
-        [utcDateFormatter setDateFormat:@"HH:mm:ss  dd-MMM-yyyy"];
+        [utcDateFormatter setDateFormat:@"EE dd-MMM-yyyy HH:mm:ss"];
     }
     utcDateTimeLabel.text = [utcDateFormatter stringFromDate:now];
+    
+    uptimeLabel.text = [ALHardware uptime];
 }
 
 #pragma mark - Motion Details Functions
