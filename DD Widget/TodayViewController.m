@@ -282,4 +282,72 @@ Reachability *googleReach;
     ipAddrLabel.text = [self getIPAddress];
 }
 
+#pragma mark -
+#pragma mark   CLLocationManager Delegate
+/*
+ *  locationManager:didUpdateLocations:
+ *
+ *  Discussion:
+ *    Invoked when new locations are available.  Required for delivery of
+ *    deferred locations.  If implemented, updates will
+ *    not be delivered to locationManager:didUpdateToLocation:fromLocation:
+ *
+ *    locations is an array of CLLocation objects in chronological order.
+ */
+//- (void)locationManager:(CLLocationManager *)manager
+//     didUpdateLocations:(NSArray *)locations{
+//    CLLocation *newLocation = [locations lastObject];
+//    CLLocation *oldLocation;
+//    if (locations.count > 1) {
+//        oldLocation = [locations objectAtIndex:locations.count-2];
+//    } else {
+//        oldLocation = nil;
+//    }
+//    //    NSLog(@"didUpdateToLocation %@ from %@", newLocation, oldLocation);
+//    latitudeLabel.text = [[NSString alloc] initWithFormat:@"%+f\u00B0", newLocation.coordinate.latitude];
+//    longitudeLabel.text = [[NSString alloc] initWithFormat:@"%+f\u00B0", newLocation.coordinate.longitude];
+//    horizentalAccuratcyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.horizontalAccuracy];
+//    altitudeLabel.text = [[NSString alloc] initWithFormat:@"%+.2f m", newLocation.altitude];
+//    verticalAccuracyLabel.text = [[NSString alloc] initWithFormat:@"+/-%.2f m", newLocation.verticalAccuracy];
+//    speedLabel.text =  [[NSString alloc] initWithFormat:@"%.2f km/h", newLocation.speed];
+//    if (newLocation.course < 0) {
+//        courseLabel.text = @"Direction is invalid.";
+//    }else{
+//        courseLabel.text = [[NSString alloc] initWithFormat:@"%.2f\u00B0", newLocation.course];
+//    }
+//    
+//    viewRegion = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 320.00,80.00);
+//    [currentLocationMapView setRegion:viewRegion animated:YES];
+//    
+//    [geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+//        if(placemarks.count){
+//            
+//            //            NSDictionary *dictionary = [[placemarks objectAtIndex:0] addressDictionary];
+//            //            addressLabel.Text = [dictionary valueForKey:@"Street"];
+//            //            cityLabel.Text = [dictionary valueForKey:@"City"];
+//            //            stateLabel.Text = [dictionary valueForKey:@"State"];
+//            //            zipCodeLabel.Text = [dictionary valueForKey:@"ZIP"];
+//            //            countryLabel.text = [dictionary valueForKey:@"Country"];
+//            //            countryCodeLabel.text = [dictionary valueForKey:@"CountryCode"];
+//            
+//            
+//            placeNameLabel.text = [placemarks[0] name];
+//            addressNumberLabel.text = [placemarks[0] subThoroughfare];
+//            addressLabel.text = [placemarks[0] thoroughfare];
+//            neighborhoodLabel.text = [placemarks[0] subLocality];
+//            cityLabel.text = [placemarks[0] locality];
+//            countyLabel.text = [placemarks[0] subAdministrativeArea];
+//            stateLabel.text = [placemarks[0] administrativeArea];
+//            zipCodeLabel.text = [placemarks[0] postalCode];
+//            countryLabel.text = [placemarks[0] country];
+//            countryCodeLabel.text = [placemarks[0] ISOcountryCode];
+//            inlandWaterLabel.text = [placemarks[0] inlandWater];
+//            oceanLabel.text = [placemarks[0] ocean];
+//            if ([[placemarks[0] areasOfInterest] count] >=1) {
+//                areasOfInterestLabel.text = [[placemarks[0] areasOfInterest] objectAtIndex:0];
+//            }
+//        }
+//    }];
+//}
+
 @end

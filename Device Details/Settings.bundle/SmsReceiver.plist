@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Emergency Contact</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>This is SMS receiver&apos;s mobile phone bumber</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>Text Field</string>
+			<key>Title</key>
+			<string>Phone Number: </string>
+			<key>Key</key>
+			<string>phoneNumber</string>
+			<key>DefaultValue</key>
+			<string>0000000000</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<true/>
+			<key>Keyboard Type</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Mobile # (SMS): </string>
+			<key>Key</key>
+			<string>smsMobileNumber</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>DefaultValue</key>
+			<string>Your SMS receiver phone number</string>
+			<key>IsSecure</key>
+			<false/>
+		</dict>
+	</array>
+	<key>PreferenceSpecifiers - 2</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>🚨Emergency Contact</string>
+			<key>FooterText</key>
+			<string>==========================</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>📞 Phone number</string>
+			<key>File</key>
+			<string>SmsReceiver</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>📩 Email Address</string>
+			<key>File</key>
+			<string>EmailReceiver</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>About</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>Copyright © 2015 by Yi JIANG
+    All rights reserved.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Version</string>
+			<key>Key</key>
+			<string>BundleVersion</string>
+			<key>DefaultValue</key>
+			<string>2.1 (3rd Jun, 2015)</string>
+			<key>IsSecure</key>
+			<false/>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>Contact</string>
+			<key>File</key>
+			<string>contactDetails</string>
+		</dict>
+	</array>
+</dict>
+</plist>
