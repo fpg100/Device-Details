@@ -124,7 +124,6 @@
 		A237C38F1B062EE30071D30F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A237C38E1B062EE30071D30F /* ExternalAccessory.framework */; };
 		A248740D1B0A42950066CE1E /* iPadMini3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A248740C1B0A42950066CE1E /* iPadMini3.plist */; };
 		A2678C1A1B121CC4008F8C3F /* iPadAir2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2678C191B121CC4008F8C3F /* iPadAir2.plist */; };
-		A269BCFC1B1F52B700A4ADF5 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A269BCFB1B1F52B700A4ADF5 /* libFlurry_6.3.0.a */; };
 		E10429A9189206FC0096B2AD /* ALAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042969189206FC0096B2AD /* ALAccessory.m */; };
 		E10429AA189206FC0096B2AD /* ALBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296C189206FC0096B2AD /* ALBattery.m */; };
 		E10429AB189206FC0096B2AD /* ALCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = E104296F189206FC0096B2AD /* ALCarrier.m */; };
@@ -140,7 +139,7 @@
 		E1174CE51B4B660E00E14F5E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1174CE41B4B660E00E14F5E /* NotificationCenter.framework */; };
 		E1174CEB1B4B660E00E14F5E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1174CEA1B4B660E00E14F5E /* TodayViewController.m */; };
 		E1174CED1B4B660E00E14F5E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1174CEC1B4B660E00E14F5E /* MainInterface.storyboard */; };
-		E1174CF01B4B660E00E14F5E /* DD Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1174CE31B4B660E00E14F5E /* DD Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1174CF01B4B660E00E14F5E /* Device Details.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1174CE31B4B660E00E14F5E /* Device Details.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E1174CFF1B4B670600E14F5E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1174CFE1B4B670600E14F5E /* InterfaceController.swift */; };
 		E1174D011B4B670600E14F5E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1174D001B4B670600E14F5E /* NotificationController.swift */; };
 		E1174D031B4B670600E14F5E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1174D021B4B670600E14F5E /* GlanceController.swift */; };
@@ -149,6 +148,17 @@
 		E1174D111B4B670600E14F5E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1174D0F1B4B670600E14F5E /* Interface.storyboard */; };
 		E1174D131B4B670600E14F5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1174D121B4B670600E14F5E /* Images.xcassets */; };
 		E1174D161B4B670600E14F5E /* Details WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1174CF91B4B670600E14F5E /* Details WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1174D251B4B817F00E14F5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4912672C187CF215001F66A5 /* Images.xcassets */; };
+		E1174D261B4B818000E14F5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4912672C187CF215001F66A5 /* Images.xcassets */; };
+		E1174D291B4B827E00E14F5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4912672C187CF215001F66A5 /* Images.xcassets */; };
+		E1174D2A1B4B836C00E14F5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4912672C187CF215001F66A5 /* Images.xcassets */; };
+		E1174D2E1B4B99A900E14F5E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D1FE17CDB49E0001A6CF /* CoreLocation.framework */; };
+		E1174D2F1B4B9B2C00E14F5E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1318923367000224F8 /* CoreFoundation.framework */; };
+		E1174D301B4B9B4B00E14F5E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49852AF317CE2A4F0086089A /* CoreMotion.framework */; };
+		E1174D311B4B9B5C00E14F5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18217CAF03D0001A6CF /* Foundation.framework */; };
+		E1174D341B4BA15D00E14F5E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB09189232FB000224F8 /* CFNetwork.framework */; };
+		E1174D561B4BA1EF00E14F5E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A237C38C1B0626600071D30F /* Reachability.m */; };
+		E1174D581B4BA25D00E14F5E /* ALNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E1042981189206FC0096B2AD /* ALNetwork.m */; };
 		E137D18117CAF03D0001A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18017CAF03D0001A6CF /* UIKit.framework */; };
 		E137D18517CAF03D0001A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137D18417CAF03D0001A6CF /* CoreGraphics.framework */; };
 		E137D18B17CAF03D0001A6CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E137D18917CAF03D0001A6CF /* InfoPlist.strings */; };
@@ -167,6 +177,7 @@
 		E176DB0E18923326000224F8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB0D18923326000224F8 /* CoreTelephony.framework */; };
 		E176DB1218923338000224F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1118923338000224F8 /* Security.framework */; };
 		E176DB1418923367000224F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176DB1318923367000224F8 /* CoreFoundation.framework */; };
+		E18A7E881B4BB297003175F8 /* libFlurry_6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18A7E871B4BB297003175F8 /* libFlurry_6.3.0.a */; };
 		E1B8B0871888B20900A20509 /* iPad 29.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0731888B20900A20509 /* iPad 29.png */; };
 		E1B8B0881888B20900A20509 /* iPad 29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0741888B20900A20509 /* iPad 29@2x.png */; };
 		E1B8B0891888B20900A20509 /* iPad 40.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B8B0751888B20900A20509 /* iPad 40.png */; };
@@ -225,7 +236,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				E1174D161B4B670600E14F5E /* Details WatchKit Extension.appex in Embed App Extensions */,
-				E1174CF01B4B660E00E14F5E /* DD Widget.appex in Embed App Extensions */,
+				E1174CF01B4B660E00E14F5E /* Device Details.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +348,6 @@
 		49EAECF019263C22008A8D58 /* iPhone5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhone5@2x.jpg"; sourceTree = "<group>"; };
 		49F7267518FC1E8300B0ED15 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
 		49F7267618FC1E8300B0ED15 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
-		A237C3621B06117C0071D30F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		A237C3671B06164B0071D30F /* iPad2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad2.plist; sourceTree = "<group>"; };
 		A237C3681B06164B0071D30F /* iPad3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad3.plist; sourceTree = "<group>"; };
 		A237C3691B06164B0071D30F /* iPad4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPad4.plist; sourceTree = "<group>"; };
@@ -361,7 +371,6 @@
 		A248740C1B0A42950066CE1E /* iPadMini3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadMini3.plist; sourceTree = "<group>"; };
 		A24874141B0A50280066CE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Device Details-Info.plist"; sourceTree = "<group>"; };
 		A2678C191B121CC4008F8C3F /* iPadAir2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPadAir2.plist; sourceTree = "<group>"; };
-		A269BCFB1B1F52B700A4ADF5 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		E1042968189206FC0096B2AD /* ALAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAccessory.h; sourceTree = "<group>"; };
 		E1042969189206FC0096B2AD /* ALAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAccessory.m; sourceTree = "<group>"; };
 		E104296B189206FC0096B2AD /* ALBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBattery.h; sourceTree = "<group>"; };
@@ -397,7 +406,7 @@
 		E10945E31B1446E9007B48E9 /* DDAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAnalytics.h; path = DDLib/DDAnalytics.h; sourceTree = "<group>"; };
 		E10945E91B14486D007B48E9 /* DDAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnalytics.m; sourceTree = "<group>"; };
 		E10945EB1B14487E007B48E9 /* DDAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAnalytics.h; sourceTree = "<group>"; };
-		E1174CE31B4B660E00E14F5E /* DD Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DD Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1174CE31B4B660E00E14F5E /* Device Details.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Device Details.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1174CE41B4B660E00E14F5E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		E1174CE81B4B660E00E14F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1174CE91B4B660E00E14F5E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -414,6 +423,9 @@
 		E1174D0E1B4B670600E14F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1174D101B4B670600E14F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E1174D121B4B670600E14F5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1174D2B1B4B8A1F00E14F5E /* Details.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Details.entitlements; path = Details/Details.entitlements; sourceTree = "<group>"; };
+		E1174D2C1B4B8A9400E14F5E /* DD Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "DD Widget.entitlements"; sourceTree = "<group>"; };
+		E1174D2D1B4B8B0C00E14F5E /* Details WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Details WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		E137D17D17CAF03D0001A6CF /* Details.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Details.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137D18017CAF03D0001A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E137D18217CAF03D0001A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -439,6 +451,8 @@
 		E176DB0D18923326000224F8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		E176DB1118923338000224F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E176DB1318923367000224F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E18A7E861B4BB297003175F8 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		E18A7E871B4BB297003175F8 /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		E1B8B0731888B20900A20509 /* iPad 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29.png"; path = "Artworks/iPad 29.png"; sourceTree = "<group>"; };
 		E1B8B0741888B20900A20509 /* iPad 29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 29@2x.png"; path = "Artworks/iPad 29@2x.png"; sourceTree = "<group>"; };
 		E1B8B0751888B20900A20509 /* iPad 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad 40.png"; path = "Artworks/iPad 40.png"; sourceTree = "<group>"; };
@@ -474,6 +488,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1174D341B4BA15D00E14F5E /* CFNetwork.framework in Frameworks */,
+				E1174D311B4B9B5C00E14F5E /* Foundation.framework in Frameworks */,
+				E1174D301B4B9B4B00E14F5E /* CoreMotion.framework in Frameworks */,
+				E1174D2F1B4B9B2C00E14F5E /* CoreFoundation.framework in Frameworks */,
+				E1174D2E1B4B99A900E14F5E /* CoreLocation.framework in Frameworks */,
 				E1174CE51B4B660E00E14F5E /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +521,7 @@
 				E176DB0A189232FB000224F8 /* CFNetwork.framework in Frameworks */,
 				499997621874F38E00D3A605 /* iAd.framework in Frameworks */,
 				E1D1D2721835AA650007E301 /* AVFoundation.framework in Frameworks */,
-				A269BCFC1B1F52B700A4ADF5 /* libFlurry_6.3.0.a in Frameworks */,
+				E18A7E881B4BB297003175F8 /* libFlurry_6.3.0.a in Frameworks */,
 				E1B9F8F217D470EC0089CE9D /* MapKit.framework in Frameworks */,
 				49852AF417CE2A4F0086089A /* CoreMotion.framework in Frameworks */,
 				E137D1FF17CDB49E0001A6CF /* CoreLocation.framework in Frameworks */,
@@ -633,8 +652,8 @@
 		A237C3611B06117C0071D30F /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				A269BCFB1B1F52B700A4ADF5 /* libFlurry_6.3.0.a */,
-				A237C3621B06117C0071D30F /* Flurry.h */,
+				E18A7E861B4BB297003175F8 /* Flurry.h */,
+				E18A7E871B4BB297003175F8 /* libFlurry_6.3.0.a */,
 			);
 			name = Flurry;
 			path = ThirdPartyLib/Flurry;
@@ -843,6 +862,7 @@
 		E1174CE61B4B660E00E14F5E /* DD Widget */ = {
 			isa = PBXGroup;
 			children = (
+				E1174D2C1B4B8A9400E14F5E /* DD Widget.entitlements */,
 				E1174CE91B4B660E00E14F5E /* TodayViewController.h */,
 				E1174CEA1B4B660E00E14F5E /* TodayViewController.m */,
 				E1174CEC1B4B660E00E14F5E /* MainInterface.storyboard */,
@@ -862,6 +882,7 @@
 		E1174CFA1B4B670600E14F5E /* Details WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E1174D2D1B4B8B0C00E14F5E /* Details WatchKit Extension.entitlements */,
 				E1174CFE1B4B670600E14F5E /* InterfaceController.swift */,
 				E1174D001B4B670600E14F5E /* NotificationController.swift */,
 				E1174D021B4B670600E14F5E /* GlanceController.swift */,
@@ -901,6 +922,7 @@
 		E137D17417CAF03D0001A6CF = {
 			isa = PBXGroup;
 			children = (
+				E1174D2B1B4B8A1F00E14F5E /* Details.entitlements */,
 				E137D19817CAF03D0001A6CF /* MainStoryboard.storyboard */,
 				4912672C187CF215001F66A5 /* Images.xcassets */,
 				E1E2748D1886468B00B25D84 /* Sources */,
@@ -918,7 +940,7 @@
 			isa = PBXGroup;
 			children = (
 				E137D17D17CAF03D0001A6CF /* Details.app */,
-				E1174CE31B4B660E00E14F5E /* DD Widget.appex */,
+				E1174CE31B4B660E00E14F5E /* Device Details.appex */,
 				E1174CF91B4B670600E14F5E /* Details WatchKit Extension.appex */,
 				E1174D081B4B670600E14F5E /* Details WatchKit App.app */,
 			);
@@ -1052,9 +1074,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1174CE21B4B660E00E14F5E /* DD Widget */ = {
+		E1174CE21B4B660E00E14F5E /* Device Details */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1174CF31B4B660E00E14F5E /* Build configuration list for PBXNativeTarget "DD Widget" */;
+			buildConfigurationList = E1174CF31B4B660E00E14F5E /* Build configuration list for PBXNativeTarget "Device Details" */;
 			buildPhases = (
 				E1174CDF1B4B660E00E14F5E /* Sources */,
 				E1174CE01B4B660E00E14F5E /* Frameworks */,
@@ -1064,9 +1086,9 @@
 			);
 			dependencies = (
 			);
-			name = "DD Widget";
+			name = "Device Details";
 			productName = "DD Widget";
-			productReference = E1174CE31B4B660E00E14F5E /* DD Widget.appex */;
+			productReference = E1174CE31B4B660E00E14F5E /* Device Details.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		E1174CF81B4B670600E14F5E /* Details WatchKit Extension */ = {
@@ -1135,10 +1157,20 @@
 					E1174CE21B4B660E00E14F5E = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = DQK83PW4RV;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E1174CF81B4B670600E14F5E = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = DQK83PW4RV;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E1174D071B4B670600E14F5E = {
 						CreatedOnToolsVersion = 6.4;
@@ -1147,6 +1179,9 @@
 					E137D17C17CAF03D0001A6CF = {
 						DevelopmentTeam = DQK83PW4RV;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.WAC = {
 								enabled = 0;
 							};
@@ -1169,7 +1204,7 @@
 			projectRoot = "";
 			targets = (
 				E137D17C17CAF03D0001A6CF /* Details */,
-				E1174CE21B4B660E00E14F5E /* DD Widget */,
+				E1174CE21B4B660E00E14F5E /* Device Details */,
 				E1174CF81B4B670600E14F5E /* Details WatchKit Extension */,
 				E1174D071B4B670600E14F5E /* Details WatchKit App */,
 			);
@@ -1182,6 +1217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1174CED1B4B660E00E14F5E /* MainInterface.storyboard in Resources */,
+				E1174D261B4B818000E14F5E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,6 +1225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1174D291B4B827E00E14F5E /* Images.xcassets in Resources */,
 				E1174D051B4B670600E14F5E /* Images.xcassets in Resources */,
 				E1174D091B4B670600E14F5E /* Details WatchKit App.app in Resources */,
 			);
@@ -1198,6 +1235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1174D2A1B4B836C00E14F5E /* Images.xcassets in Resources */,
 				E1174D111B4B670600E14F5E /* Interface.storyboard in Resources */,
 				E1174D131B4B670600E14F5E /* Images.xcassets in Resources */,
 			);
@@ -1288,6 +1326,7 @@
 				A237C3811B06164B0071D30F /* iPhone4.plist in Resources */,
 				49E7D88818895EEE0096C450 /* iPhone 57.png in Resources */,
 				E1B8B0871888B20900A20509 /* iPad 29.png in Resources */,
+				E1174D251B4B817F00E14F5E /* Images.xcassets in Resources */,
 				49E8F37518CF34C400E98861 /* 1393698718_note.png in Resources */,
 				49E8F39018CF34C400E98861 /* 1393698872_stack.png in Resources */,
 				49E8F37418CF34C400E98861 /* 1393698709_settings.png in Resources */,
@@ -1346,6 +1385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1174D581B4BA25D00E14F5E /* ALNetwork.m in Sources */,
+				E1174D561B4BA1EF00E14F5E /* Reachability.m in Sources */,
 				E1174CEB1B4B660E00E14F5E /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1397,7 +1438,7 @@
 /* Begin PBXTargetDependency section */
 		E1174CEF1B4B660E00E14F5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1174CE21B4B660E00E14F5E /* DD Widget */;
+			target = E1174CE21B4B660E00E14F5E /* Device Details */;
 			targetProxy = E1174CEE1B4B660E00E14F5E /* PBXContainerItemProxy */;
 		};
 		E1174D0B1B4B670600E14F5E /* PBXTargetDependency */ = {
@@ -1468,6 +1509,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "DD Widget/DD Widget.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1483,8 +1525,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "DD Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1500,6 +1547,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "DD Widget/DD Widget.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -1513,8 +1561,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "DD Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1547,7 +1600,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				IBSC_MODULE = Details_WatchKit_Extension;
 				INFOPLIST_FILE = "Details WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1580,7 +1633,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				IBSC_MODULE = Details_WatchKit_Extension;
 				INFOPLIST_FILE = "Details WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1598,6 +1651,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "Details WatchKit Extension/Details WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1613,8 +1667,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Details WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
@@ -1631,6 +1690,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "Details WatchKit Extension/Details WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -1644,8 +1704,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Details WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
@@ -1722,12 +1787,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_ENTITLEMENTS = Details/Details.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Device",
 					Details,
@@ -1743,6 +1810,10 @@
 					Details,
 					"$(PROJECT_DIR)/Device",
 					Details,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
 					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
@@ -1776,12 +1847,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_ENTITLEMENTS = Details/Details.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Device Details/Device Details-Prefix.pch";
 				INFOPLIST_FILE = "Device Details/Device Details-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Device",
 					Details,
@@ -1817,6 +1890,10 @@
 					Details/ThirdPartyLib/Flurry,
 					"$(PROJECT_DIR)/Device",
 					Details/ThirdPartyLib/Flurry,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
+					"$(PROJECT_DIR)/Device",
+					Details/ThirdPartyLib/Flurry,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1828,13 +1905,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1174CF31B4B660E00E14F5E /* Build configuration list for PBXNativeTarget "DD Widget" */ = {
+		E1174CF31B4B660E00E14F5E /* Build configuration list for PBXNativeTarget "Device Details" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1174CF11B4B660E00E14F5E /* Debug */,
 				E1174CF21B4B660E00E14F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1174D171B4B670600E14F5E /* Build configuration list for PBXNativeTarget "Details WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -1843,6 +1921,7 @@
 				E1174D191B4B670600E14F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1174D1A1B4B670600E14F5E /* Build configuration list for PBXNativeTarget "Details WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -1851,6 +1930,7 @@
 				E1174D1C1B4B670600E14F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E137D17817CAF03D0001A6CF /* Build configuration list for PBXProject "Device Details" */ = {
 			isa = XCConfigurationList;
