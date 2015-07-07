@@ -44,6 +44,8 @@
     
     RNLongPressGestureRecognizer *longPress = [[RNLongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
     [self.view addGestureRecognizer:longPress];
+    
+    setStatusBarColor([UIColor blackColor]);
 }
 
 - (void)didReceiveMemoryWarning
@@ -224,5 +226,23 @@
     return version;
 }
 
+
+// sets the status bar text color. returns YES on success.
+/// currently, this only
+/// works in iOS 7. It uses undocumented, inofficial APIs.
+BOOL setStatusBarColor(UIColor *color)
+{
+    id statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
+    id statusBar = [statusBarWindow valueForKey:@"statusBar"];
+    
+    SEL setForegroundColor_sel = NSSelectorFromString(@"setForegroundColor:");
+    if([statusBar respondsToSelector:setForegroundColor_sel]) {
+        // iOS 7+
+        [statusBar performSelector:setForegroundColor_sel withObject:[UIColor greenColor]];
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
 @end
