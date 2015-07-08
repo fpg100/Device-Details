@@ -23,12 +23,21 @@
 @synthesize networkIpMaskLabel;
 @synthesize ssidLabel;
 @synthesize ssidTagLabel;
+@synthesize networkDetailsView = _networkDetailsView;
+@synthesize locationDetailsView = _locationDetailsView;
+@synthesize storageDetailsView = _storageDetailsView;
+@synthesize dateTimeDetailsView = _dateTimeDetailsView;
+@synthesize jailbreakDetailsView = _jailbreakDetailsView;
 
 Reachability *googleReach;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [_networkDetailsView setHidden:NO];
+    [_locationDetailsView setHidden:YES];
+    [_storageDetailsView setHidden:YES];
+    [_dateTimeDetailsView setHidden:YES];
+    [_jailbreakDetailsView setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,12 +55,49 @@ Reachability *googleReach;
     completionHandler(NCUpdateResultNewData);
 }
 
-- (IBAction)buttonTouchUpInSide:(id)sender {
-    NSLog(@"Yes....!!");
-    
-    [self getNetworkDetails];
-}
 
+
+- (IBAction)networkButtonTouchUpInSide:(id)sender{
+    [self getNetworkDetails];
+    [_networkDetailsView setHidden:NO];
+    [_locationDetailsView setHidden:YES];
+    [_storageDetailsView setHidden:YES];
+    [_dateTimeDetailsView setHidden:YES];
+    [_jailbreakDetailsView setHidden:YES];
+    
+}
+- (IBAction)locationButtonTouchUpInSide:(id)sender{
+    [_networkDetailsView setHidden:YES];
+    [_locationDetailsView setHidden:NO];
+    [_storageDetailsView setHidden:YES];
+    [_dateTimeDetailsView setHidden:YES];
+    [_jailbreakDetailsView setHidden:YES];
+    
+}
+- (IBAction)storageButtonTouchUpInSide:(id)sender{
+    [_networkDetailsView setHidden:YES];
+    [_locationDetailsView setHidden:YES];
+    [_storageDetailsView setHidden:NO];
+    [_dateTimeDetailsView setHidden:YES];
+    [_jailbreakDetailsView setHidden:YES];
+    
+}
+- (IBAction)timeBatteryButtonTouchUpInSide:(id)sender{
+    [_networkDetailsView setHidden:YES];
+    [_locationDetailsView setHidden:YES];
+    [_storageDetailsView setHidden:YES];
+    [_dateTimeDetailsView setHidden:NO];
+    [_jailbreakDetailsView setHidden:YES];
+    
+}
+- (IBAction)jailbreakButtonTouchUpInSide:(id)sender{
+    [_networkDetailsView setHidden:YES];
+    [_locationDetailsView setHidden:YES];
+    [_storageDetailsView setHidden:YES];
+    [_dateTimeDetailsView setHidden:YES];
+    [_jailbreakDetailsView setHidden:NO];
+    
+}
 
 #pragma mark -
 #pragma mark   Network Details Functions

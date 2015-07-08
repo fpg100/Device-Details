@@ -45,6 +45,16 @@
 - (IBAction)storageButtonTouchUpInSide:(id)sender;
 - (IBAction)timeBatteryButtonTouchUpInSide:(id)sender;
 - (IBAction)jailbreakButtonTouchUpInSide:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *networkDetailsView;
+@property (weak, nonatomic) IBOutlet UIView *locationDetailsView;
+@property (weak, nonatomic) IBOutlet UIView *storageDetailsView;
+@property (weak, nonatomic) IBOutlet UIView *dateTimeDetailsView;
+@property (weak, nonatomic) IBOutlet UIView *jailbreakDetailsView;
+
+
+
+
+
 
 //Network Details
 @property (weak, nonatomic) IBOutlet UILabel *networkTypeLabel;
