@@ -33,6 +33,7 @@ Reachability *googleReach;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self getNetworkDetails];
     [_networkDetailsView setHidden:NO];
     [_locationDetailsView setHidden:YES];
     [_storageDetailsView setHidden:YES];

@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" placeholderIntrinsicWidth="37" placeholderIntrinsicHeight="37" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-io-eb7">
                                 <rect key="frame" x="26" y="11" width="37" height="37"/>
                                 <state key="normal" image="cloud">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -143,7 +143,7 @@
                                     <constraint firstItem="Fvr-cI-D5M" firstAttribute="firstBaseline" secondItem="M6c-W5-lSS" secondAttribute="firstBaseline" id="9Wb-Dh-xNP"/>
                                     <constraint firstItem="yks-wu-E47" firstAttribute="trailing" secondItem="akN-lW-IWa" secondAttribute="trailing" id="CMn-FL-aVf"/>
                                     <constraint firstItem="VhB-di-UcX" firstAttribute="trailing" secondItem="4ew-u7-khH" secondAttribute="trailing" id="DaC-fi-rjb"/>
-                                    <constraint firstItem="do6-Nv-lTE" firstAttribute="leading" secondItem="yks-wu-E47" secondAttribute="trailing" constant="8" symbolic="YES" id="EvW-H4-bDu"/>
+                                    <constraint firstItem="do6-Nv-lTE" firstAttribute="leading" secondItem="VhB-di-UcX" secondAttribute="leading" constant="1" id="Dkj-4h-wWl"/>
                                     <constraint firstItem="M6c-W5-lSS" firstAttribute="bottom" secondItem="zre-Su-o7H" secondAttribute="bottomMargin" id="H4S-cq-EPS"/>
                                     <constraint firstItem="4ew-u7-khH" firstAttribute="leading" secondItem="M6c-W5-lSS" secondAttribute="leading" id="JJf-3k-gt0"/>
                                     <constraint firstItem="Fvr-cI-D5M" firstAttribute="baseline" secondItem="M6c-W5-lSS" secondAttribute="baseline" id="KWU-jZ-vNQ"/>
