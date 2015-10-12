@@ -63,11 +63,11 @@
             <objects>
                 <viewController id="2" customClass="DDViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="3500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="01d-Yw-n8y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="3500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Device Type:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0V1-xi-DiR">
@@ -1467,6 +1467,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="uty-SI-Meb"/>
+        <segue reference="CSt-Qz-E23"/>
     </inferredMetricsTieBreakers>
 </document>
